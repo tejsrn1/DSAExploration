@@ -1,180 +1,210 @@
-package aa_learning.dsa.array;
+package a.dsa.array;
 
 import java.util.*;
 
-//https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
-
-//: Solve Problems on Arrays [Easy -> Medium -> Hard]
-
 
 public class ArrayDS {
+
+
+    /**
+     * This method finds and returns the largest element in an array.
+     *
+     * @param inputArray An array of integers.
+     * @return The largest integer in the array.
+     * <p>
+     * Example:
+     * int[] array = {1, 2, 3, 4, 5};
+     * int largest = findLargestElement(array);
+     * System.out.println(largest); // Prints: 5
+     */
     public int findLargestElement(int[] inputArray) {
-
-        int maxVal = 0;
+        int maxVal = Integer.MIN_VALUE; // Initialize with the smallest possible integer
         for (int i = 0; i < inputArray.length; i++) {
-
-            maxVal = Math.max(maxVal, inputArray[i]);
+            maxVal = Math.max(maxVal, inputArray[i]); // Update maxVal if a larger value is found
         }
         return maxVal;
-
     }
 
+    /**
+     * This method finds and returns the second largest or second smallest element in an array.
+     *
+     * @param inputArray  An array of integers.
+     * @param returnSmall A boolean flag to decide whether to return the second smallest (if true) or second largest (if false) element.
+     * @return The second smallest or second largest integer in the array. Returns -1 if the array has less than 2 elements.
+     * <p>
+     * Example:
+     * int[] array = {1, 2, 3, 4, 5};
+     * int secondLargest = findSecondLargestElement(array, false);
+     * System.out.println(secondLargest); // Prints: 4
+     * <p>
+     * int secondSmallest = findSecondLargestElement(array, true);
+     * System.out.println(secondSmallest); // Prints: 2
+     */
     public int findSecondLargestElement(int[] inputArray, boolean returnSmall) {
-
-        //Check its optimal solution I could more think like it instead of belwo solution.
-
         if (inputArray.length < 2) {
-            return -1; // must have at least 2 numbers
+            return -1; // Array must have at least 2 numbers
         }
-        int s1 = Integer.MAX_VALUE;
-        int s2 = Integer.MAX_VALUE;
+        int smallest = Integer.MAX_VALUE;
+        int secondSmallest = Integer.MAX_VALUE;
 
-        int l1 = Integer.MIN_VALUE;
-        int l2 = Integer.MIN_VALUE;
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
 
         for (int i = 0; i < inputArray.length; i++) {
-
-            //small
-            int temp = s1;
-            if (inputArray[i] < s1) {
-                s1 = inputArray[i];
-                s2 = temp;
-
-            } else if (inputArray[i] < s2) {
-
-                s2 = inputArray[i];
-
+            // Update smallest and second smallest
+            if (inputArray[i] < smallest) {
+                secondSmallest = smallest; // Update second smallest before updating smallest
+                smallest = inputArray[i];
+            } else if (inputArray[i] < secondSmallest) {
+                secondSmallest = inputArray[i];
             }
 
-            //large
-
-            int temp2 = l1;
-            if (inputArray[i] > l1) {
-                l1 = inputArray[i];
-                l2 = temp2;
-
-            } else if (inputArray[i] > l2 && inputArray[i] != l1) {
-
-                l2 = inputArray[i];
-
+            // Update largest and second largest
+            if (inputArray[i] > largest) {
+                secondLargest = largest; // Update second largest before updating largest
+                largest = inputArray[i];
+            } else if (inputArray[i] > secondLargest && inputArray[i] != largest) {
+                secondLargest = inputArray[i];
             }
-
-
         }
-        return returnSmall ? s2 : l2;
+        return returnSmall ? secondSmallest : secondLargest;
     }
 
-    public boolean isSortedNRotated(int[] inputArray) {
 
-    /*
-    Idea :
-        - Sorted array is increasing and to find sorted and rotated
-        only one violation of increasing can be allowed.
-
-          LEN = 4;
-          0  1  2  3  begin   4  5  6 7
-          A  B  C  D  from 0  A  B  C D
-          how? % length that makes sure anycount which track index start from 0 when spill over length.
-          e.g. order =  4 for Len =3
-          4 % 3 =  1 instead of 5
-    *
-    * */
-
-        int violation = 0;
-        int len = inputArray.length;
+    /**
+     * Checks if the given array is sorted and then rotated.
+     * A sorted array is one that is in increasing order. To determine if it's sorted and then rotated,
+     * we allow for only one violation of the increasing order.
+     *
+     * @param arr The input array to check.
+     * @return true if the array is sorted and rotated, false otherwise.
+     *
+     * Example 1:
+     * Input: [4, 5, 6, 7, 1, 2, 3]
+     * Output: true
+     * Explanation: The array is sorted and rotated at index 3.
+     *
+     * Example 2:
+     * Input: [4, 5, 7, 6, 1, 2, 3]
+     * Output: false
+     * Explanation: The array has two violations of the increasing order at indices 2 and 3.
+     */
+    public boolean isSortedAndRotated(int[] arr) {
+        int violationCount = 0;
+        int len = arr.length;
 
         for (int i = 0; i < len; i++) {
-            // when index goes beyond len , mod will restart from 0
-            int safeIdx = (i + 1) % len;
-            //when ascending rule breaks
-            if (inputArray[i] > inputArray[safeIdx]) {
-                violation++;
+            // When index goes beyond len, mod will restart from 0
+            int nextIndex = (i + 1) % len;
+            // When ascending rule breaks
+            if (arr[i] > arr[nextIndex]) {
+                violationCount++;
             }
         }
 
-        return violation > 1 ? false : true;
-
+        // If there are more than one violations, the array is not sorted and rotated
+        return violationCount > 1 ? false : true;
     }
 
-    public int removeDuplicatesINSortedArray(int[] inputArray) {
 
-        int pt = 0;
-        for (int i = 1; i < inputArray.length; i++) {
-
-            if (inputArray[i] != inputArray[pt]) {
-                pt++;
-                inputArray[pt] = inputArray[i];
+    /**
+     * Removes duplicates in a sorted array and returns the new length.
+     *
+     * @param arr The input array from which duplicates are to be removed.
+     * @return The length of the array after removing duplicates.
+     *
+     * Example:
+     * Input: [1, 1, 2]
+     * Output: 2
+     * Explanation: After removing the duplicate "1", the array becomes [1, 2] with length 2.
+     */
+    public int removeDuplicatesInSortedArray(int[] arr) {
+        int uniqueElementIndex = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] != arr[uniqueElementIndex]) {
+                uniqueElementIndex++;
+                arr[uniqueElementIndex] = arr[i];
             }
         }
-        return pt + 1;//bcs we need to send len until good array.
-
+        return uniqueElementIndex + 1; // We need to send length until good array.
     }
 
-    public void rotateArray_RegularWay() {
+    /**
+     * Rotates an array to the left and right by one position.
+     *
+     * Example:
+     * Input: [1, 2, 3, 4, 5]
+     * Output (Left rotation): [2, 3, 4, 5, 1]
+     * Output (Right rotation): [5, 1, 2, 3, 4]
+     */
+    public void rotateArrayRegularWay() {
+        int[] arr = {1, 2, 3, 4, 5};
 
-        int inputArray[] = {1, 2, 3, 4, 5};// left output = 2,3,4,5,1
-
-        //Left
-        int temp = inputArray[0];
-        for (int i = 0; i < inputArray.length - 1; i++) {
-            inputArray[i] = inputArray[i + 1];
+        // Left rotation
+        int firstElement = arr[0];
+        for (int i = 0; i < arr.length - 1; i++) {
+            arr[i] = arr[i + 1];
         }
-        inputArray[inputArray.length - 1] = temp;
+        arr[arr.length - 1] = firstElement;
 
-
-        //right
-        int inputArray2[] = {1, 2, 3, 4, 5};// right output = 5,1,2,3,4
-
-        int temp2 = inputArray2[inputArray2.length - 1];
-
-        for (int i = inputArray2.length - 1; i > 0; i--) {
-            inputArray2[i] = inputArray2[i - 1];
+        // Right rotation
+        int[] arr2 = {1, 2, 3, 4, 5};
+        int lastElement = arr2[arr2.length - 1];
+        for (int i = arr2.length - 1; i > 0; i--) {
+            arr2[i] = arr2[i - 1];
         }
-        inputArray2[0] = temp2;
-
+        arr2[0] = lastElement;
     }
 
-    // Rotate array start--------------------------------------------
-    public void rotateArray_ReversalWay(int order) {
-
-        int inputArray[] = {1, 2, 3, 4, 5, 6, 7};// left output = 34567 1 2
-
-        order = order % inputArray.length; // this is to make sure when order> len then 4 % 3 = 1 order reset to 1
 
 
-        //Left : Idea : rotate array 3 times.
-        // for the no of order
-        // for left part of array
-        // whole array.
 
-        ReverseArray(inputArray, 0, order - 1);
-        ReverseArray(inputArray, order, inputArray.length - 1);
-        ReverseArray(inputArray, 0, inputArray.length - 1);
 
-        //right
-        int inputArray2[] = {1, 2, 3, 4, 5, 6, 7};// right output = 6 7 12345
+    public void rotateArrayReversalWay(int order) {
+    /*
+    Rotates an array to the left and right by a given order.
 
-        //Right: Idea : rotate array 2 times.
-        // for the no of order i.e. 2
-        // for left part of array 7-2= 5
-        // whole array. for len =7
+    Example:
+    Input: [1, 2, 3, 4, 5, 6, 7], order = 2
+    Output (Left rotation): [3, 4, 5, 6, 7, 1, 2]
+    Output (Right rotation): [6, 7, 1, 2, 3, 4, 5]
+    */
 
-        ReverseArray(inputArray2, inputArray2.length - order, inputArray2.length - 1);
-        ReverseArray(inputArray2, 0, inputArray2.length - order - 1);
-        ReverseArray(inputArray2, 0, inputArray2.length - 1);
+        int[] inputArray = {1, 2, 3, 4, 5, 6, 7};
+        order = order % inputArray.length; // This is to make sure when order > len then order resets to 1
+
+        // Left rotation: Rotate array 3 times.
+        reverseArray(inputArray, 0, order - 1);
+        reverseArray(inputArray, order, inputArray.length - 1);
+        reverseArray(inputArray, 0, inputArray.length - 1);
+
+        // Right rotation
+        int[] inputArray2 = {1, 2, 3, 4, 5, 6, 7};
+        reverseArray(inputArray2, inputArray2.length - order, inputArray2.length - 1);
+        reverseArray(inputArray2, 0, inputArray2.length - order - 1);
+        reverseArray(inputArray2, 0, inputArray2.length - 1);
     }
 
-    private static void ReverseArray(int[] arr, int start, int end) {
+    private static void reverseArray(int[] arr, int start, int end) {
+    /*
+    Reverses the elements in an array from a start index to an end index.
+
+    Example:
+    Input: [1, 2, 3, 4, 5], start = 1, end = 3
+    Output: [1, 4, 3, 2, 5]
+    */
+
         while (start <= end) {
-            int strt = arr[start];
+            int startElement = arr[start];
             arr[start] = arr[end];
-            arr[end] = strt;
+            arr[end] = startElement;
             start++;
             end--;
         }
     }
 
-    // Rotate array end--------------------------------------------
+
+
 
     public void zerosToEnd(int[] inputArray) {
         if (inputArray.length <= 1) { // at least 2 element required.
