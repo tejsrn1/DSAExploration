@@ -997,7 +997,7 @@ public class RecursionBackTrackingDSA {
      * @return A list of strings, each representing a row of the 2D character array.
      */
     public List<String> prepResultList(char[][] board) {
-        List<String> rowAsStringList = new LinkedListDSA_wpi<>();
+        List<String> rowAsStringList = new LinkedList<>();
         // Iterate over each row and convert it into a string
         for (int i = 0; i < board.length; i++) {
             String s = new String(board[i]);
