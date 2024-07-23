@@ -1,9 +1,9 @@
-package a.dsa;
+package a.expo;
 
 import java.util.*;
 
 
-public class ArrayDS {
+public class ArrayDSA {
 
 
     /**
