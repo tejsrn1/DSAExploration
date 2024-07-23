@@ -78,12 +78,12 @@ public class ArrayDS {
      *
      * @param arr The input array to check.
      * @return true if the array is sorted and rotated, false otherwise.
-     *
+     * <p>
      * Example 1:
      * Input: [4, 5, 6, 7, 1, 2, 3]
      * Output: true
      * Explanation: The array is sorted and rotated at index 3.
-     *
+     * <p>
      * Example 2:
      * Input: [4, 5, 7, 6, 1, 2, 3]
      * Output: false
@@ -112,7 +112,7 @@ public class ArrayDS {
      *
      * @param arr The input array from which duplicates are to be removed.
      * @return The length of the array after removing duplicates.
-     *
+     * <p>
      * Example:
      * Input: [1, 1, 2]
      * Output: 2
@@ -131,7 +131,7 @@ public class ArrayDS {
 
     /**
      * Rotates an array to the left and right by one position.
-     *
+     * <p>
      * Example:
      * Input: [1, 2, 3, 4, 5]
      * Output (Left rotation): [2, 3, 4, 5, 1]
@@ -157,53 +157,53 @@ public class ArrayDS {
     }
 
 
-
-
-
-    public void rotateArrayReversalWay(int order) {
-    /*
-    Rotates an array to the left and right by a given order.
-
-    Example:
-    Input: [1, 2, 3, 4, 5, 6, 7], order = 2
-    Output (Left rotation): [3, 4, 5, 6, 7, 1, 2]
-    Output (Right rotation): [6, 7, 1, 2, 3, 4, 5]
-    */
-
-        int[] inputArray = {1, 2, 3, 4, 5, 6, 7};
-        order = order % inputArray.length; // This is to make sure when order > len then order resets to 1
+    /**
+     * Rotates an array to the left and right by a given order.
+     *
+     * @param rotationOrder The number of positions to rotate the array.
+     *                      <p>
+     *                      Example:
+     *                      Input: [1, 2, 3, 4, 5, 6, 7], order = 2
+     *                      Output (Left rotation): [3, 4, 5, 6, 7, 1, 2]
+     *                      Output (Right rotation): [6, 7, 1, 2, 3, 4, 5]
+     */
+    public void rotateArrayReversalWay(int rotationOrder) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        rotationOrder = rotationOrder % arr.length; // This is to make sure when order > len then order resets to 1
 
         // Left rotation: Rotate array 3 times.
-        reverseArray(inputArray, 0, order - 1);
-        reverseArray(inputArray, order, inputArray.length - 1);
-        reverseArray(inputArray, 0, inputArray.length - 1);
+        reverseArray(arr, 0, rotationOrder - 1);
+        reverseArray(arr, rotationOrder, arr.length - 1);
+        reverseArray(arr, 0, arr.length - 1);
 
         // Right rotation
-        int[] inputArray2 = {1, 2, 3, 4, 5, 6, 7};
-        reverseArray(inputArray2, inputArray2.length - order, inputArray2.length - 1);
-        reverseArray(inputArray2, 0, inputArray2.length - order - 1);
-        reverseArray(inputArray2, 0, inputArray2.length - 1);
+        int[] arr2 = {1, 2, 3, 4, 5, 6, 7};
+        reverseArray(arr2, arr2.length - rotationOrder, arr2.length - 1);
+        reverseArray(arr2, 0, arr2.length - rotationOrder - 1);
+        reverseArray(arr2, 0, arr2.length - 1);
     }
 
+    /**
+     * Reverses the elements in an array from a start index to an end index.
+     *
+     * @param arr   The input array to reverse.
+     * @param start The start index for the reversal.
+     * @param end   The end index for the reversal.
+     *              <p>
+     *              Example:
+     *              Input: [1, 2, 3, 4, 5], start = 1, end = 3
+     *              Output: [1, 4, 3, 2, 5]
+     *              Explanation: The elements at indices 1 to 3 are reversed.
+     */
     private static void reverseArray(int[] arr, int start, int end) {
-    /*
-    Reverses the elements in an array from a start index to an end index.
-
-    Example:
-    Input: [1, 2, 3, 4, 5], start = 1, end = 3
-    Output: [1, 4, 3, 2, 5]
-    */
-
         while (start <= end) {
-            int startElement = arr[start];
+            int temp = arr[start];
             arr[start] = arr[end];
-            arr[end] = startElement;
+            arr[end] = temp;
             start++;
             end--;
         }
     }
-
-
 
 
     public void zerosToEnd(int[] inputArray) {
@@ -2011,7 +2011,7 @@ public class ArrayDS {
         //this was last element so revese array will bring it back to first element
         // 321 -> back to 123
         if (dipIdx == -1) {
-            ReverseArray(arr, 0, arr.length - 1);
+            reverseArray(arr, 0, arr.length - 1);
             return arr;
         }
 
