@@ -2,8 +2,6 @@ package exploration;
 
 import java.util.Arrays;
 
-//https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
-//1D Array, 2D array and on Answers.
 public class BinarysearchDSA {
 
     /*

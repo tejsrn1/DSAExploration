@@ -1,9 +1,5 @@
 package exploration;
 
-//https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
-// Easy , Medium and hard
-//https://www.youtube.com/watch?v=ARvQcqJ_-NY&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=39
-
 
 import exploration.helpers.greedy.Job;
 import exploration.helpers.greedy.helpers.Meeting;

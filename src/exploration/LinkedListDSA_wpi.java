@@ -6,8 +6,6 @@ import exploration.helpers.llist.lru.ListNodeCloned;
 import java.util.HashMap;
 import java.util.Map;
 
-//https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
-// 1D ,Doubly , Medium and Hard.
 public class LinkedListDSA_wpi {
 
     /*

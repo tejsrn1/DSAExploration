@@ -2,8 +2,6 @@ package exploration;
 
 import java.util.*;
 
-//https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
-// Stack Queue problems.
 public class StackQueue {
 
     /*
