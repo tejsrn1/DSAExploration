@@ -3,7 +3,7 @@ package a.expo;
 
 import a.expo.helpers.llist.lru.DoublyListNode;
 
-public class DoubleLinkedList {
+public class DoubleLinkedListDSA_WIP {
 
     //Doubly LinkedList Problems
 

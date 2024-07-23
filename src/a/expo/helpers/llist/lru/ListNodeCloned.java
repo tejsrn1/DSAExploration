@@ -1,11 +1,11 @@
 package a.expo.helpers.llist.lru;
 
 public class ListNodeCloned {
-    int val;
-    ListNodeCloned next;
-    ListNodeCloned random;
+    public int val;
+    public ListNodeCloned next;
+    public ListNodeCloned random;
 
-    ListNodeCloned(int x) {
+    public ListNodeCloned(int x) {
         val = x;
         next = null;
         random = null;

@@ -6,7 +6,7 @@ import a.expo.helpers.tree.helper.binarytree.TreeNode;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class BinaryTree {
+public class BinaryTreeDSA_WIP {
 
 
 /*

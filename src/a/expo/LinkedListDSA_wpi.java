@@ -8,7 +8,7 @@ import java.util.Map;
 
 //https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
 // 1D ,Doubly , Medium and Hard.
-public class LinkedList {
+public class LinkedListDSA_wpi {
 
     /*
     Notes :
