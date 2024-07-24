@@ -2,7 +2,7 @@ package exploration;
 
 import java.util.*;
 
-public class StackQueue {
+public class StackQueueDSA {
 
     /*
     Notes:
