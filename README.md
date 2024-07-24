@@ -1,5 +1,4 @@
-# Data Structures and Algorithms !GitHub Logo
-
+# Data Structures and Algorithms
 Welcome to the **Data Structures and Algorithms** repository. This repository is a comprehensive collection of hundreds of coding examples and notes designed to help you understand and implement various data structures and algorithms.
 
 ## Table of Contents
@@ -7,7 +6,6 @@ Welcome to the **Data Structures and Algorithms** repository. This repository is
 2. Data Structures
 3. Algorithms
 4. Contributing
-5. License
 
 ## Introduction
 This repository is designed to be a resource for all levels of programmers. Whether you're a beginner just starting out or an experienced developer looking for a refresher, you'll find valuable insights and examples here. Each code sample is accompanied by detailed notes that explain the underlying concepts and the code itself.
