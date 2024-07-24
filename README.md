@@ -5,7 +5,7 @@ Welcome to the **Data Structures and Algorithms** repository. This repository is
 1. Introduction
 2. Data Structures
 3. Algorithms
-4. Contributing
+
 
 ## Introduction
 This repository is designed to be a resource for all levels of programmers. Whether you're a beginner just starting out or an experienced developer looking for a refresher, you'll find valuable insights and examples here. Each code sample is accompanied by detailed notes that explain the underlying concepts and the code itself.
@@ -24,7 +24,3 @@ Knuth-Morris-Pratt (KMP) Algorithm : The KMP Algorithm is a string matching algo
 
 These are just two examples of the many algorithms you’ll find in this repository. I cover a wide range of topics, from basic sorting and searching algorithms to more complex graph and string algorithms. Each algorithm is accompanied by a detailed explanation in plain English to help you understand how it works. I hope you find this repository to be a valuable resource in your programming journey!
 
-
-
-## Contributing
-Read only access.
