@@ -6,7 +6,7 @@ public class SortingDSA {
     /**
      * This method sorts an array using the Selection Sort algorithm.
      *
-     * @param inputArr The input array to be sorted.
+     * @param  inputArr The input array to be sorted.
      */
     public void SelectionSort(int[] inputArr) {
         for (int outerIdx = 0; outerIdx < inputArr.length; outerIdx++) {
@@ -29,7 +29,7 @@ public class SortingDSA {
     /**
      * This method sorts an array using the Bubble Sort algorithm.
      *
-     * @param inputArr The input array to be sorted.
+     * @param  inputArr The input array to be sorted.
      */
     public void BubbleSort(int[] inputArr) {
         for (int outIdx = inputArr.length - 1; outIdx >= 0; outIdx--) {
@@ -47,7 +47,7 @@ public class SortingDSA {
     /**
      * This method sorts an array using the Insertion Sort algorithm.
      *
-     * @param inputArr The input array to be sorted.
+     * @param  inputArr The input array to be sorted.
      */
     public void InsertionSort(int[] inputArr) {
         for (int outIdx = 1; outIdx < inputArr.length; outIdx++) {
@@ -68,9 +68,9 @@ public class SortingDSA {
     /**
      * This method sorts an array using the MergeSort algorithm.
      *
-     * @param inputArr The array to be sorted.
-     * @param start    The starting index of the portion of the array to be sorted.
-     * @param end      The ending index of the portion of the array to be sorted.
+     * @param  inputArr The array to be sorted.
+     * @param  start    The starting index of the portion of the array to be sorted.
+     * @param  end      The ending index of the portion of the array to be sorted.
      *                 <p>
      *                 The MergeSort algorithm works as follows:
      *                 1. Divide the array into two halves.
@@ -109,10 +109,10 @@ public class SortingDSA {
      * This method is part of the Merge Sort algorithm, which is a divide-and-conquer
      * algorithm for sorting an array. It divides the array into two halves, recursively sorts them, and then merges them. This method is responsible for the merging step. The time complexity of this method is O(n), where n is the number of elements in the sub-array defined by start and end. The space complexity is also O(n) due to the use of a temporary array. The overall time complexity of the Merge Sort algorithm is O(n log n).
      *
-     * @param inputArr The original array which contains the sub-arrays to be merged.
-     * @param start    The starting index of the first sub-array.
-     * @param mid      The ending index of the first sub-array and mid+1 is the starting index of the second sub-array.
-     * @param end      The ending index of the second sub-array.
+     * @param  inputArr The original array which contains the sub-arrays to be merged.
+     * @param  start    The starting index of the first sub-array.
+     * @param  mid      The ending index of the first sub-array and mid+1 is the starting index of the second sub-array.
+     * @param  end      The ending index of the second sub-array.
      */
     void mergeArray(int[] inputArr, int start, int end, int mid) {
         // Create a temporary array to hold the merged result
@@ -163,9 +163,9 @@ public class SortingDSA {
      * It finds a partition index by making all smaller values to the left of the partition and all larger values to the right.
      * It then recursively sorts the left and right parts from the partition index.
      *
-     * @param inputArr The input array.
-     * @param low      The starting index for the sort.
-     * @param high     The ending index for the sort.
+     * @param  inputArr The input array.
+     * @param  low      The starting index for the sort.
+     * @param  high     The ending index for the sort.
      */
     public void QuickSort(int[] inputArr, int low, int high) {
         if (low > high) {
@@ -181,9 +181,9 @@ public class SortingDSA {
      * It moves all smaller values to the left of the partition and all larger values to the right.
      * It then swaps the low value with the y value to get the new pivot index.
      *
-     * @param givenArray The array to be partitioned.
-     * @param low        The starting index for the partition.
-     * @param high       The ending index for the partition.
+     * @param  givenArray The array to be partitioned.
+     * @param  low        The starting index for the partition.
+     * @param  high       The ending index for the partition.
      * @return The partition index.
      */
     private int partitions(int[] givenArray, int low, int high) {

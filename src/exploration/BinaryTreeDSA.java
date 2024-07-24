@@ -13,7 +13,7 @@ public class BinaryTreeDSA {
      * This method performs an in-order traversal of a Binary Search Tree (BST).
      * In an in-order traversal, the left subtree is visited first, then the root, and then the right subtree.
      *
-     * @param root The root node of the BST.
+     * @param  root The root node of the BST.
      *             <p>
      *             Example:
      *             TreeNode root = new TreeNode(4);
@@ -34,7 +34,7 @@ public class BinaryTreeDSA {
      * This method performs a pre-order traversal of a BST.
      * In a pre-order traversal, the root is visited first, then the left subtree, and then the right subtree.
      *
-     * @param root The root node of the BST.
+     * @param  root The root node of the BST.
      *             <p>
      *             Example:
      *             TreeNode root = new TreeNode(4);
@@ -55,7 +55,7 @@ public class BinaryTreeDSA {
      * This method performs a post-order traversal of a BST.
      * In a post-order traversal, the left subtree is visited first, then the right subtree, and then the root.
      *
-     * @param root The root node of the BST.
+     * @param  root The root node of the BST.
      *             <p>
      *             Example:
      *             TreeNode root = new TreeNode(4);
@@ -76,7 +76,7 @@ public class BinaryTreeDSA {
      * This method performs a pre-order traversal of a BST iteratively.
      * It uses a stack to keep track of the nodes to visit.
      *
-     * @param root The root node of the BST.
+     * @param  root The root node of the BST.
      * @return A list of the nodes in the order they were visited.
      * <p>
      * Example:
@@ -111,7 +111,7 @@ public class BinaryTreeDSA {
     /**
      * This method performs an in-order traversal of a Binary Search Tree (BST) iteratively.
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A list of integers representing the in-order traversal of the BST.
      * <p>
      * Example:
@@ -150,7 +150,7 @@ public class BinaryTreeDSA {
     /**
      * This method performs a post-order traversal of a Binary Search Tree (BST) iteratively.
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A list of integers representing the post-order traversal of the BST.
      * <p>
      * Example:
@@ -191,7 +191,7 @@ public class BinaryTreeDSA {
     /**
      * This method performs a level-order traversal of a Binary Search Tree (BST).
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A list of integers representing the level-order traversal of the BST.
      * <p>
      * Example:
@@ -224,7 +224,7 @@ public class BinaryTreeDSA {
     /**
      * This method performs a level-order traversal of a Binary Search Tree (BST) and collects the nodes at each level.
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A list of lists of integers representing the nodes at each level in the level-order traversal of the BST.
      * <p>
      * Example:
@@ -273,7 +273,7 @@ public class BinaryTreeDSA {
     /**
      * This method finds the maximum depth of a binary tree using level order traversal (Breadth-First Search).
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      * @return The maximum depth of the binary tree.
      * <p>
      * Example:
@@ -312,7 +312,7 @@ public class BinaryTreeDSA {
     /**
      * This method finds the maximum depth of a binary tree using post-order traversal (Depth-First Search).
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      * @return The maximum depth of the binary tree.
      * <p>
      * Example:
@@ -335,7 +335,7 @@ public class BinaryTreeDSA {
      * This method checks if a binary tree is height-balanced.
      * A binary tree is height-balanced if the depth of the two subtrees of every node never differs by more than one.
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      * @return 0 if the binary tree is height-balanced, -1 otherwise.
      * <p>
      * Example:
@@ -363,8 +363,8 @@ public class BinaryTreeDSA {
      * This method finds the diameter of a binary tree.
      * The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
      *
-     * @param root   The root of the binary tree.
-     * @param maxDia An array of size 1 where maxDia[0] is the maximum diameter found so far.
+     * @param  root   The root of the binary tree.
+     * @param  maxDia An array of size 1 where maxDia[0] is the maximum diameter found so far.
      * @return The height of the binary tree.
      * <p>
      * Example:
@@ -388,8 +388,8 @@ public class BinaryTreeDSA {
      * This method finds the maximum path sum in a binary tree.
      * The path is a line between any two nodes in the tree where each node can only be visited once.
      *
-     * @param root   The root of the binary tree.
-     * @param maxSum An array of size 1 where maxSum[0] is the maximum path sum found so far.
+     * @param  root   The root of the binary tree.
+     * @param  maxSum An array of size 1 where maxSum[0] is the maximum path sum found so far.
      * @return The maximum path sum that can be obtained by considering the current node and either of its left or
      * right child.
      * <p>
@@ -422,8 +422,8 @@ public class BinaryTreeDSA {
      * This method checks if two binary trees are identical.
      * Two trees are identical if they have the same structure and the same node values.
      *
-     * @param root1 The root node of the first tree.
-     * @param root2 The root node of the second tree.
+     * @param  root1 The root node of the first tree.
+     * @param  root2 The root node of the second tree.
      * @return true if the trees are identical, false otherwise.
      * <p>
      * Example:
@@ -453,7 +453,7 @@ public class BinaryTreeDSA {
      * The nodes' values of the tree are returned as a list of lists. Each list represents one level of the tree.
      * The nodes are listed from left to right, then right to left for the next level and alternate between.
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return The zigzag level order traversal of the tree.
      * <p>
      * Example:
@@ -504,7 +504,7 @@ public class BinaryTreeDSA {
      * This method returns the boundary of a binary tree.
      * The boundary includes the left boundary, leaves, and right boundary in anti-clockwise direction.
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return The boundary of the tree.
      * <p>
      * Example:
@@ -555,8 +555,8 @@ public class BinaryTreeDSA {
     /**
      * This method adds the right boundary nodes of a Binary Tree to a list.
      *
-     * @param node The root node of the Binary Tree.
-     * @param list A list to store the right boundary nodes.
+     * @param  node The root node of the Binary Tree.
+     * @param  list A list to store the right boundary nodes.
      *             <p>
      *             Example:
      *             TreeNode root = new TreeNode(1);
@@ -587,7 +587,7 @@ public class BinaryTreeDSA {
     /**
      * This method checks if a node is a leaf node.
      *
-     * @param node The node to check.
+     * @param  node The node to check.
      * @return True if the node is a leaf node, otherwise false.
      */
     private boolean isLeafNode(TreeNode node) {
@@ -598,7 +598,7 @@ public class BinaryTreeDSA {
      * This method performs a vertical traversal of a Binary Tree.
      * It returns a list of lists where each list contains the nodes at a specific column from top to bottom.
      *
-     * @param root The root node of the Binary Tree.
+     * @param  root The root node of the Binary Tree.
      * @return A list of lists representing the vertical order traversal.
      * <p>
      * Example:
@@ -631,10 +631,10 @@ public class BinaryTreeDSA {
      * This is a helper method for the Vertical_Traversal_L method.
      * It performs a depth-first search on the Binary Tree and stores the nodes in a map.
      *
-     * @param root        The root node of the Binary Tree.
-     * @param curColDepth The current column depth.
-     * @param curRowDepth The current row depth.
-     * @param resMap      A map to store the nodes.
+     * @param  root        The root node of the Binary Tree.
+     * @param  curColDepth The current column depth.
+     * @param  curRowDepth The current row depth.
+     * @param  resMap      A map to store the nodes.
      */
     void Vertical_Traversal_L(TreeNode root, int curColDepth, int curRowDepth,
                               TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> resMap) {
@@ -670,7 +670,7 @@ public class BinaryTreeDSA {
     /**
      * This method performs a vertical traversal of a Binary Search Tree (BST).
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A list of lists of integers representing the nodes at each column in the vertical traversal of the BST.
      * <p>
      * Example:
@@ -756,7 +756,7 @@ public class BinaryTreeDSA {
     /**
      * This method performs a top view traversal of a Binary Search Tree (BST).
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A TreeMap of integers representing the nodes visible from the top view of the BST.
      * <p>
      * Example:
@@ -783,7 +783,7 @@ public class BinaryTreeDSA {
     /**
      * This method performs a bottom view traversal of a Binary Search Tree (BST).
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A TreeMap of integers representing the nodes visible from the bottom view of the BST.
      * <p>
      * Example:
@@ -812,9 +812,9 @@ public class BinaryTreeDSA {
      * This method performs a bottom view traversal of a binary tree.
      * It uses a TreeMap to store the last node at each horizontal distance from the root.
      *
-     * @param root The root of the binary tree.
-     * @param col  The horizontal distance from the root.
-     * @param map  A TreeMap where the key is the horizontal distance and the value is the node's value.
+     * @param  root The root of the binary tree.
+     * @param  col  The horizontal distance from the root.
+     * @param  map  A TreeMap where the key is the horizontal distance and the value is the node's value.
      *             <p>
      *             Example:
      *             Input: root = [1,2,3,4,5,6,7]
@@ -833,7 +833,7 @@ public class BinaryTreeDSA {
     /**
      * This method finds the leftmost node at the bottom level of a binary tree.
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      * @return The value of the leftmost node at the bottom level.
      * <p>
      * Example:
@@ -866,7 +866,7 @@ public class BinaryTreeDSA {
      * This method performs a left view traversal of a binary tree.
      * It captures the first node at each level of the binary tree.
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      * @return A list of nodes representing the left view of the binary tree.
      * <p>
      * Example:
@@ -884,9 +884,9 @@ public class BinaryTreeDSA {
      * This method performs a left view traversal of a binary tree.
      * The left view of a binary tree contains the first node of each level as seen from the left side.
      *
-     * @param root       The root node of the tree.
-     * @param rowOrDepth The current depth or row in the tree.
-     * @param res        The result list to store the left view nodes.
+     * @param  root       The root node of the tree.
+     * @param  rowOrDepth The current depth or row in the tree.
+     * @param  res        The result list to store the left view nodes.
      *                   <p>
      *                   Example:
      *                   Input: root = [1,2,3,4,5]
@@ -911,7 +911,7 @@ public class BinaryTreeDSA {
      * This method returns the right view of a binary tree.
      * The right view of a binary tree contains the first node of each level as seen from the right side.
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return The right view of the tree.
      * <p>
      * Example:
@@ -943,7 +943,7 @@ public class BinaryTreeDSA {
      * This method checks if a binary tree is symmetric.
      * A binary tree is symmetric if the left subtree is a mirror reflection of the right subtree.
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return true if the tree is symmetric, false otherwise.
      * <p>
      * Example:
@@ -985,9 +985,9 @@ public class BinaryTreeDSA {
      * This method prints the path from the root to a given node in a binary tree.
      * The path is returned as a list of node values.
      *
-     * @param root       The root node of the tree.
-     * @param nodeToFind The node to find in the tree.
-     * @param res        The result list to store the path.
+     * @param  root       The root node of the tree.
+     * @param  nodeToFind The node to find in the tree.
+     * @param  res        The result list to store the path.
      * @return true if the node is found, false otherwise.
      * <p>
      * Example:
@@ -1022,7 +1022,7 @@ public class BinaryTreeDSA {
      * This method returns all root-to-leaf paths in a binary tree.
      * Each path is represented as a string of node values separated by "->".
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return The root-to-leaf paths in the tree.
      * <p>
      * Example:
@@ -1068,9 +1068,9 @@ public class BinaryTreeDSA {
      * The LCA is defined between two nodes nodeA and nodeB as the lowest node in the tree that has both nodeA and
      * nodeB as descendants.
      *
-     * @param root  The root node of the tree.
-     * @param nodeA The first node.
-     * @param nodeB The second node.
+     * @param  root  The root node of the tree.
+     * @param  nodeA The first node.
+     * @param  nodeB The second node.
      * @return The lowest common ancestor of nodeA and nodeB.
      * <p>
      * Example:
@@ -1106,7 +1106,7 @@ public class BinaryTreeDSA {
     /**
      * This method counts the number of nodes in a binary tree.
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return The number of nodes in the tree.
      * <p>
      * Example:
@@ -1129,7 +1129,7 @@ public class BinaryTreeDSA {
     /**
      * This method calculates the width of a Binary Search Tree (BST).
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return The maximum width of the BST.
      * <p>
      * Example:
@@ -1181,7 +1181,7 @@ public class BinaryTreeDSA {
     /**
      * This method serializes a Binary Search Tree (BST) into a string.
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      * @return A string representing the serialized BST.
      * <p>
      * Example:
@@ -1207,7 +1207,7 @@ public class BinaryTreeDSA {
     /**
      * This method deserializes a string into a Binary Search Tree (BST).
      *
-     * @param input The string to be deserialized.
+     * @param  input The string to be deserialized.
      * @return The root of the deserialized BST.
      * <p>
      * Example:
@@ -1242,7 +1242,7 @@ public class BinaryTreeDSA {
      * It uses a post-order traversal (left, right, root) to ensure that the children nodes are processed before the
      * parent node.
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      *             <p>
      *             Example:
      *             Input: root = [1,2,3]
@@ -1272,13 +1272,13 @@ public class BinaryTreeDSA {
      * This method builds a binary tree from its in-order and post-order traversals.
      * It uses a LinkedHashMap to store the indices of the in-order traversal elements for efficient lookups.
      *
-     * @param inorder   The in-order traversal of the binary tree.
-     * @param is        The start index of the in-order traversal.
-     * @param ie        The end index of the in-order traversal.
-     * @param postorder The post-order traversal of the binary tree.
-     * @param ps        The start index of the post-order traversal.
-     * @param pe        The end index of the post-order traversal.
-     * @param map       A LinkedHashMap where the key is the node's value and the value is the node's index in the
+     * @param  inorder   The in-order traversal of the binary tree.
+     * @param  is        The start index of the in-order traversal.
+     * @param  ie        The end index of the in-order traversal.
+     * @param  postorder The post-order traversal of the binary tree.
+     * @param  ps        The start index of the post-order traversal.
+     * @param  pe        The end index of the post-order traversal.
+     * @param  map       A LinkedHashMap where the key is the node's value and the value is the node's index in the
      *                  in-order traversal.
      * @return The root of the binary tree.
      * <p>
@@ -1309,13 +1309,13 @@ public class BinaryTreeDSA {
      * This method builds a binary tree from its in-order and pre-order traversals.
      * It uses a LinkedHashMap to store the indices of the in-order traversal elements for efficient lookups.
      *
-     * @param inorder  The in-order traversal of the binary tree.
-     * @param is       The start index of the in-order traversal.
-     * @param ie       The end index of the in-order traversal.
-     * @param preorder The pre-order traversal of the binary tree.
-     * @param preS     The start index of the pre-order traversal.
-     * @param preE     The end index of the pre-order traversal.
-     * @param map      A LinkedHashMap where the key is the node's value and the value is the node's index in the
+     * @param  inorder  The in-order traversal of the binary tree.
+     * @param  is       The start index of the in-order traversal.
+     * @param  ie       The end index of the in-order traversal.
+     * @param  preorder The pre-order traversal of the binary tree.
+     * @param  preS     The start index of the pre-order traversal.
+     * @param  preE     The end index of the pre-order traversal.
+     * @param  map      A LinkedHashMap where the key is the node's value and the value is the node's index in the
      *                 in-order traversal.
      * @return The root of the binary tree.
      * <p>
@@ -1347,7 +1347,7 @@ public class BinaryTreeDSA {
      * It uses a post-order traversal (right, left, root) to ensure that the right child is processed before the left
      * child.
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      *             <p>
      *             Example:
      *             Input: root = [1,2,5,3,4,null,6]
@@ -1377,7 +1377,7 @@ public class BinaryTreeDSA {
      * The nodes' values of the tree are returned as a list of lists. Each list represents one level of the tree.
      * The nodes are listed from left to right, then right to left for the next level and alternate between.
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return The zigzag level order traversal of the tree.
      * <p>
      * Example:
@@ -1451,7 +1451,7 @@ public class BinaryTreeDSA {
      * This method returns the boundary of a binary tree.
      * The boundary includes the left boundary, leaves, and right boundary in anti-clockwise direction.
      *
-     * @param root The root node of the tree.
+     * @param  root The root node of the tree.
      * @return The boundary of the tree.
      * <p>
      * Example:

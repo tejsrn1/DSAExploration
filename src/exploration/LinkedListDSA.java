@@ -44,8 +44,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method inserts a new node at the beginning of the linked list.
      *
-     * @param data The data to be inserted in the new node.
-     * @param head The head of the linked list.
+     * @param  data The data to be inserted in the new node.
+     * @param  head The head of the linked list.
      * @return The updated head of the linked list.
      */
     public ListNode InsertNode_Prepend(int data, ListNode head) {
@@ -65,8 +65,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method appends a new node at the end of the linked list.
      *
-     * @param data The data to be inserted in the new node.
-     * @param head The head of the linked list.
+     * @param  data The data to be inserted in the new node.
+     * @param  head The head of the linked list.
      * @return The head of the linked list.
      */
     public ListNode InsertNode_Append(int data, ListNode head) {
@@ -95,7 +95,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method deletes the last node of the linked list.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The updated head of the linked list.
      */
     public ListNode DeleteLastNode(ListNode head) {
@@ -120,7 +120,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method counts the number of nodes in the linked list using iteration.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The count of nodes in the linked list.
      */
     public int getCount(ListNode head) {
@@ -143,7 +143,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method counts the number of nodes in the linked list using recursion.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The count of nodes in the linked list.
      */
     public int getCount_Recursive(ListNode head) {
@@ -164,8 +164,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method searches for a specific value in a linked list.
      *
-     * @param head      The head node of the linked list.
-     * @param searchVal The value to search for.
+     * @param  head      The head node of the linked list.
+     * @param  searchVal The value to search for.
      * @return true if the value is found, false otherwise.
      * <p>
      * Example:
@@ -194,8 +194,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method recursively searches for a specific value in a linked list.
      *
-     * @param head The head node of the linked list.
-     * @param searchVal The value to search for.
+     * @param  head The head node of the linked list.
+     * @param  searchVal The value to search for.
      * @return true if the value is found, false otherwise.
      *
      * Example:
@@ -216,7 +216,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method finds the middle element of a linked list.
      *
-     * @param head The head node of the linked list.
+     * @param  head The head node of the linked list.
      * @return The middle node of the linked list.
      *
      * Example:
@@ -241,7 +241,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method reverses a linked list.
      *
-     * @param head The head node of the linked list.
+     * @param  head The head node of the linked list.
      * @return The head node of the reversed linked list.
      *
      * Example:
@@ -271,7 +271,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method recursively reverses a linked list.
      *
-     * @param head The head node of the linked list.
+     * @param  head The head node of the linked list.
      * @return The head node of the reversed linked list.
      *
      * Example:
@@ -287,8 +287,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method reverses a linked list using recursion.
      *
-     * @param curr The current node in the list.
-     * @param prev The previous node in the list.
+     * @param  curr The current node in the list.
+     * @param  prev The previous node in the list.
      * @return The head of the reversed list.
      *
      * Example:
@@ -311,7 +311,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method detects if a linked list has a cycle using Floyd’s Cycle-Finding Algorithm.
      *
-     * @param head The head of the list.
+     * @param  head The head of the list.
      * @return True if there is a cycle, false otherwise.
      *
      * Example:
@@ -341,7 +341,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method finds the starting point of a cycle in a linked list using Floyd’s Cycle-Finding Algorithm.
      *
-     * @param head The head of the list.
+     * @param  head The head of the list.
      * @return The starting node of the cycle, or null if there is no cycle.
      *
      * Example:
@@ -379,7 +379,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method checks if a linked list is a palindrome.
      *
-     * @param head The head of the list.
+     * @param  head The head of the list.
      * @return True if the list is a palindrome, false otherwise.
      *
      * Example:
@@ -427,8 +427,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method removes the nth node from the end of a linked list.
      *
-     * @param head The head of the list.
-     * @param n The position from the end of the list.
+     * @param  head The head of the list.
+     * @param  n The position from the end of the list.
      * @return The head of the list after the removal.
      *
      * Example:
@@ -471,8 +471,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method finds the intersection of two linked lists.
      *
-     * @param head  The head of the first linked list.
-     * @param head2 The head of the second linked list.
+     * @param  head  The head of the first linked list.
+     * @param  head2 The head of the second linked list.
      * @return The value of the intersecting node. If no intersection, returns 0.
      * <p>
      * Example:
@@ -533,7 +533,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method adds 1 to a number represented as a linked list.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The head of the linked list after adding 1.
      * <p>
      * Example:
@@ -586,8 +586,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method sums two numbers represented as linked lists.
      *
-     * @param head  The head of the first linked list.
-     * @param head2 The head of the second linked list.
+     * @param  head  The head of the first linked list.
+     * @param  head2 The head of the second linked list.
      * @return The head of the linked list representing the sum.
      * <p>
      * Example:
@@ -630,8 +630,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method reverses a linked list in groups of k.
      *
-     * @param head The head of the linked list.
-     * @param k    The size of the groups.
+     * @param  head The head of the linked list.
+     * @param  k    The size of the groups.
      * @return The head of the linked list after reversing in groups of k.
      * <p>
      * Example:
@@ -691,8 +691,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method rotates a linked list by k positions.
      *
-     * @param head The head of the linked list.
-     * @param k    The number of positions to rotate.
+     * @param  head The head of the linked list.
+     * @param  k    The number of positions to rotate.
      * @return The head of the linked list after rotating.
      * <p>
      * Example:
@@ -743,7 +743,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method removes duplicates from a linked list.
      *
-     * @param head The head node of the linked list.
+     * @param  head The head node of the linked list.
      * @return The head node of the linked list with duplicates removed.
      *
      * Example:
@@ -771,8 +771,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method partitions a linked list around a value x, such that all nodes less than x come before all nodes greater than or equal to x.
      *
-     * @param head The head node of the linked list.
-     * @param x The value to partition around.
+     * @param  head The head node of the linked list.
+     * @param  x The value to partition around.
      * @return The head node of the partitioned linked list.
      *
      * Example:
@@ -813,8 +813,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method merges two sorted linked lists and returns it as a new sorted list.
      *
-     * @param head1 The head node of the first sorted linked list.
-     * @param head2 The head node of the second sorted linked list.
+     * @param  head1 The head node of the first sorted linked list.
+     * @param  head2 The head node of the second sorted linked list.
      * @return The head node of the merged sorted linked list.
      *
      * Example:
@@ -851,7 +851,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method merges k sorted linked lists and returns it as a new sorted list.
      *
-     * @param lists An array of head nodes of the k sorted linked lists.
+     * @param  lists An array of head nodes of the k sorted linked lists.
      * @return The head node of the merged sorted linked list.
      *
      * Example:
@@ -881,7 +881,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method deletes the middle node of the linked list.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The updated head of the linked list.
      */
     public ListNode deleteMiddle(ListNode head) {
@@ -906,7 +906,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method rearranges the linked list such that all odd nodes come before even nodes.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The head of the rearranged linked list.
      */
     public ListNode oddEvenList(ListNode head) {
@@ -937,7 +937,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method sorts the linked list using Merge Sort algorithm.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The head of the sorted linked list.
      */
     public ListNode sortList(ListNode head) {
@@ -961,7 +961,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method splits the linked list into two halves.
      *
-     * @param head The head of the linked list.
+     * @param  head The head of the linked list.
      * @return The head of the second half of the linked list.
      */
     private ListNode getSecondHalf(ListNode head) {
@@ -986,8 +986,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method merges two sorted linked lists into one sorted linked list.
      *
-     * @param left The head of the first sorted linked list.
-     * @param right The head of the second sorted linked list.
+     * @param  left The head of the first sorted linked list.
+     * @param  right The head of the second sorted linked list.
      * @return The head of the merged sorted linked list.
      */
     private ListNode merge(ListNode left, ListNode right) {
@@ -1017,7 +1017,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method clones a linked list with random pointers.
      *
-     * @param head The head of the original linked list.
+     * @param  head The head of the original linked list.
      * @return The head of the cloned linked list.
      */
     public ListNodeCloned copyRandomList_aka_CloneLinkedList(ListNodeCloned head) {
@@ -1053,8 +1053,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method returns a cloned node from a map if it exists, otherwise creates a new node, adds it to the map, and returns it.
      *
-     * @param head The head of the list.
-     * @param visitedMap The map containing the visited nodes.
+     * @param  head The head of the list.
+     * @param  visitedMap The map containing the visited nodes.
      * @return The cloned node.
      *
      * Example:
@@ -1076,7 +1076,7 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method reverses a linked list.
      *
-     * @param head The head of the list.
+     * @param  head The head of the list.
      * @return The head of the reversed list.
      *
      * Example:
@@ -1099,8 +1099,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method appends a node to the end of a linked list and returns the head of the list.
      *
-     * @param data The data for the new node.
-     * @param head The head of the list.
+     * @param  data The data for the new node.
+     * @param  head The head of the list.
      * @return The head of the list after the node is appended.
      *
      * Example:
@@ -1127,8 +1127,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method searches for a node in a linked list and returns it.
      *
-     * @param head The head of the list.
-     * @param searchVal The value to search for.
+     * @param  head The head of the list.
+     * @param  searchVal The value to search for.
      * @return The node if found, null otherwise.
      *
      * Example:
@@ -1151,8 +1151,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method sums two numbers represented as linked lists.
      *
-     * @param head  The head of the first linked list.
-     * @param head2 The head of the second linked list.
+     * @param  head  The head of the first linked list.
+     * @param  head2 The head of the second linked list.
      * @return The head of the linked list representing the sum.
      * <p>
      * Example:
@@ -1208,8 +1208,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method partitions a linked list around a value x.
      *
-     * @param head The head of the linked list.
-     * @param x    The value to partition around.
+     * @param  head The head of the linked list.
+     * @param  x    The value to partition around.
      * @return The head of the linked list after partitioning.
      * <p>
      * Example:
@@ -1250,8 +1250,8 @@ For instance, when deleting duplicate code and all nodes in the list are duplica
     /**
      * This method merges two sorted linked lists.
      *
-     * @param head  The head of the first linked list.
-     * @param head2 The head of the second linked list.
+     * @param  head  The head of the first linked list.
+     * @param  head2 The head of the second linked list.
      * @return The head of the merged linked list.
      * <p>
      * Example:

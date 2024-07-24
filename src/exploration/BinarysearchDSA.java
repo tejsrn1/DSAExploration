@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BinarysearchDSA {
 
-    /*
+    /* 
    Binary search is a method of searching for a specific value within a sorted space. This technique involves
    dividing the space in half and then proceeding to the left or right, depending on the position of the value being
    searched for. The search concludes once the desired value is found.
@@ -33,8 +33,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method performs a binary search on a sorted array iteratively.
      *
-     * @param arr    The input sorted array.
-     * @param target The target value to search for.
+     * @param  arr    The input sorted array.
+     * @param  target The target value to search for.
      * @return The index of the target value if found, -1 otherwise.
      */
     public int binarySearch_Iterative(int[] arr, int target) {
@@ -57,8 +57,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method performs a binary search on a sorted array recursively.
      *
-     * @param arr    The input sorted array.
-     * @param target The target value to search for.
+     * @param  arr    The input sorted array.
+     * @param  target The target value to search for.
      * @return The index of the target value if found, -1 otherwise.
      */
     public int binarySearch_Recursive(int[] arr, int target) {
@@ -86,9 +86,9 @@ problems involving binary search and sorted spaces.
      * The lower bound is the first or smallest index where the value at that index is greater than or equal to the
      * target.
      *
-     * @param arr    The input sorted array.
-     * @param target The target value.
-     * @param len    The length of the array.
+     * @param  arr    The input sorted array.
+     * @param  target The target value.
+     * @param  len    The length of the array.
      * @return The index of the lower bound.
      */
     public int lowerBound(int[] arr, int target, int len) {
@@ -112,9 +112,9 @@ problems involving binary search and sorted spaces.
      * This method finds the upper bound of a target value in a sorted array.
      * The upper bound is the first or smallest index where the value at that index is greater than the target.
      *
-     * @param arr    The input sorted array.
-     * @param target The target value.
-     * @param len    The length of the array.
+     * @param  arr    The input sorted array.
+     * @param  target The target value.
+     * @param  len    The length of the array.
      * @return The index of the upper bound.
      */
     public int upperBound(int[] arr, int target, int len) {
@@ -138,8 +138,8 @@ problems involving binary search and sorted spaces.
      * This method finds the floor of a target value in a sorted array.
      * The floor is the largest element in the array that is less than or equal to the target.
      *
-     * @param arr    The input sorted array.
-     * @param target The target value.
+     * @param  arr    The input sorted array.
+     * @param  target The target value.
      * @return The floor of the target value.
      */
     public int floor(int[] arr, int target) {
@@ -163,8 +163,8 @@ problems involving binary search and sorted spaces.
      * This method finds the ceiling of a target value in a sorted array.
      * The ceiling is the smallest element in the array that is greater than or equal to the target.
      *
-     * @param arr    The input sorted array.
-     * @param target The target value.
+     * @param  arr    The input sorted array.
+     * @param  target The target value.
      * @return The ceiling of the target value.
      */
     public int ceiling(int[] arr, int target) {
@@ -188,8 +188,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the first occurrence of a target number in a sorted array.
      *
-     * @param arr    The sorted array.
-     * @param target The target number.
+     * @param  arr    The sorted array.
+     * @param  target The target number.
      * @return The index of the first occurrence of the target number.
      */
     public int first_occurrence(int[] arr, int target) {
@@ -214,8 +214,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the last occurrence of a target number in a sorted array.
      *
-     * @param arr    The sorted array.
-     * @param target The target number.
+     * @param  arr    The sorted array.
+     * @param  target The target number.
      * @return The index of the last occurrence of the target number.
      */
     public int last_occurrence(int[] arr, int target) {
@@ -240,8 +240,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method counts the occurrence of a target number in a sorted array.
      *
-     * @param arr    The sorted array.
-     * @param target The target number.
+     * @param  arr    The sorted array.
+     * @param  target The target number.
      * @return The count of the target number in the array.
      */
     public int count_occurrence(int[] arr, int target) {
@@ -256,8 +256,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the index where a target number would be if it were inserted in order in a sorted array.
      *
-     * @param arr    The sorted array.
-     * @param target The target number.
+     * @param  arr    The sorted array.
+     * @param  target The target number.
      * @return The index where the target number would be if it were inserted in order.
      */
     public int searchInsert(int[] arr, int target) {
@@ -283,8 +283,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the index of a target number in a sorted and rotated array.
      *
-     * @param arr    The sorted and rotated array.
-     * @param target The target number.
+     * @param  arr    The sorted and rotated array.
+     * @param  target The target number.
      * @return The index of the target number in the array.
      */
     public int sortedRotated_array_search(int[] arr, int target) {
@@ -321,8 +321,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method searches for a target value in a sorted and rotated array that may contain duplicates.
      *
-     * @param arr    the array to be searched
-     * @param target the value to be found
+     * @param  arr    the array to be searched
+     * @param  target the value to be found
      * @return true if the target is found, false otherwise
      * <p>
      * Example:
@@ -366,7 +366,7 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the minimum value in a sorted and rotated array.
      *
-     * @param arr the array to be searched
+     * @param  arr the array to be searched
      * @return the minimum value in the array
      * <p>
      * Example:
@@ -402,7 +402,7 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds how many times a sorted array has been rotated.
      *
-     * @param arr the rotated array
+     * @param  arr the rotated array
      * @return the number of times the array has been rotated
      * <p>
      * Example:
@@ -443,7 +443,7 @@ problems involving binary search and sorted spaces.
      * This method finds the single non-duplicate number in a sorted array where every element appears twice except
      * for one.
      *
-     * @param arr the array to be searched
+     * @param  arr the array to be searched
      * @return the single non-duplicate number
      * <p>
      * Example:
@@ -489,7 +489,7 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds a peak element in an array.
      *
-     * @param arr the array to be searched
+     * @param  arr the array to be searched
      * @return the index of a peak element
      * <p>
      * Example:
@@ -536,7 +536,7 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the floor square root of a target number.
      *
-     * @param target the number to find the floor square root of
+     * @param  target the number to find the floor square root of
      * @return the floor square root of the target
      * <p>
      * Example:
@@ -566,8 +566,8 @@ problems involving binary search and sorted spaces.
      * Koko can decide her bananas-per-hour eating speed of the bananas pile. She will choose the smallest integer
      * such that she can eat all the bananas within the total hours.
      *
-     * @param pilesOfBanana The piles of bananas that Koko can eat.
-     * @param totalHours    The total hours within which Koko needs to eat all the bananas.
+     * @param  pilesOfBanana The piles of bananas that Koko can eat.
+     * @param  totalHours    The total hours within which Koko needs to eat all the bananas.
      * @return The minimum eating speed (bananas per hour) required for Koko to eat all the bananas within the total
      * hours.
      */
@@ -600,9 +600,9 @@ problems involving binary search and sorted spaces.
      * This method calculates the minimum number of days required to make the total bouquets using the total flowers.
      * Each bouquet requires totalFlowerToUse flowers to make.
      *
-     * @param bloomDay            The bloom day of each flower.
-     * @param totalBouquetsToMake The total bouquets to make.
-     * @param totalFlowerToUse    The total flowers to use for each bouquet.
+     * @param  bloomDay            The bloom day of each flower.
+     * @param  totalBouquetsToMake The total bouquets to make.
+     * @param  totalFlowerToUse    The total flowers to use for each bouquet.
      * @return The minimum number of days required to make the total bouquets using the total flowers.
      */
     public int minDays_toMake_Bouquets(int[] bloomDay, int totalBouquetsToMake, int totalFlowerToUse) {
@@ -637,9 +637,9 @@ problems involving binary search and sorted spaces.
      * This method calculates the possible bouquets that can be made on the current day.
      * Each bouquet requires totalFlowerToUse flowers to make.
      *
-     * @param bloomDay         The bloom day of each flower.
-     * @param currentDay       The current day.
-     * @param totalFlowerToUse The total flowers to use for each bouquet.
+     * @param  bloomDay         The bloom day of each flower.
+     * @param  currentDay       The current day.
+     * @param  totalFlowerToUse The total flowers to use for each bouquet.
      * @return The possible bouquets that can be made on the current day.
      */
     private int getPossibleBouquets(int[] bloomDay, int currentDay, int totalFlowerToUse) {
@@ -665,8 +665,8 @@ problems involving binary search and sorted spaces.
      * This method finds the smallest divisor such that the sum of quotients of an array of numbers divided by the
      * divisor is less than or equal to a threshold.
      *
-     * @param numbers   The input array of numbers.
-     * @param threshold The threshold sum of quotients.
+     * @param  numbers   The input array of numbers.
+     * @param  threshold The threshold sum of quotients.
      * @return The smallest divisor.
      */
     public int smallestDivisor(int[] numbers, int threshold) {
@@ -700,8 +700,8 @@ problems involving binary search and sorted spaces.
      * This method finds the minimum capacity of a ship such that all the weights can be shipped within the allowed
      * days.
      *
-     * @param weights     The input array of weights.
-     * @param allowedDays The number of allowed days.
+     * @param  weights     The input array of weights.
+     * @param  allowedDays The number of allowed days.
      * @return The minimum capacity of the ship.
      */
     public int shipWithinDays(int[] weights, int allowedDays) {
@@ -743,8 +743,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the kth missing positive number in a sorted array.
      *
-     * @param arr The input sorted array.
-     * @param k   The kth missing positive number to find.
+     * @param  arr The input sorted array.
+     * @param  k   The kth missing positive number to find.
      * @return The kth missing positive number.
      */
     public int findKthPositive_Linear(int[] arr, int k) {
@@ -766,8 +766,8 @@ problems involving binary search and sorted spaces.
      * This method finds the maximum distance between cows in stalls such that the cows are placed as far apart as
      * possible.
      *
-     * @param stalls The input array of stalls.
-     * @param cows   The number of cows.
+     * @param  stalls The input array of stalls.
+     * @param  cows   The number of cows.
      * @return The maximum distance between cows.
      */
     public int maxDistance_aka_aggressiveCows_akaMagnetBucket(int[] stalls, int cows) {
@@ -787,8 +787,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the maximum minimum distance between cows in stalls using binary search.
      *
-     * @param stalls The stalls where the cows are placed.
-     * @param cows   The number of cows.
+     * @param  stalls The stalls where the cows are placed.
+     * @param  cows   The number of cows.
      * @return The maximum minimum distance between cows.
      */
     public int maxDistance_aka_aggressiveCows_akaMagnetBucket_BinarySearch(int[] stalls, int cows) {
@@ -834,8 +834,8 @@ problems involving binary search and sorted spaces.
      * This method counts the minimum number of pages that should be allocated to students such that the maximum
      * number is minimized.
      *
-     * @param pagesOfEachBook The number of pages in each book.
-     * @param students        The number of students.
+     * @param  pagesOfEachBook The number of pages in each book.
+     * @param  students        The number of students.
      * @return The minimum number of pages that should be allocated to students.
      */
     public int countStudents_aka_allocateMinNoOfPages(int[] pagesOfEachBook, int students) {
@@ -887,8 +887,8 @@ problems involving binary search and sorted spaces.
      * This method counts the number of students required to read all the books given a maximum number of pages a
      * student can read.
      *
-     * @param pagesOfEachBook an array representing the number of pages in each book
-     * @param mxPages         the maximum number of pages a student can read
+     * @param  pagesOfEachBook an array representing the number of pages in each book
+     * @param  mxPages         the maximum number of pages a student can read
      * @return the number of students required
      * <p>
      * Example:
@@ -916,8 +916,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the minimum maximum number of items that can be allocated to each store.
      *
-     * @param pileOfProductsOrItems an array representing the number of items in each pile
-     * @param stores                the number of stores
+     * @param  pileOfProductsOrItems an array representing the number of items in each pile
+     * @param  stores                the number of stores
      * @return the minimum maximum number of items that can be allocated to each store
      * <p>
      * Example:
@@ -953,8 +953,8 @@ problems involving binary search and sorted spaces.
      * This method splits an array into a specified number of subarrays such that the maximum sum of any subarray is
      * minimized.
      *
-     * @param arr             the array to be split
-     * @param countOfSubArray the number of subarrays
+     * @param  arr             the array to be split
+     * @param  countOfSubArray the number of subarrays
      * @return the minimum possible maximum sum of any subarray
      * <p>
      * Example:
@@ -993,8 +993,8 @@ problems involving binary search and sorted spaces.
      * This method counts the number of subarrays that can be formed from the given array such that the sum of each
      * subarray is less than or equal to the maximum sum.
      *
-     * @param arr   The input array.
-     * @param mxSum The maximum sum of each subarray.
+     * @param  arr   The input array.
+     * @param  mxSum The maximum sum of each subarray.
      * @return The number of subarrays that can be formed.
      */
     private int countSplitArray(int[] arr, int mxSum) {
@@ -1018,11 +1018,11 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the kth smallest element in two sorted arrays using binary search.
      *
-     * @param arr1 The first sorted array.
-     * @param arr2 The second sorted array.
-     * @param k    The index of the element to find (0-based indexing).
-     * @param len1 The length of the first array.
-     * @param len2 The length of the second array.
+     * @param  arr1 The first sorted array.
+     * @param  arr2 The second sorted array.
+     * @param  k    The index of the element to find (0-based indexing).
+     * @param  len1 The length of the first array.
+     * @param  len2 The length of the second array.
      * @return The kth smallest element in the two sorted arrays.
      */
     public int kthelement_sortedArrays_BinarySearch(int[] arr1, int[] arr2, int k, int len1, int len2) {
@@ -1058,8 +1058,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the median of two sorted arrays.
      *
-     * @param arr1 The first sorted array.
-     * @param arr2 The second sorted array.
+     * @param  arr1 The first sorted array.
+     * @param  arr2 The second sorted array.
      * @return The median of the two sorted arrays.
      */
     public double findMedianSortedArrays(int[] arr1, int[] arr2) {
@@ -1105,7 +1105,7 @@ problems involving binary search and sorted spaces.
      * This method finds the row with the maximum number of ones in a binary matrix.
      * The matrix is sorted in non-increasing order.
      *
-     * @param mat The binary matrix.
+     * @param  mat The binary matrix.
      * @return An array of two integers. The first integer is the row with the maximum number of ones and the second
      * integer is the maximum number of ones.
      */
@@ -1143,8 +1143,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method performs a binary search on a 2D matrix.
      *
-     * @param mat    The input 2D matrix.
-     * @param target The target value to search for.
+     * @param  mat    The input 2D matrix.
+     * @param  target The target value to search for.
      * @return True if the target value is found, false otherwise.
      */
     public boolean searchMatrix(int[][] mat, int target) {
@@ -1173,8 +1173,8 @@ problems involving binary search and sorted spaces.
     /**
      * This method searches for a target value in a 2D matrix where each row and column is sorted separately.
      *
-     * @param mat    The input 2D matrix.
-     * @param target The target value to search for.
+     * @param  mat    The input 2D matrix.
+     * @param  target The target value to search for.
      * @return True if the target value is found, false otherwise.
      */
     public boolean searchMatrix_2_RowNColSortedSeparately(int[][] mat, int target) {
@@ -1201,7 +1201,7 @@ problems involving binary search and sorted spaces.
      * This method finds the peak grid in a 2D matrix.
      * A peak grid is a grid that is greater than its four neighbors (top, bottom, left, and right).
      *
-     * @param mat The input 2D matrix.
+     * @param  mat The input 2D matrix.
      * @return The coordinates of the peak grid.
      */
     public int[] findPeakGrid(int[][] mat) {
@@ -1239,7 +1239,7 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the row with the maximum number of ones in a binary matrix.
      *
-     * @param mat The binary matrix.
+     * @param  mat The binary matrix.
      * @return An array containing the row index and the maximum number of ones.
      */
     public int[] rowAndMaximumOnes_EXTRA(int[][] mat) {
@@ -1271,9 +1271,9 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the kth smallest element in two sorted arrays.
      *
-     * @param arr1 The first sorted array.
-     * @param arr2 The second sorted array.
-     * @param k    The index of the element to find.
+     * @param  arr1 The first sorted array.
+     * @param  arr2 The second sorted array.
+     * @param  k    The index of the element to find.
      * @return The kth smallest element in the two sorted arrays.
      */
     public int kthelement_sortedArrays(int[] arr1, int[] arr2, int k) {
@@ -1309,11 +1309,11 @@ problems involving binary search and sorted spaces.
     /**
      * This method finds the kth smallest element in two sorted arrays using binary search.
      *
-     * @param arr1 The first sorted array.
-     * @param arr2 The second sorted array.
-     * @param k    The index of the element to find.
-     * @param len1 The length of the first sorted array.
-     * @param len2 The length of the second sorted array.
+     * @param  arr1 The first sorted array.
+     * @param  arr2 The second sorted array.
+     * @param  k    The index of the element to find.
+     * @param  len1 The length of the first sorted array.
+     * @param  len2 The length of the second sorted array.
      * @return The kth smallest element in the two sorted arrays.
      */
     public int kthelement_sortedArrays_BinarySearch_ORG_NOTES(int[] arr1, int[] arr2, int k, int len1, int len2) {

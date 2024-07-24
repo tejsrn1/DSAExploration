@@ -72,8 +72,8 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the nth term of the Fibonacci sequence using dynamic programming with memoization.
      *
-     * @param term   The nth term to calculate.
-     * @param memory The memory array used for memoization.
+     * @param  term   The nth term to calculate.
+     * @param  memory The memory array used for memoization.
      * @return The nth term of the Fibonacci sequence.
      */
     public int DP_Memoization_Learn_Via_FibFunction(int term, int[] memory) {
@@ -96,7 +96,7 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the nth term of the Fibonacci sequence using dynamic programming with tabulation.
      *
-     * @param term The nth term to calculate.
+     * @param  term The nth term to calculate.
      * @return The nth term of the Fibonacci sequence.
      */
     public int DP_Tabulation_Learn_Via_FibFunction(int term) {
@@ -120,7 +120,7 @@ public class DynamicProgramDSA {
      * This method calculates the number of distinct ways to climb a staircase with n steps.
      * At each step, you can either climb 1 or 2 steps.
      *
-     * @param steps The number of steps in the staircase.
+     * @param  steps The number of steps in the staircase.
      * @return The number of distinct ways to climb the staircase.
      */
     public int climbStairs_wo_Tabulation(int steps) {
@@ -137,7 +137,7 @@ public class DynamicProgramDSA {
      * This method calculates the number of distinct ways to climb a staircase with n steps using dynamic programming with tabulation.
      * At each step, you can either climb 1 or 2 steps.
      *
-     * @param steps The number of steps in the staircase.
+     * @param  steps The number of steps in the staircase.
      * @return The number of distinct ways to climb the staircase.
      */
     public int climbStairs_Tabulation(int steps) {
@@ -160,9 +160,9 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum energy required for a frog to reach the top of the steps using memoization.
      *
-     * @param steps   The number of steps.
-     * @param heights The heights of each step.
-     * @param energy  The energy array to store the minimum energy required to reach each step.
+     * @param  steps   The number of steps.
+     * @param  heights The heights of each step.
+     * @param  energy  The energy array to store the minimum energy required to reach each step.
      * @return The minimum energy required to reach the top of the steps.
      */
     public int FrogJump_min_Energy_Memoziation(int steps, int[] heights, int[] energy) {
@@ -194,8 +194,8 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum energy required for a frog to reach the top of the steps using tabulation.
      *
-     * @param steps   The number of steps.
-     * @param heights The heights of each step.
+     * @param  steps   The number of steps.
+     * @param  heights The heights of each step.
      * @return The minimum energy required to reach the top of the steps.
      */
     public int FrogJump_MIN_Energy_Tabulation(int steps, int[] heights) {
@@ -230,10 +230,10 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum energy required for a frog to reach the top of the steps using memoization. The frog can jump up to K steps.
      *
-     * @param steps   The number of steps.
-     * @param K       The maximum number of steps the frog can jump.
-     * @param heights The heights of each step.
-     * @param energy  The energy array to store the minimum energy required to reach each step.
+     * @param  steps   The number of steps.
+     * @param  K       The maximum number of steps the frog can jump.
+     * @param  heights The heights of each step.
+     * @param  energy  The energy array to store the minimum energy required to reach each step.
      * @return The minimum energy required to reach the top of the steps.
      */
     public int FrogJump_min_Energy_Memoziation_K_Jumps(int steps, int K, int[] heights, int[] energy) {
@@ -264,9 +264,9 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum energy required for a frog to reach the top of the steps using tabulation. The frog can jump up to K steps.
      *
-     * @param steps   The number of steps.
-     * @param K       The maximum number of steps the frog can jump.
-     * @param heights The heights of each step.
+     * @param  steps   The number of steps.
+     * @param  K       The maximum number of steps the frog can jump.
+     * @param  heights The heights of each step.
      * @return The minimum energy required to reach the top of the steps.
      */
     public int FrogJump_MIN_Energy_Tabulation_K_Jumps(int steps, int K, int[] heights) {
@@ -302,9 +302,9 @@ public class DynamicProgramDSA {
      * This method calculates the maximum sum of a subsequence with the constraint that no two numbers in the sequence should be adjacent in the array.
      * It uses memoization to optimize the computation.
      *
-     * @param arr    the array of integers
-     * @param index  the current index in the array
-     * @param memory the array used for memoization
+     * @param  arr    the array of integers
+     * @param  index  the current index in the array
+     * @param  memory the array used for memoization
      * @return the maximum sum of a non-adjacent subsequence
      * <p>
      * Example:
@@ -335,7 +335,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum sum of a subsequence with the constraint that no two numbers in the sequence should be adjacent in the array.
      * It uses tabulation to optimize the computation.
      *
-     * @param arr the array of integers
+     * @param  arr the array of integers
      * @return the maximum sum of a non-adjacent subsequence
      * <p>
      * Example:
@@ -364,7 +364,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum sum of a subsequence with the constraint that no two numbers in the sequence should be adjacent in the array.
      * It considers the case where the array is circular.
      *
-     * @param arr the array of integers
+     * @param  arr the array of integers
      * @return the maximum sum of a non-adjacent subsequence
      * <p>
      * Example:
@@ -394,7 +394,7 @@ public class DynamicProgramDSA {
     /**
      * This helper method calculates the maximum sum of a subsequence with the constraint that no two numbers in the sequence should be adjacent in the array.
      *
-     * @param arr the array of integers
+     * @param  arr the array of integers
      * @return the maximum sum of a non-adjacent subsequence
      */
     int rob_2_security(int[] arr) {
@@ -420,7 +420,7 @@ public class DynamicProgramDSA {
      * The ninja can perform one task per day and cannot perform the same task on consecutive days.
      * The method uses memoization to optimize the calculation.
      *
-     * @param points The points that can be obtained from each task on each day.
+     * @param  points The points that can be obtained from each task on each day.
      * @return The maximum points that can be obtained.
      */
     public int NinjaTraining_Memoiazation(int[][] points) {
@@ -474,7 +474,7 @@ public class DynamicProgramDSA {
      * The ninja can perform one task per day and cannot perform the same task on consecutive days.
      * The method uses tabulation to optimize the calculation.
      *
-     * @param points The points that can be obtained from each task on each day.
+     * @param  points The points that can be obtained from each task on each day.
      * @return The maximum points that can be obtained.
      */
     public int NinjaTraining_Tabulation(int[][] points) {
@@ -511,8 +511,8 @@ public class DynamicProgramDSA {
      * The robot can only move either down or right at any point in time.
      * The method uses memoization to optimize the calculation.
      *
-     * @param m The number of rows in the grid.
-     * @param n The number of columns in the grid.
+     * @param  m The number of rows in the grid.
+     * @param  n The number of columns in the grid.
      * @return The number of unique paths.
      */
     public int Robot_grid_uniquePaths_Memoization(int m, int n) {
@@ -552,8 +552,8 @@ public class DynamicProgramDSA {
      * The robot starts at the top left corner (0,0) and moves only in two directions: right and down.
      * The grid is represented by a 2D array with 'm' rows and 'n' columns.
      *
-     * @param m The number of rows in the grid.
-     * @param n The number of columns in the grid.
+     * @param  m The number of rows in the grid.
+     * @param  n The number of columns in the grid.
      * @return The number of unique paths the robot can take.
      */
     public int Robot_grid_uniquePaths_Tabulation(int m, int n) {
@@ -594,7 +594,7 @@ public class DynamicProgramDSA {
      * The robot starts at the top left corner (0,0) and moves only in two directions: right and down.
      * The grid is represented by a 2D array where 0 represents an open cell and 1 represents an obstacle.
      *
-     * @param obstacleGrid The grid with obstacles, where 0 is an open cell and 1 is an obstacle.
+     * @param  obstacleGrid The grid with obstacles, where 0 is an open cell and 1 is an obstacle.
      * @return The number of unique paths the robot can take considering the obstacles.
      */
     public int Robot_grid_uniquePaths_2_Obstacles_Tabulation(int[][] obstacleGrid) {
@@ -644,7 +644,7 @@ public class DynamicProgramDSA {
      * The robot can only move either down or right at any point in time.
      * The grid is represented by a 2D array where each cell contains a non-negative integer representing the cost of the path through that cell.
      *
-     * @param matrix The grid represented as a 2D array of non-negative integers.
+     * @param  matrix The grid represented as a 2D array of non-negative integers.
      * @return The minimum path sum from top left to bottom right.
      */
     public int min_path_sum_Memoization(int[][] matrix) {
@@ -689,7 +689,7 @@ public class DynamicProgramDSA {
      * The robot can only move either down or right at any point in time.
      * The grid is represented by a 2D array where each cell contains a non-negative integer representing the cost of the path through that cell.
      *
-     * @param matrix The grid represented as a 2D array of non-negative integers.
+     * @param  matrix The grid represented as a 2D array of non-negative integers.
      * @return The minimum path sum from top left to bottom right.
      */
     public int min_path_sum_Memoization_Tabulation(int[][] matrix) {
@@ -738,7 +738,7 @@ public class DynamicProgramDSA {
      * This method calculates the minimum path sum in a triangle using memoization.
      * The triangle is represented as a 2D matrix.
      *
-     * @param matrix The input 2D matrix representing the triangle.
+     * @param  matrix The input 2D matrix representing the triangle.
      * @return The minimum path sum from the top to the bottom of the triangle.
      */
     public int min_path_sum_Triangular_Memoization(int[][] matrix) {
@@ -758,10 +758,10 @@ public class DynamicProgramDSA {
      * This is a helper method for the min_path_sum_Triangular_Memoization method.
      * It uses recursion and memoization to calculate the minimum path sum.
      *
-     * @param triangle The input 2D matrix representing the triangle.
-     * @param row      The current row in the triangle.
-     * @param col      The current column in the triangle.
-     * @param memory   The 2D memory matrix used for memoization.
+     * @param  triangle The input 2D matrix representing the triangle.
+     * @param  row      The current row in the triangle.
+     * @param  col      The current column in the triangle.
+     * @param  memory   The 2D memory matrix used for memoization.
      * @return The minimum path sum from the current position to the bottom of the triangle.
      */
     int min_path_sum_Triangular_Memoization(int[][] triangle, int row, int col, int[][] memory) {
@@ -796,7 +796,7 @@ public class DynamicProgramDSA {
      * This method calculates the minimum path sum in a triangle using tabulation.
      * The triangle is represented as a 2D matrix.
      *
-     * @param triangle The input 2D matrix representing the triangle.
+     * @param  triangle The input 2D matrix representing the triangle.
      * @return The minimum path sum from the top to the bottom of the triangle.
      */
     public int min_path_sum_Triangular_Tabulation(int[][] triangle) {
@@ -829,7 +829,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum falling sum from any cell of the first row using memoization.
      * The input is represented as a 2D matrix.
      *
-     * @param matrix The input 2D matrix.
+     * @param  matrix The input 2D matrix.
      * @return The maximum falling sum from any cell of the first row.
      */
     public int Max_Falling_sum_FromAnyCellOfFirstRow_Memoization(int[][] matrix) {
@@ -859,10 +859,10 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the maximum falling sum from any cell of the first row using memoization.
      *
-     * @param matrix The input matrix.
-     * @param row    The current row.
-     * @param col    The current column.
-     * @param memory The memory array to store the maximum falling sum for each cell.
+     * @param  matrix The input matrix.
+     * @param  row    The current row.
+     * @param  col    The current column.
+     * @param  memory The memory array to store the maximum falling sum for each cell.
      * @return The maximum falling sum from the current cell.
      */
     public int Max_Falling_sum_FromAnyCellOfFirstRow_Memoization(int[][] matrix, int row, int col, int[][] memory) {
@@ -888,7 +888,7 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum falling sum from any cell of the first row using memoization.
      *
-     * @param matrix The input matrix.
+     * @param  matrix The input matrix.
      * @return The minimum falling sum from any cell of the first row.
      */
     public int MIN_Falling_sum_FromAnyCellOfFirstRow_Memoization(int[][] matrix) {
@@ -930,7 +930,7 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum falling sum from any cell of the first row using tabulation.
      *
-     * @param matrix The input matrix.
+     * @param  matrix The input matrix.
      * @return The minimum falling sum from any cell of the first row.
      */
     public int MIN_Falling_sum_FromAnyCellOfFirstRow_Tabulation(int[][] matrix) {
@@ -973,7 +973,7 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum falling sum from any cell of the first row with non-zero shifts using memoization.
      *
-     * @param matrix The input matrix.
+     * @param  matrix The input matrix.
      * @return The minimum falling sum from any cell of the first row with non-zero shifts.
      */
     public int MIN_Falling_sum_non_zero_shifts_Memoization(int[][] matrix) {
@@ -997,10 +997,10 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the minimum falling sum in a matrix with non-zero shifts using memoization.
      *
-     * @param matrix the input matrix
-     * @param row    the current row index
-     * @param col    the current column index
-     * @param memory the array used for memoization
+     * @param  matrix the input matrix
+     * @param  row    the current row index
+     * @param  col    the current column index
+     * @param  memory the array used for memoization
      * @return the minimum falling sum
      * <p>
      * Example:
@@ -1034,8 +1034,8 @@ public class DynamicProgramDSA {
     /**
      * This method checks if there is a subset of the given array that sums up to the target value using memoization.
      *
-     * @param arr    the array of integers
-     * @param target the target sum
+     * @param  arr    the array of integers
+     * @param  target the target sum
      * @return true if there is a subset that sums up to the target, false otherwise
      * <p>
      * Example:
@@ -1055,10 +1055,10 @@ public class DynamicProgramDSA {
     /**
      * This helper method checks if there is a subset of the given array that sums up to the target value using memoization.
      *
-     * @param arr    the array of integers
-     * @param idx    the current index in the array
-     * @param target the target sum
-     * @param memory the array used for memoization
+     * @param  arr    the array of integers
+     * @param  idx    the current index in the array
+     * @param  target the target sum
+     * @param  memory the array used for memoization
      * @return true if there is a subset that sums up to the target, false otherwise
      */
     boolean subsetSumToK_Memoization(int[] arr, int idx, int target, int[][] memory) {
@@ -1087,8 +1087,8 @@ public class DynamicProgramDSA {
     /**
      * This method checks if there is a subset of the given array that sums up to the target value using tabulation.
      *
-     * @param arr    the array of integers
-     * @param target the target sum
+     * @param  arr    the array of integers
+     * @param  target the target sum
      * @return true if there is a subset that sums up to the target, false otherwise
      * <p>
      * Example:
@@ -1128,8 +1128,8 @@ public class DynamicProgramDSA {
     /**
      * This method checks if there is a subset of the given array that sums up to the target value using tabulation and space optimization.
      *
-     * @param sumArray the array of integers
-     * @param k        the target sum
+     * @param  sumArray the array of integers
+     * @param  k        the target sum
      * @return true if there is a subset that sums up to the target, false otherwise
      * <p>
      * Example:
@@ -1168,7 +1168,7 @@ public class DynamicProgramDSA {
     /**
      * This method checks if the given array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
      *
-     * @param arr the array of integers
+     * @param  arr the array of integers
      * @return true if the array can be partitioned, false otherwise
      * <p>
      * Example:
@@ -1194,7 +1194,7 @@ public class DynamicProgramDSA {
      * This method partitions an array into two subsets such that the absolute difference between their sums is minimized.
      * It uses memoization to optimize the calculation.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The minimum absolute difference between the sums of the two subsets.
      */
     public int PartitionEqualSubsetWithMinAbsolute_Memoization(int[] arr) {
@@ -1228,8 +1228,8 @@ public class DynamicProgramDSA {
      * This method counts the number of subsets of an array that sum up to a target value.
      * It uses memoization to optimize the calculation.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return The number of subsets that sum up to the target.
      */
     public int CountSubsets_equalTo_Sum_K_Memoization(int[] arr, int target) {
@@ -1275,8 +1275,8 @@ public class DynamicProgramDSA {
      * This method counts the number of subsets of an array that sum up to a target value.
      * It uses tabulation to optimize the calculation.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return The number of subsets that sum up to the target.
      */
     public int CountSubsets_equalTo_Sum_K_Tabulation(int[] arr, int target) {
@@ -1318,8 +1318,8 @@ public class DynamicProgramDSA {
      * This method counts the number of subsets in an array that sum up to a given target.
      * It uses memoization to store intermediate results for efficiency.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return The number of subsets that sum up to the target.
      */
     public int CountSubsets_equalTo_Sum_K_Memoization_EdgeCases(int[] arr, int target) {
@@ -1373,8 +1373,8 @@ public class DynamicProgramDSA {
      * This method counts the number of subsets in an array that have a sum equal to a given difference.
      * It first calculates the target sum, then calls the CountSubsets_equalTo_Sum_K_Memoization_EdgeCases method.
      *
-     * @param arr  The input array.
-     * @param diff The target difference.
+     * @param  arr  The input array.
+     * @param  diff The target difference.
      * @return The number of subsets that have a sum equal to the difference.
      */
     public int CountSubsets_equalTo_DIFF_K_Memoization(int[] arr, int diff) {
@@ -1401,9 +1401,9 @@ public class DynamicProgramDSA {
      * This method solves the 0/1 Knapsack problem using memoization.
      * It calculates the maximum value that can be put in a knapsack of capacity WCapacity.
      *
-     * @param wt        The array of weights.
-     * @param val       The array of values.
-     * @param WCapacity The capacity of the knapsack.
+     * @param  wt        The array of weights.
+     * @param  val       The array of values.
+     * @param  WCapacity The capacity of the knapsack.
      * @return The maximum value that can be put in the knapsack.
      */
     public int knapsack_01_limited_Memoization(int[] wt, int[] val, int WCapacity) {
@@ -1455,9 +1455,9 @@ public class DynamicProgramDSA {
     /**
      * This method solves the 0/1 Knapsack problem using tabulation (bottom-up approach).
      *
-     * @param wt        The array of weights.
-     * @param val       The array of values corresponding to each weight.
-     * @param WCapacity The total capacity of the knapsack.
+     * @param  wt        The array of weights.
+     * @param  val       The array of values corresponding to each weight.
+     * @param  WCapacity The total capacity of the knapsack.
      * @return The maximum value that can be obtained by picking items without exceeding the knapsack capacity.
      * <p>
      * Example:
@@ -1498,8 +1498,8 @@ public class DynamicProgramDSA {
      * This method finds the minimum number of coins needed to make a given amount.
      * It uses memoization (top-down approach) and assumes an unlimited supply of coins of each denomination.
      *
-     * @param arr       The array of coin denominations.
-     * @param targetSum The target sum.
+     * @param  arr       The array of coin denominations.
+     * @param  targetSum The target sum.
      * @return The minimum number of coins needed to make the target sum. If it's not possible, return -1.
      * <p>
      * Example:
@@ -1552,8 +1552,8 @@ public class DynamicProgramDSA {
      * This method calculates the minimum number of coins needed to make a target sum.
      * It uses a dynamic programming approach with tabulation.
      *
-     * @param coinArr   Array of available coin denominations.
-     * @param targetSum The target sum to be achieved.
+     * @param  coinArr   Array of available coin denominations.
+     * @param  targetSum The target sum to be achieved.
      * @return The minimum number of coins needed to achieve the target sum.
      */
     public int MinimumCoins_UnlimitedCoins_aka_coinChange_Tabulation(int[] coinArr, int targetSum) {
@@ -1599,8 +1599,8 @@ public class DynamicProgramDSA {
      * This method finds the number of ways to achieve a target sum by adding or subtracting elements in an array.
      * It uses a dynamic programming approach with memoization.
      *
-     * @param arr    The input array.
-     * @param target The target sum to be achieved.
+     * @param  arr    The input array.
+     * @param  target The target sum to be achieved.
      * @return The number of ways to achieve the target sum.
      */
     public int findTargetSumWays_aka_CountSubsets_equalTo_DIFF_K_Memoization(int[] arr, int target) {
@@ -1630,8 +1630,8 @@ public class DynamicProgramDSA {
      * This method calculates the number of ways to make a target sum using an array of coin denominations.
      * It uses a dynamic programming approach with memoization.
      *
-     * @param arr    Array of available coin denominations.
-     * @param target The target sum to be achieved.
+     * @param  arr    Array of available coin denominations.
+     * @param  target The target sum to be achieved.
      * @return The number of ways to achieve the target sum.
      */
     public int NoOfWays_CoinChange_UnlimitedCoins_Memoization(int[] arr, int target) {
@@ -1649,10 +1649,10 @@ public class DynamicProgramDSA {
      * This method calculates the number of ways to make change for a given target amount using an array of coins.
      * The coins can be used unlimited times. This method uses memoization to avoid redundant calculations.
      *
-     * @param coinArr The array of coins.
-     * @param coinIdx The index of the current coin being considered.
-     * @param target  The target amount.
-     * @param memory  The 2D array used for memoization.
+     * @param  coinArr The array of coins.
+     * @param  coinIdx The index of the current coin being considered.
+     * @param  target  The target amount.
+     * @param  memory  The 2D array used for memoization.
      * @return The number of ways to make change for the target amount.
      */
     public int NoOfWays_CoinChange_UnlimitedCoins_Memoization(int[] coinArr, int coinIdx, int target, int[][] memory) {
@@ -1690,8 +1690,8 @@ public class DynamicProgramDSA {
      * This method calculates the number of ways to make change for a given target amount using an array of coins.
      * The coins can be used unlimited times. This method uses tabulation (bottom-up approach) for the calculation.
      *
-     * @param coinArr The array of coins.
-     * @param target  The target amount.
+     * @param  coinArr The array of coins.
+     * @param  target  The target amount.
      * @return The number of ways to make change for the target amount.
      */
     public int NoOfWays_CoinChange_UnlimitedCoins_Tabulation(int[] coinArr, int target) {
@@ -1731,9 +1731,9 @@ public class DynamicProgramDSA {
      * Each item in the knapsack has a certain value and weight, and an unlimited number of each item can be used.
      * This method uses memoization to avoid redundant calculations.
      *
-     * @param wt        The array of weights of the items.
-     * @param val       The array of values of the items.
-     * @param WCapacity The capacity of the knapsack.
+     * @param  wt        The array of weights of the items.
+     * @param  val       The array of values of the items.
+     * @param  WCapacity The capacity of the knapsack.
      * @return The maximum value that can be put in the knapsack.
      */
     public int knapsack_Unlimited_Memoization(int[] wt, int[] val, int WCapacity) {
@@ -1749,11 +1749,11 @@ public class DynamicProgramDSA {
     /**
      * This method solves the unlimited knapsack problem using memoization.
      *
-     * @param wtArr     The array of weights of the items.
-     * @param valArr    The array of values of the items.
-     * @param WCapacity The total capacity of the knapsack.
-     * @param wtIdx     The current index in the weight array.
-     * @param memory    The memoization table.
+     * @param  wtArr     The array of weights of the items.
+     * @param  valArr    The array of values of the items.
+     * @param  WCapacity The total capacity of the knapsack.
+     * @param  wtIdx     The current index in the weight array.
+     * @param  memory    The memoization table.
      * @return The maximum value that can be obtained.
      */
     int knapsack_Unlimited_Memoization(int[] wtArr, int[] valArr, int WCapacity, int wtIdx, int[][] memory) {
@@ -1793,9 +1793,9 @@ public class DynamicProgramDSA {
     /**
      * This method solves the unlimited knapsack problem using tabulation.
      *
-     * @param wtArr     The array of weights of the items.
-     * @param valArr    The array of values of the items.
-     * @param WCapacity The total capacity of the knapsack.
+     * @param  wtArr     The array of weights of the items.
+     * @param  valArr    The array of values of the items.
+     * @param  WCapacity The total capacity of the knapsack.
      * @return The maximum value that can be obtained.
      */
     public int knapsack_Unlimited_Tabulation(int[] wtArr, int[] valArr, int WCapacity) {
@@ -1833,8 +1833,8 @@ public class DynamicProgramDSA {
     /**
      * This method solves the road cutting problem using memoization.
      *
-     * @param roadLen The length of the road.
-     * @param val     The array of values for each length.
+     * @param  roadLen The length of the road.
+     * @param  val     The array of values for each length.
      * @return The maximum value that can be obtained.
      */
     public int RoadCutting_Unlimited_Memoization(int roadLen, int[] val) {
@@ -1880,8 +1880,8 @@ public class DynamicProgramDSA {
     /**
      * This method finds the length of the longest common subsequence of two strings using memoization.
      *
-     * @param s1 the first string
-     * @param s2 the second string
+     * @param  s1 the first string
+     * @param  s2 the second string
      * @return the length of the longest common subsequence
      * <p>
      * Example:
@@ -1901,11 +1901,11 @@ public class DynamicProgramDSA {
     /**
      * This helper method finds the length of the longest common subsequence of two strings using memoization.
      *
-     * @param s1     the first string
-     * @param s2     the second string
-     * @param s1Idx  the current index in the first string
-     * @param s2Idx  the current index in the second string
-     * @param memory the array used for memoization
+     * @param  s1     the first string
+     * @param  s2     the second string
+     * @param  s1Idx  the current index in the first string
+     * @param  s2Idx  the current index in the second string
+     * @param  memory the array used for memoization
      * @return the length of the longest common subsequence
      */
     public int longest_Common_SubSequence_Memoization(String s1, String s2, int s1Idx, int s2Idx, int[][] memory) {
@@ -1933,8 +1933,8 @@ public class DynamicProgramDSA {
     /**
      * This method finds the length of the longest common subsequence of two strings using tabulation.
      *
-     * @param s1 the first string
-     * @param s2 the second string
+     * @param  s1 the first string
+     * @param  s2 the second string
      * @return the length of the longest common subsequence
      * <p>
      * Example:
@@ -1970,8 +1970,8 @@ public class DynamicProgramDSA {
     /**
      * This method prints the longest common subsequence of two strings.
      *
-     * @param s1 the first string
-     * @param s2 the second string
+     * @param  s1 the first string
+     * @param  s2 the second string
      *           <p>
      *           Example:
      *           Input: s1 = "abcde", s2 = "ace"
@@ -2033,8 +2033,8 @@ public class DynamicProgramDSA {
     /**
      * This method finds the length of the longest common substring of two strings using tabulation.
      *
-     * @param s1 the first string
-     * @param s2 the second string
+     * @param  s1 the first string
+     * @param  s2 the second string
      * @return the length of the longest common substring
      * <p>
      * Example:
@@ -2077,7 +2077,7 @@ public class DynamicProgramDSA {
      * A palindromic string is a string that remains the same when its characters are reversed.
      * The method uses tabulation to optimize the calculation.
      *
-     * @param s1 The input string.
+     * @param  s1 The input string.
      * @return The length of the longest palindromic subsequence.
      */
     public int longest_Palindromic_SubSequence_Tabulation(String s1) {
@@ -2090,7 +2090,7 @@ public class DynamicProgramDSA {
      * A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
      * The method uses tabulation to optimize the calculation.
      *
-     * @param s1 The input string.
+     * @param  s1 The input string.
      * @return The minimum number of insertions required to make the string palindrome.
      */
     public int min_Insertions_make_string_Palindrome_Tabulation(String s1) {
@@ -2103,8 +2103,8 @@ public class DynamicProgramDSA {
      * This method calculates the minimum number of insertions and deletions required to transform one string into another.
      * The method uses tabulation to optimize the calculation.
      *
-     * @param s1 The first string.
-     * @param s2 The second string.
+     * @param  s1 The first string.
+     * @param  s2 The second string.
      * @return The minimum number of insertions and deletions required to transform the first string into the second string.
      */
     public int min_InsertDelete_aka_min_Distance_Tabulation(String s1, String s2) {
@@ -2118,8 +2118,8 @@ public class DynamicProgramDSA {
      * A supersequence of two strings is a string that contains both strings as subsequences.
      * The method uses tabulation to optimize the calculation.
      *
-     * @param s1 The first string.
-     * @param s2 The second string.
+     * @param  s1 The first string.
+     * @param  s2 The second string.
      * @return The shortest supersequence of the two strings.
      */
     public String shortest_Common_Supersequence_Tabulation(String s1, String s2) {
@@ -2198,8 +2198,8 @@ public class DynamicProgramDSA {
      * This method calculates the number of distinct subsequences of a string that equal another string.
      * It uses memoization to optimize the calculation.
      *
-     * @param s1 The first string.
-     * @param s2 The second string.
+     * @param  s1 The first string.
+     * @param  s2 The second string.
      * @return The number of distinct subsequences of the first string that equal the second string.
      */
     public int DistinctSubsequences_Memoization(String s1, String s2) {
@@ -2215,11 +2215,11 @@ public class DynamicProgramDSA {
      * This method counts the number of distinct subsequences of s1 that equal s2.
      * It uses memoization to store intermediate results for efficiency.
      *
-     * @param s1     The first string.
-     * @param s2     The second string.
-     * @param s1Idx  The current index in s1.
-     * @param s2Idx  The current index in s2.
-     * @param memory The 2D array used for memoization.
+     * @param  s1     The first string.
+     * @param  s2     The second string.
+     * @param  s1Idx  The current index in s1.
+     * @param  s2Idx  The current index in s2.
+     * @param  memory The 2D array used for memoization.
      * @return The number of distinct subsequences of s1 that equal s2.
      */
     public int DistinctSubsequences_Memoization(String s1, String s2, int s1Idx, int s2Idx, int[][] memory) {
@@ -2262,8 +2262,8 @@ public class DynamicProgramDSA {
      * The operations allowed are insert, delete, and replace.
      * It uses memoization to store intermediate results for efficiency.
      *
-     * @param s1 The first string.
-     * @param s2 The second string.
+     * @param  s1 The first string.
+     * @param  s2 The second string.
      * @return The minimum number of operations required to convert s1 to s2.
      */
     public int editDistance_AKA_minDistance_Memoization(String s1, String s2) {
@@ -2320,8 +2320,8 @@ public class DynamicProgramDSA {
      * '.' matches any single character.
      * '*' matches zero or more of the preceding element.
      *
-     * @param pattern     The pattern string.
-     * @param inputString The input string.
+     * @param  pattern     The pattern string.
+     * @param  inputString The input string.
      * @return true if the input string can be matched by the pattern, false otherwise.
      */
     public boolean wildcard_matching_Memoization(String pattern, String inputString) {
@@ -2390,8 +2390,8 @@ public class DynamicProgramDSA {
      * This method checks if a given string matches a pattern that includes wildcards.
      * It uses a tabulation (bottom-up) approach.
      *
-     * @param pat The pattern string, which may include '?' (matches any single character) and '*' (matches any sequence of characters).
-     * @param str The string to be matched.
+     * @param  pat The pattern string, which may include '?' (matches any single character) and '*' (matches any sequence of characters).
+     * @param  str The string to be matched.
      * @return True if the string matches the pattern, false otherwise.
      * <p>
      * Example:
@@ -2440,7 +2440,7 @@ public class DynamicProgramDSA {
      * This method finds the length of the longest increasing subsequence in a given array.
      * It uses memoization (top-down approach).
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The length of the longest increasing subsequence.
      * <p>
      * Example:
@@ -2481,7 +2481,7 @@ public class DynamicProgramDSA {
      * This method finds the length of the longest increasing subsequence in a given array.
      * It uses tabulation (bottom-up approach) and assumes that the array is weakly increasing.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The length of the longest increasing subsequence.
      * <p>
      * Example:
@@ -2519,7 +2519,7 @@ public class DynamicProgramDSA {
      * This method finds the length of the longest increasing subsequence in a given array.
      * It uses tabulation (bottom-up approach) and assumes that the array is strongly increasing.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The length of the longest increasing subsequence.
      * <p>
      * Example:
@@ -2553,7 +2553,7 @@ public class DynamicProgramDSA {
      * This method prints the longest increasing subsequence in an array.
      * It uses a dynamic programming approach with strong tabulation.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      */
     public void Print_longest_Increasing_Subsequence_AKA_lengthOfLIS_Tabulation_Strong(int[] arr) {
         int[] memory = new int[arr.length];
@@ -2602,7 +2602,7 @@ public class DynamicProgramDSA {
      * This method finds the largest divisible subset in an array.
      * It uses a dynamic programming approach with tabulation.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The largest divisible subset in the array.
      */
     public List<Integer> largest_Divisible_Subset_Tabulation(int[] arr) {
@@ -2652,7 +2652,7 @@ public class DynamicProgramDSA {
      * This method finds the longest string chain in an array of words.
      * It uses a dynamic programming approach with tabulation.
      *
-     * @param words The input array of words.
+     * @param  words The input array of words.
      * @return The length of the longest string chain.
      */
     public int longest_String_Chain_Tabulation(String[] words) {
@@ -2688,8 +2688,8 @@ public class DynamicProgramDSA {
      * It checks if the length of the first string is one more than the second string,
      * and if the characters in the same positions are the same.
      *
-     * @param s1 The first string.
-     * @param s2 The second string.
+     * @param  s1 The first string.
+     * @param  s2 The second string.
      * @return True if the strings are one character apart, false otherwise.
      */
     private boolean compareWords(String s1, String s2) {
@@ -2721,7 +2721,7 @@ public class DynamicProgramDSA {
      * This method finds the number of longest increasing subsequences (LIS) in an array.
      * It uses tabulation (bottom-up approach) for the calculation.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The number of longest increasing subsequences in the array.
      */
     public int find_Number_Of_LIS_Tabulation(int[] arr) {
@@ -2778,7 +2778,7 @@ public class DynamicProgramDSA {
     /**
      * This method calculates the maximum profit that can be made from buying and selling stocks.
      *
-     * @param priceArr The array of stock prices.
+     * @param  priceArr The array of stock prices.
      * @return The maximum profit that can be made.
      */
     public int StockBuyNSell_aka_maxProfit(int[] priceArr) {
@@ -2806,7 +2806,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be made from buying and selling stocks.
      * It does not use dynamic programming.
      *
-     * @param prices The array of stock prices.
+     * @param  prices The array of stock prices.
      * @return The maximum profit that can be made.
      */
     public int StockBuyNSell_2_aka_maxProfit_NON_DP(int[] prices) {
@@ -2827,7 +2827,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be made from buying and selling stocks.
      * It uses memoization to optimize the calculation.
      *
-     * @param priceArr The array of stock prices.
+     * @param  priceArr The array of stock prices.
      * @return The maximum profit that can be made.
      */
     public int StockBuyNSell_2_aka_maxProfit_Memoization(int[] priceArr) {
@@ -2843,10 +2843,10 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be made from buying and selling stocks.
      * It uses memoization to optimize the calculation.
      *
-     * @param priceArr The array of stock prices.
-     * @param pIdx     The current index in the price array.
-     * @param canBuy   A flag indicating whether we can buy a stock.
-     * @param memory   The memoization table.
+     * @param  priceArr The array of stock prices.
+     * @param  pIdx     The current index in the price array.
+     * @param  canBuy   A flag indicating whether we can buy a stock.
+     * @param  memory   The memoization table.
      * @return The maximum profit that can be made.
      */
     public int StockBuyNSell_2_aka_maxProfit_Memoization(int[] priceArr, int pIdx, int canBuy, int[][] memory) {
@@ -2886,7 +2886,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be made from buying and selling stocks.
      * It uses tabulation to optimize the calculation.
      *
-     * @param priceArr The array of stock prices.
+     * @param  priceArr The array of stock prices.
      * @return The maximum profit that can be made.
      */
     public int StockBuyNSell_2_aka_maxProfit_Tabulation(int[] priceArr) {
@@ -2934,7 +2934,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be achieved from performing two transactions on a given stock price array.
      * It uses a dynamic programming approach with memoization.
      *
-     * @param priceArr The input array representing the stock prices.
+     * @param  priceArr The input array representing the stock prices.
      * @return The maximum profit that can be achieved.
      */
     public int StockBuyNSell_3_TwoTransaction_aka_maxProfit_Memoization(int[] priceArr) {
@@ -2952,11 +2952,11 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be achieved from performing two transactions on a given stock price array.
      * It uses a dynamic programming approach with memoization.
      *
-     * @param priceArr The input array representing the stock prices.
-     * @param pIdx     The current price index.
-     * @param canBuy   A flag indicating whether a buy operation can be performed.
-     * @param maxTrans The maximum number of transactions allowed.
-     * @param memory   The memoization table.
+     * @param  priceArr The input array representing the stock prices.
+     * @param  pIdx     The current price index.
+     * @param  canBuy   A flag indicating whether a buy operation can be performed.
+     * @param  maxTrans The maximum number of transactions allowed.
+     * @param  memory   The memoization table.
      * @return The maximum profit that can be achieved.
      */
     public int StockBuyNSell_3_TwoTransaction_aka_maxProfit_Memoization(int[] priceArr, int pIdx, int canBuy, int maxTrans, int[][][] memory) {
@@ -2992,7 +2992,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be achieved from performing two transactions on a given stock price array.
      * It uses a dynamic programming approach with tabulation.
      *
-     * @param priceArr The input array representing the stock prices.
+     * @param  priceArr The input array representing the stock prices.
      * @return The maximum profit that can be achieved.
      */
     public int StockBuyNSell_3_TwoTransaction_aka_maxProfit_Tabulation(int[] priceArr) {
@@ -3030,8 +3030,8 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be achieved from performing k transactions on a given stock price array.
      * It uses a dynamic programming approach with tabulation.
      *
-     * @param priceArr The input array representing the stock prices.
-     * @param k        The maximum number of transactions allowed.
+     * @param  priceArr The input array representing the stock prices.
+     * @param  k        The maximum number of transactions allowed.
      * @return The maximum profit that can be achieved.
      */
     public int StockBuyNSell_3_K_Transaction_aka_maxProfit_Tabulation(int[] priceArr, int k) {
@@ -3069,7 +3069,7 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be obtained from buying and selling stocks.
      * It uses a tabulation (bottom-up) approach and assumes a cooling off period after selling.
      *
-     * @param priceArr The array of stock prices.
+     * @param  priceArr The array of stock prices.
      * @return The maximum profit that can be obtained.
      * <p>
      * Example:
@@ -3107,8 +3107,8 @@ public class DynamicProgramDSA {
      * This method calculates the maximum profit that can be obtained from buying and selling stocks.
      * It uses a tabulation (bottom-up) approach and assumes a transaction fee for each sell.
      *
-     * @param priceArr The array of stock prices.
-     * @param fees     The transaction fee.
+     * @param  priceArr The array of stock prices.
+     * @param  fees     The transaction fee.
      * @return The maximum profit that can be obtained.
      * <p>
      * Example:
@@ -3149,7 +3149,7 @@ public class DynamicProgramDSA {
     /**
      * This method prints an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      *            <p>
      *            Example:
      *            Suppose the input array is [1, 2, 3, 4, 5].
@@ -3166,7 +3166,7 @@ public class DynamicProgramDSA {
     /**
      * This method prints a list.
      *
-     * @param list The input list.
+     * @param  list The input list.
      *             <p>
      *             Example:
      *             Suppose the input list is [1, 2, 3, 4, 5].

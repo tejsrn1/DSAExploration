@@ -8,8 +8,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method prints numbers from 1 to N recursively.
      *
-     * @param inputNumber The number to start printing from, usually starts from 1.
-     * @param N           The number till which we want to print.
+     * @param  inputNumber The number to start printing from, usually starts from 1.
+     * @param  N           The number till which we want to print.
      *                    <p>
      *                    Example:
      *                    PrintNumberTillN(1, 5) will print: 1 2 3 4 5
@@ -27,8 +27,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method prints a name 'Tejpal' N times recursively.
      *
-     * @param counter The counter to track the number of times the name has been printed.
-     * @param N       The total number of times the name should be printed.
+     * @param  counter The counter to track the number of times the name has been printed.
+     * @param  N       The total number of times the name should be printed.
      *                <p>
      *                Example:
      *                PrintNames_N_Times(1, 3) will print: Tejpal Tejpal Tejpal
@@ -46,8 +46,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method prints numbers from 1 to N recursively.
      *
-     * @param start The number to start printing from, usually starts from 1.
-     * @param N     The number till which we want to print.
+     * @param  start The number to start printing from, usually starts from 1.
+     * @param  N     The number till which we want to print.
      *              <p>
      *              Example:
      *              PrintNames_1_to_N(1, 3) will print: 1 2 3
@@ -65,8 +65,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method prints numbers from N to 1 recursively.
      *
-     * @param N   The number to start printing from.
-     * @param end The number till which we want to print, usually ends at 1.
+     * @param  N   The number to start printing from.
+     * @param  end The number till which we want to print, usually ends at 1.
      *            <p>
      *            Example:
      *            PrintNames_N_to_1(3, 1) will print: 3 2 1
@@ -84,7 +84,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method calculates the sum of first N natural numbers.
      *
-     * @param N The number up to which the sum is to be calculated.
+     * @param  N The number up to which the sum is to be calculated.
      * @return The sum of first N natural numbers.
      * <p>
      * Example:
@@ -104,7 +104,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method calculates the factorial of a number N.
      *
-     * @param N The number for which the factorial is to be calculated.
+     * @param  N The number for which the factorial is to be calculated.
      * @return The factorial of the number N.
      * <p>
      * Example:
@@ -124,8 +124,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method reverses an array in a non-recursive manner.
      *
-     * @param givenArray The array to be reversed.
-     * @param len        The length of the array.
+     * @param  givenArray The array to be reversed.
+     * @param  len        The length of the array.
      *                   <p>
      *                   Example:
      *                   Input: givenArray = {5, 4, 3, 2, 1}, len = 5
@@ -153,8 +153,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method reverses an array in a recursive manner.
      *
-     * @param givenArray The array to be reversed.
-     * @param len        The length of the array.
+     * @param  givenArray The array to be reversed.
+     * @param  len        The length of the array.
      */
     public void reverse_Array_Recursive(int[] givenArray, int len) {
         printArray(givenArray);
@@ -165,9 +165,9 @@ public class RecursionBackTrackingDSA {
     /**
      * This method reverses an array in-place using recursion.
      *
-     * @param givenArray the array to be reversed
-     * @param start      the starting index for the reversal
-     * @param end        the ending index for the reversal
+     * @param  givenArray the array to be reversed
+     * @param  start      the starting index for the reversal
+     * @param  end        the ending index for the reversal
      *                   <p>
      *                   Example:
      *                   Input: [1, 2, 3, 4, 5], start = 0, end = 4
@@ -191,8 +191,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method checks if a given string is a palindrome.
      *
-     * @param givenString the string to be checked
-     * @param len         the length of the string
+     * @param  givenString the string to be checked
+     * @param  len         the length of the string
      *                    <p>
      *                    Example:
      *                    Input: "ABC D CBA", len = 9
@@ -206,9 +206,9 @@ public class RecursionBackTrackingDSA {
     /**
      * This helper method checks if a substring of a given string is a palindrome.
      *
-     * @param givenString the string to be checked
-     * @param start       the starting index of the substring
-     * @param end         the ending index of the substring
+     * @param  givenString the string to be checked
+     * @param  start       the starting index of the substring
+     * @param  end         the ending index of the substring
      * @return true if the substring is a palindrome, false otherwise
      * <p>
      * Example:
@@ -231,7 +231,7 @@ public class RecursionBackTrackingDSA {
      * This method prints the Fibonacci series up to the Nth term.
      * The Fibonacci series is a series of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1.
      *
-     * @param N The term up to which the Fibonacci series is to be printed. (0-based indexing)
+     * @param  N The term up to which the Fibonacci series is to be printed. (0-based indexing)
      *          <p>
      *          Example:
      *          Input: N = 5
@@ -271,7 +271,7 @@ public class RecursionBackTrackingDSA {
      * This method returns the Nth term of the Fibonacci series using recursion.
      * The Fibonacci series is a series of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1.
      *
-     * @param N The term of the Fibonacci series to be returned. (0-based indexing)
+     * @param  N The term of the Fibonacci series to be returned. (0-based indexing)
      * @return The Nth term of the Fibonacci series.
      */
     public int Fibonacci_Series_UpTo_N_Numbers_Recursive(int N) {
@@ -291,8 +291,8 @@ public class RecursionBackTrackingDSA {
      * This method calculates the power of a number.
      * It uses the binary exponentiation method to reduce the time complexity to O(log N).
      *
-     * @param num   The base number.
-     * @param power The exponent.
+     * @param  num   The base number.
+     * @param  power The exponent.
      * @return The result of num raised to the power.
      */
     public double myPow(double num, int power) {
@@ -309,8 +309,8 @@ public class RecursionBackTrackingDSA {
      * This method calculates the power of a number using binary exponentiation.
      * Binary exponentiation (also known as exponentiation by squaring) reduces the complexity from O(N) to O(log N) by halving the exponent in each step.
      *
-     * @param num The base number.
-     * @param N   The exponent.
+     * @param  num The base number.
+     * @param  N   The exponent.
      * @return The result of num raised to the power N.
      */
     private double calculatePower(double num, long N) {
@@ -332,7 +332,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method sorts a stack in ascending order using recursion.
      *
-     * @param stack The stack of integers to be sorted.
+     * @param  stack The stack of integers to be sorted.
      *              <p>
      *              Example:
      *              Given stack: [3, 1, 2]
@@ -373,7 +373,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method reverses a stack using recursion.
      *
-     * @param stack The stack of integers to be reversed.
+     * @param  stack The stack of integers to be reversed.
      *              <p>
      *              Example:
      *              Given stack: [1, 2, 3]
@@ -414,8 +414,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method generates all binary strings of a given length.
      *
-     * @param arr The array to store the binary strings.
-     * @param len The length of the binary strings.
+     * @param  arr The array to store the binary strings.
+     * @param  len The length of the binary strings.
      *            <p>
      *            Example:
      *            Input: len = 2
@@ -445,7 +445,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method generates all valid combinations of n pairs of parentheses.
      *
-     * @param n The number of pairs of parentheses.
+     * @param  n The number of pairs of parentheses.
      * @return A list of all valid combinations of n pairs of parentheses.
      * <p>
      * Example:
@@ -498,7 +498,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method generates all unique subsets of a given array using backtracking.
      *
-     * @param arr the array for which subsets are to be generated
+     * @param  arr the array for which subsets are to be generated
      * @return a list of all unique subsets
      * <p>
      * Example:
@@ -520,11 +520,11 @@ public class RecursionBackTrackingDSA {
     /**
      * This helper method uses backtracking to generate all unique subsets of a given length.
      *
-     * @param arr        the array for which subsets are to be generated
-     * @param startIndex the starting index for the subset
-     * @param resList    the list to store the generated subsets
-     * @param currList   the current subset being generated
-     * @param limit      the desired length of the subsets
+     * @param  arr        the array for which subsets are to be generated
+     * @param  startIndex the starting index for the subset
+     * @param  resList    the list to store the generated subsets
+     * @param  currList   the current subset being generated
+     * @param  limit      the desired length of the subsets
      */
     private void backTrack_PowerSubSet(int[] arr, int startIndex, List<List<Integer>> resList, List<Integer> currList, int limit) {
         // If the current subset has reached the desired length, add it to the result list
@@ -548,7 +548,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method generates all unique subsets of a given array using backtracking, handling duplicates.
      *
-     * @param arr the array for which subsets are to be generated
+     * @param  arr the array for which subsets are to be generated
      * @return a list of all unique subsets
      * <p>
      * Example:
@@ -572,11 +572,11 @@ public class RecursionBackTrackingDSA {
     /**
      * This helper method uses backtracking to generate all unique subsets of a given length, handling duplicates.
      *
-     * @param arr        the array for which subsets are to be generated
-     * @param startIndex the starting index for the subset
-     * @param resList    the list to store the generated subsets
-     * @param currList   the current subset being generated
-     * @param limit      the desired length of the subsets
+     * @param  arr        the array for which subsets are to be generated
+     * @param  startIndex the starting index for the subset
+     * @param  resList    the list to store the generated subsets
+     * @param  currList   the current subset being generated
+     * @param  limit      the desired length of the subsets
      */
     private void powerSet_AllSubsets_WithDuplicate(int[] arr, int startIndex, List<List<Integer>> resList, List<Integer> currList, int limit) {
         // If the current subset has reached the desired length, add it to the result list
@@ -606,9 +606,9 @@ public class RecursionBackTrackingDSA {
      * This method generates all subsets of a given string using backtracking.
      * The approach is based on increasing the index and picking the character, and then increasing the index and not picking the character.
      *
-     * @param index    The current index in the input string.
-     * @param inputStr The input string.
-     * @param output   The current subset.
+     * @param  index    The current index in the input string.
+     * @param  inputStr The input string.
+     * @param  output   The current subset.
      *                 <p>
      *                 Example:
      *                 Input: index = 0, inputStr = "abc", output = ""
@@ -634,9 +634,9 @@ public class RecursionBackTrackingDSA {
      * The approach is based on increasing the index and picking the character, and then increasing the index and not picking the character.
      * If the current character is the same as the next character, it is not picked to avoid generating duplicate subsets.
      *
-     * @param index    The current index in the input string.
-     * @param inputStr The input string.
-     * @param output   The current subset.
+     * @param  index    The current index in the input string.
+     * @param  inputStr The input string.
+     * @param  output   The current subset.
      *                 <p>
      *                 Example:
      *                 Input: index = 0, inputStr = "aab", output = ""
@@ -663,8 +663,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method finds all combinations of array elements that sum up to a target value.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return A list of lists where each list is a combination of numbers that sum up to the target.
      * <p>
      * Example:
@@ -704,8 +704,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method finds all unique combinations of array elements that sum up to a target value.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return A list of lists where each list is a unique combination of numbers that sum up to the target.
      * <p>
      * Example:
@@ -750,7 +750,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method calculates the sum of all subsets of the given array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return A sorted list of sums of all subsets.
      * <p>
      * Example:
@@ -767,10 +767,10 @@ public class RecursionBackTrackingDSA {
     /**
      * This method calculates the sum of all subsets of an array using backtracking.
      *
-     * @param arr   The array for which the sum of subsets is to be calculated.
-     * @param index The current index in the array.
-     * @param sum   The current sum.
-     * @param res   The result list to store the sum of all subsets.
+     * @param  arr   The array for which the sum of subsets is to be calculated.
+     * @param  index The current index in the array.
+     * @param  sum   The current sum.
+     * @param  res   The result list to store the sum of all subsets.
      */
     void backtracking_Sum_All_Subsets(int[] arr, int index, int sum, List<Integer> res) {
         // Base condition: when reached array limit, add sum for that subset in result
@@ -789,7 +789,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method generates all possible letter combinations that the number could represent on a phone keypad.
      *
-     * @param digits The digits entered on the phone keypad.
+     * @param  digits The digits entered on the phone keypad.
      * @return A list of all possible letter combinations.
      */
     public List<String> letterCombinations(String digits) {
@@ -838,7 +838,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method generates all possible palindrome subsequences of a string.
      *
-     * @param inputStr The input string.
+     * @param  inputStr The input string.
      * @return A list of all possible palindrome subsequences.
      */
     public List<List<String>> palindrome_subsequence(String inputStr) {
@@ -871,9 +871,9 @@ public class RecursionBackTrackingDSA {
     /**
      * This method checks if a substring of a given string is a palindrome.
      *
-     * @param s     the string to be checked
-     * @param start the starting index of the substring
-     * @param end   the ending index of the substring
+     * @param  s     the string to be checked
+     * @param  start the starting index of the substring
+     * @param  end   the ending index of the substring
      * @return true if the substring is a palindrome, false otherwise
      * <p>
      * Example:
@@ -892,8 +892,8 @@ public class RecursionBackTrackingDSA {
     /**
      * This method checks if a given word can be found in a 2D character grid.
      *
-     * @param board the 2D character grid
-     * @param word  the word to be found
+     * @param  board the 2D character grid
+     * @param  word  the word to be found
      * @return true if the word can be found, false otherwise
      * <p>
      * Example:
@@ -915,13 +915,13 @@ public class RecursionBackTrackingDSA {
     /**
      * This helper method uses backtracking to check if a given word can be found in a 2D character grid.
      *
-     * @param board  the 2D character grid
-     * @param word   the word to be found
-     * @param rw     the current row index
-     * @param col    the current column index
-     * @param rowLen the number of rows in the grid
-     * @param colLen the number of columns in the grid
-     * @param index  the current index in the word
+     * @param  board  the 2D character grid
+     * @param  word   the word to be found
+     * @param  rw     the current row index
+     * @param  col    the current column index
+     * @param  rowLen the number of rows in the grid
+     * @param  colLen the number of columns in the grid
+     * @param  index  the current index in the word
      * @return true if the word can be found, false otherwise
      */
     private boolean Word_Search_backTracking(char[][] board, String word, int rw, int col, int rowLen, int colLen, int index) {
@@ -949,7 +949,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method solves the N-Queens problem.
      *
-     * @param n the number of queens and the size of the chessboard
+     * @param  n the number of queens and the size of the chessboard
      * @return a list of all possible solutions
      * <p>
      * Example:
@@ -970,9 +970,9 @@ public class RecursionBackTrackingDSA {
     /**
      * This helper method uses backtracking to solve the N-Queens problem.
      *
-     * @param board the chessboard
-     * @param res   the list to store the solutions
-     * @param row   the current row index
+     * @param  board the chessboard
+     * @param  res   the list to store the solutions
+     * @param  row   the current row index
      */
     private void solveQueen_backtracking(char[][] board, ArrayList<List<String>> res, int row) {
         if (row == board.length) {
@@ -993,7 +993,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method converts each row of a 2D character array into a string and adds it to a list.
      *
-     * @param board The 2D character array.
+     * @param  board The 2D character array.
      * @return A list of strings, each representing a row of the 2D character array.
      */
     public List<String> prepResultList(char[][] board) {
@@ -1010,9 +1010,9 @@ public class RecursionBackTrackingDSA {
      * This method checks if it is safe to place a queen at a given position in a chessboard.
      * It checks the vertical row, left diagonal, and right diagonal for any existing queens.
      *
-     * @param board The chessboard represented as a 2D character array.
-     * @param row   The row index of the position.
-     * @param col   The column index of the position.
+     * @param  board The chessboard represented as a 2D character array.
+     * @param  row   The row index of the position.
+     * @param  col   The column index of the position.
      * @return True if it is safe to place a queen at the position, false otherwise.
      */
     public boolean isSafeToPutQueen(char[][] board, int row, int col) {
@@ -1047,8 +1047,8 @@ public class RecursionBackTrackingDSA {
      * The animal can move in four directions: up, down, left, and right.
      * The animal cannot move to a blocked cell or revisit a cell.
      *
-     * @param maze The maze represented as a 2D integer array. 0 represents a blocked cell and 1 represents a free cell.
-     * @param size The size of the maze.
+     * @param  maze The maze represented as a 2D integer array. 0 represents a blocked cell and 1 represents a free cell.
+     * @param  size The size of the maze.
      * @return A list of strings, each representing a possible path.
      */
     public List<String> Maze_Animal(int[][] maze, int size) {
@@ -1099,9 +1099,9 @@ public class RecursionBackTrackingDSA {
      * This method checks if a ball can reach the destination in a maze by rolling in any of the four directions until it hits a wall.
      * The ball cannot roll through a wall or revisit a cell.
      *
-     * @param maze        The maze represented as a 2D integer array. 0 represents a wall and 1 represents a free cell.
-     * @param start       The starting position of the ball.
-     * @param destination The destination position.
+     * @param  maze        The maze represented as a 2D integer array. 0 represents a wall and 1 represents a free cell.
+     * @param  start       The starting position of the ball.
+     * @param  destination The destination position.
      * @return True if the ball can reach the destination, false otherwise.
      */
     public boolean Maze_RollingBall(int[][] maze, int[] start, int[] destination) {
@@ -1136,13 +1136,13 @@ public class RecursionBackTrackingDSA {
      * This method rolls a ball in a maze from a given position in a given direction until it hits a wall.
      * Then it backtracks to find a path to the destination.
      *
-     * @param maze         The 2D array representing the maze.
-     * @param row          The starting row position of the ball.
-     * @param col          The starting column position of the ball.
-     * @param rowDirection The direction of the ball in terms of rows.
-     * @param colDirection The direction of the ball in terms of columns.
-     * @param destination  The destination coordinates in the maze.
-     * @param visited      A 2D boolean array to keep track of visited cells in the maze.
+     * @param  maze         The 2D array representing the maze.
+     * @param  row          The starting row position of the ball.
+     * @param  col          The starting column position of the ball.
+     * @param  rowDirection The direction of the ball in terms of rows.
+     * @param  colDirection The direction of the ball in terms of columns.
+     * @param  destination  The destination coordinates in the maze.
+     * @param  visited      A 2D boolean array to keep track of visited cells in the maze.
      * @return True if a path to the destination is found, false otherwise.
      */
     private boolean RollingNthenBackTrack(int[][] maze, int row, int col, int rowDirection, int colDirection, int[] destination, boolean[][] visited) {
@@ -1163,8 +1163,8 @@ public class RecursionBackTrackingDSA {
      * This method solves the m-coloring problem using backtracking.
      * It colors a graph with m colors such that no two adjacent vertices have the same color.
      *
-     * @param n The number of vertices in the graph.
-     * @param m The number of colors.
+     * @param  n The number of vertices in the graph.
+     * @param  m The number of colors.
      * @return True if the graph can be colored with m colors, false otherwise.
      */
     public boolean M_Coloring_Graph(int n, int m) {
@@ -1232,7 +1232,7 @@ public class RecursionBackTrackingDSA {
     /**
      * This method prints an array.
      *
-     * @param inputA The input array.
+     * @param  inputA The input array.
      */
     private void printArray(int[] inputA) {
         for (int x = 0; x < inputA.length; x++) {

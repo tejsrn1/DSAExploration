@@ -19,7 +19,7 @@ public class StackQueue {
     /**
      * This method checks if the given string of parentheses is valid.
      *
-     * @param inputStr The string of parentheses.
+     * @param  inputStr The string of parentheses.
      * @return true if the string is valid, false otherwise.
      * <p>
      * Example:
@@ -57,7 +57,7 @@ public class StackQueue {
     /**
      * This method converts an infix expression to a postfix expression.
      *
-     * @param inputStr The infix expression.
+     * @param  inputStr The infix expression.
      * @return The postfix expression.
      *
      * Example:
@@ -113,7 +113,7 @@ public class StackQueue {
     /**
      * This method returns the priority of an operator.
      *
-     * @param ch The operator.
+     * @param  ch The operator.
      * @return The priority of the operator. Higher number means higher priority.
      */
     private int getPriority(char ch) {
@@ -135,7 +135,7 @@ public class StackQueue {
      * The expression is based on Infix to Postfix conversion approach.
      * The operator works one step behind in the sequence of all operators.
      *
-     * @param inputStr The arithmetic expression in string format.
+     * @param  inputStr The arithmetic expression in string format.
      * @return The result of the arithmetic expression.
      */
     public int calculator_II_INtoPostBased(String inputStr) {
@@ -204,7 +204,7 @@ public class StackQueue {
      * The expression can contain parentheses.
      * The sign is handled by an integer which captures and applies for the next time.
      *
-     * @param inputStr The arithmetic expression in string format.
+     * @param  inputStr The arithmetic expression in string format.
      * @return The result of the arithmetic expression.
      */
     public int calculator_II_HARD(String inputStr) {
@@ -289,8 +289,8 @@ public class StackQueue {
      * The next greater element for an element 'x' is the first greater element on the right side of 'x' in the second array.
      * If no such element exists, the output is -1 for this element.
      *
-     * @param arr1 The first array.
-     * @param arr2 The second array.
+     * @param  arr1 The first array.
+     * @param  arr2 The second array.
      * @return An array of the next greater elements for each element in the first array.
      */
     public int[] nextGreaterElements_1(int[] arr1, int[] arr2) {
@@ -357,7 +357,7 @@ public class StackQueue {
     /**
      * This method finds the next greater elements in a circular array using a monotonic stack.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return An array of the next greater elements.
      *
      * Example:
@@ -407,7 +407,7 @@ public class StackQueue {
     /**
      * This method finds the next greater permutation of a number.
      *
-     * @param number The input number.
+     * @param  number The input number.
      * @return The next greater permutation of the number. If no such permutation exists, returns -1.
      * <p>
      * Example:
@@ -461,7 +461,7 @@ public class StackQueue {
     /**
      * This method calculates the amount of rain water that can be trapped between the bars.
      *
-     * @param heightArr The array representing the height of the bars.
+     * @param  heightArr The array representing the height of the bars.
      * @return The total amount of rain water that can be trapped.
      * <p>
      * Example:
@@ -507,7 +507,7 @@ public class StackQueue {
     /**
      * This method calculates the sum of minimum values of all subarrays of the given array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The sum of minimum values of all subarrays modulo 10^9 + 7.
      *
      * Example:
@@ -538,7 +538,7 @@ public class StackQueue {
     /**
      * This method simulates the collision of asteroids.
      *
-     * @param arr The input array representing the asteroids.
+     * @param  arr The input array representing the asteroids.
      * @return The state of the asteroids after all collisions.
      *
      * Example:
@@ -583,7 +583,7 @@ public class StackQueue {
     /**
      * This method finds the largest rectangle area in a histogram using a monotonic stack.
      *
-     * @param heights The heights of the bars in the histogram.
+     * @param  heights The heights of the bars in the histogram.
      * @return The area of the largest rectangle.
      *
      * Example:
@@ -651,7 +651,7 @@ public class StackQueue {
     /**
      * This method finds the maximal rectangle in a binary matrix.
      *
-     * @param matrix The binary matrix.
+     * @param  matrix The binary matrix.
      * @return The area of the maximal rectangle.
      *
      * Example:
@@ -718,8 +718,8 @@ public class StackQueue {
     /**
      * This method finds the maximum value in each sliding window of size k in the array.
      *
-     * @param arr The input array.
-     * @param k   The size of the sliding window.
+     * @param  arr The input array.
+     * @param  k   The size of the sliding window.
      * @return An array of maximum values in each sliding window.
      *
      * Example:
@@ -771,8 +771,8 @@ public class StackQueue {
     /**
      * This method finds the next greater element for each element in the first array in the second array.
      *
-     * @param arr1 The first array.
-     * @param arr2 The second array.
+     * @param  arr1 The first array.
+     * @param  arr2 The second array.
      * @return An array of the next greater elements.
      *
      * Example:
@@ -810,7 +810,7 @@ public class StackQueue {
     /**
      * This method calculates the largest rectangle in the histogram.
      *
-     * @param heights The heights of the bars in the histogram.
+     * @param  heights The heights of the bars in the histogram.
      * @return The area of the largest rectangle.
      *
      * Example:

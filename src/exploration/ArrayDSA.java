@@ -6,10 +6,10 @@ import java.util.*;
 public class ArrayDSA {
 
 
-    /**
+    /** 
      * This method finds and returns the largest element in an array.
      *
-     * @param inputArray An array of integers.
+     * @param  inputArray An array of integers.
      * @return The largest integer in the array.
      * <p>
      * Example:
@@ -28,8 +28,8 @@ public class ArrayDSA {
     /**
      * This method finds and returns the second largest or second smallest element in an array.
      *
-     * @param inputArray  An array of integers.
-     * @param returnSmall A boolean flag to decide whether to return the second smallest (if true) or second largest
+     * @param  inputArray  An array of integers.
+     * @param  returnSmall A boolean flag to decide whether to return the second smallest (if true) or second largest
      *                    (if false) element.
      * @return The second smallest or second largest integer in the array. Returns -1 if the array has less than 2
      * elements.
@@ -78,7 +78,7 @@ public class ArrayDSA {
      * A sorted array is one that is in increasing order. To determine if it's sorted and then rotated,
      * we allow for only one violation of the increasing order.
      *
-     * @param arr The input array to check.
+     * @param  arr The input array to check.
      * @return true if the array is sorted and rotated, false otherwise.
      * <p>
      * Example 1:
@@ -112,7 +112,7 @@ public class ArrayDSA {
     /**
      * Removes duplicates in a sorted array and returns the new length.
      *
-     * @param arr The input array from which duplicates are to be removed.
+     * @param  arr The input array from which duplicates are to be removed.
      * @return The length of the array after removing duplicates.
      * <p>
      * Example:
@@ -162,7 +162,7 @@ public class ArrayDSA {
     /**
      * Rotates an array to the left and right by a given order.
      *
-     * @param rotationOrder The number of positions to rotate the array.
+     * @param  rotationOrder The number of positions to rotate the array.
      *                      <p>
      *                      Example:
      *                      Input: [1, 2, 3, 4, 5, 6, 7], order = 2
@@ -188,9 +188,9 @@ public class ArrayDSA {
     /**
      * Reverses the elements in an array from a start index to an end index.
      *
-     * @param arr   The input array to reverse.
-     * @param start The start index for the reversal.
-     * @param end   The end index for the reversal.
+     * @param  arr   The input array to reverse.
+     * @param  start The start index for the reversal.
+     * @param  end   The end index for the reversal.
      *              <p>
      *              Example:
      *              Input: [1, 2, 3, 4, 5], start = 1, end = 3
@@ -211,7 +211,7 @@ public class ArrayDSA {
     /**
      * Moves all zeros in an array to the end.
      *
-     * @param arr The input array to modify.
+     * @param  arr The input array to modify.
      *            <p>
      *            Example:
      *            Input: [0, 1, 0, 3, 12]
@@ -238,10 +238,10 @@ public class ArrayDSA {
     /**
      * Finds the union of two sorted arrays.
      *
-     * @param arr1 The first input array.
-     * @param arr2 The second input array.
-     * @param n    The length of the first array.
-     * @param m    The length of the second array.
+     * @param  arr1 The first input array.
+     * @param  arr2 The second input array.
+     * @param  n    The length of the first array.
+     * @param  m    The length of the second array.
      * @return The union of the two arrays.
      * <p>
      * Example:
@@ -291,10 +291,10 @@ public class ArrayDSA {
     /**
      * Finds the union of two unsorted arrays.
      *
-     * @param arr1 The first input array.
-     * @param arr2 The second input array.
-     * @param n    The length of the first array.
-     * @param m    The length of the second array.
+     * @param  arr1 The first input array.
+     * @param  arr2 The second input array.
+     * @param  n    The length of the first array.
+     * @param  m    The length of the second array.
      * @return The union of the two arrays.
      * <p>
      * Example:
@@ -328,10 +328,10 @@ public class ArrayDSA {
     /**
      * Finds the intersection of two arrays.
      *
-     * @param arr1 The first input array.
-     * @param arr2 The second input array.
-     * @param n    The length of the first array.
-     * @param m    The length of the second array.
+     * @param  arr1 The first input array.
+     * @param  arr2 The second input array.
+     * @param  n    The length of the first array.
+     * @param  m    The length of the second array.
      * @return The intersection of the two arrays.
      * <p>
      * Example:
@@ -368,7 +368,7 @@ public class ArrayDSA {
     /**
      * Finds the missing number in an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The missing number.
      * <p>
      * Example:
@@ -400,7 +400,7 @@ public class ArrayDSA {
     /**
      * Finds the missing number in an array in an optimized way.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The missing number.
      * <p>
      * Example:
@@ -428,7 +428,7 @@ public class ArrayDSA {
     /**
      * Finds the maximum number of consecutive ones in an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The maximum number of consecutive ones.
      * <p>
      * Example:
@@ -454,7 +454,7 @@ public class ArrayDSA {
     /**
      * Finds the single element in an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The single element.
      * <p>
      * Example:
@@ -485,8 +485,8 @@ public class ArrayDSA {
     /**
      * Finds the length of the longest subarray with sum equal to K using brute force.
      *
-     * @param arr The input array.
-     * @param K   The target sum.
+     * @param  arr The input array.
+     * @param  K   The target sum.
      * @return The length of the longest subarray with sum equal to K.
      */
     public int longestSubArrayWithSumKBruteForce(int[] arr, int K) {
@@ -520,8 +520,8 @@ public class ArrayDSA {
     /**
      * Finds the length of the longest subarray with sum equal to K using two pointers.
      *
-     * @param arr The input array.
-     * @param K   The target sum.
+     * @param  arr The input array.
+     * @param  K   The target sum.
      * @return The length of the longest subarray with sum equal to K.
      */
     public int longestSubArrayWithSumKTwoPointer(int[] arr, int K) {
@@ -553,8 +553,8 @@ public class ArrayDSA {
     /**
      * Checks if there is a continuous subarray with sum equal to a multiple of K.
      *
-     * @param arr The input array.
-     * @param K   The target multiple.
+     * @param  arr The input array.
+     * @param  K   The target multiple.
      * @return true if there is a continuous subarray with sum equal to a multiple of K, false otherwise.
      */
     public boolean continuousGoodSubArrayWithSumK(int[] arr, int K) {
@@ -588,8 +588,8 @@ public class ArrayDSA {
     /**
      * Finds the length of the smallest subarray with sum equal to K using two pointers.
      *
-     * @param arr The input array.
-     * @param K   The target sum.
+     * @param  arr The input array.
+     * @param  K   The target sum.
      * @return The length of the smallest subarray with sum equal to K.
      */
     public int minSubArrayWithSumKTwoPointer(int[] arr, int K) {
@@ -618,8 +618,8 @@ public class ArrayDSA {
     /**
      * Finds two numbers in an array that add up to a target sum using two pointers.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return An array of two indices whose elements add up to the target sum.
      */
     public int[] findTwoSum(int[] arr, int target) {
@@ -648,8 +648,8 @@ public class ArrayDSA {
     /**
      * Finds two numbers in an array that add up to a target sum using a HashMap.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return An array of two indices whose elements add up to the target sum.
      */
     public int[] findTwoSumHashMap(int[] arr, int target) {
@@ -675,7 +675,7 @@ public class ArrayDSA {
     /**
      * Sorts an array of colors represented by 0s, 1s, and 2s.
      *
-     * @param nums The input array.
+     * @param  nums The input array.
      */
     public void sortColors(int[] nums) {
         int red = 0, white = 0, blue = 0;
@@ -712,7 +712,7 @@ public class ArrayDSA {
     /**
      * Sorts an array of colors represented by 0s, 1s, and 2s using the Dutch National Flag algorithm.
      *
-     * @param nums The input array.
+     * @param  nums The input array.
      */
     public void sortColorsDutchFlagAlgo(int[] nums) {
         int low = 0, mid = 0, high = nums.length - 1;
@@ -738,7 +738,7 @@ public class ArrayDSA {
     /**
      * Finds the majority element in an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The majority element.
      */
     public int majorityElement(int[] arr) {
@@ -767,7 +767,7 @@ public class ArrayDSA {
     /**
      * Finds the majority element in an array using Moore's Voting Algorithm.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The majority element.
      */
     public int majorityElementMooreVoting(int[] arr) {
@@ -803,7 +803,7 @@ public class ArrayDSA {
     /**
      * Finds the maximum sum of a subarray in an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The maximum sum of a subarray.
      */
     public int maxSubArraySum(int[] arr) {
@@ -839,7 +839,7 @@ public class ArrayDSA {
     /**
      * Rearranges an array so that positive and negative numbers alternate.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The rearranged array.
      */
     public int[] rearrangeArray(int[] arr) {
@@ -864,7 +864,7 @@ public class ArrayDSA {
     /**
      * Finds the length of the longest sequence of consecutive elements in an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The length of the longest sequence of consecutive elements.
      */
     public int longestConsecutiveElements(int[] arr) {
@@ -888,7 +888,7 @@ public class ArrayDSA {
     /**
      * Finds the length of the longest sequence of consecutive elements in an array using a HashSet.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The length of the longest sequence of consecutive elements.
      */
     public int longestConsecutiveElementsHashSet(int[] arr) {
@@ -918,7 +918,7 @@ public class ArrayDSA {
     /**
      * Finds the leaders in an array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return An array of leaders.
      */
     public int[] findLeaders(int[] arr) {
@@ -945,8 +945,8 @@ public class ArrayDSA {
      * This method counts the total number of sub-arrays in a given array whose sum equals to a given integer k.
      * It uses a HashMap to store the running sum of elements and their count.
      *
-     * @param arr The input array.
-     * @param k   The target sum.
+     * @param  arr The input array.
+     * @param  k   The target sum.
      * @return The total number of sub-arrays whose sum equals to k.
      * <p>
      * Example:
@@ -991,7 +991,7 @@ public class ArrayDSA {
      * A majority element is an element that appears more than n/3 times in the array, where n is the length of the
      * array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return An array of all the majority elements.
      * <p>
      * Example:
@@ -1034,7 +1034,7 @@ public class ArrayDSA {
      * A majority element is an element that appears more than n/3 times in the array, where n is the length of the
      * array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return An array of all the majority elements.
      * <p>
      * Example:
@@ -1098,7 +1098,7 @@ public class ArrayDSA {
      * This method finds all the triplets in a given array whose sum equals to zero.
      * It uses a HashSet to store the triplets and avoid duplicates.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return A list of all the triplets whose sum equals to zero.
      * <p>
      * Example:
@@ -1131,7 +1131,7 @@ public class ArrayDSA {
      * This method finds all the triplets in a given array whose sum equals to zero.
      * It sorts the array first and then uses three pointers to find the triplets.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return A list of all the triplets whose sum equals to zero.
      * <p>
      * Example:
@@ -1181,8 +1181,8 @@ public class ArrayDSA {
      * This method finds all the quadruplets in a given array whose sum equals to a target.
      * It sorts the array first and then uses four pointers to find the quadruplets.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return A list of all the quadruplets whose sum equals to the target.
      * <p>
      * Example:
@@ -1238,7 +1238,7 @@ public class ArrayDSA {
      * This method finds the maximum length of a sub-array in a given array whose sum equals to zero.
      * It uses a HashMap to store the running sum and its index.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The maximum length of a sub-array whose sum equals to zero.
      * <p>
      * Example:
@@ -1273,8 +1273,8 @@ public class ArrayDSA {
      * It compares the last element of the first array with the first element of the second array and swaps them if
      * necessary.
      *
-     * @param arr1 The first input array.
-     * @param arr2 The second input array.
+     * @param  arr1 The first input array.
+     * @param  arr2 The second input array.
      *             <p>
      *             Example:
      *             Input: arr1 = [1, 5, 9], arr2 = [2, 4, 6]
@@ -1305,7 +1305,7 @@ public class ArrayDSA {
      * This method merges all the overlapping intervals in a given array of intervals.
      * It sorts the array first and then merges the overlapping intervals.
      *
-     * @param arr The input array of intervals.
+     * @param  arr The input array of intervals.
      * @return A list of merged intervals.
      * <p>
      * Example:
@@ -1340,7 +1340,7 @@ public class ArrayDSA {
      * It uses the absolute values of the elements as indices and marks the corresponding elements in the array as
      * negative.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return An array of two integers where the first integer is the repeating number and the second integer is the
      * missing number.
      * <p>
@@ -1378,7 +1378,7 @@ public class ArrayDSA {
      * This method finds the maximum product of a sub-array in a given array.
      * It uses a brute force approach by checking all possible sub-arrays.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The maximum product of a sub-array.
      * <p>
      * Example:
@@ -1405,7 +1405,7 @@ public class ArrayDSA {
      * This method finds the maximum product of a sub-array in a given array.
      * It uses a two-pass approach by calculating the product from left to right and from right to left.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The maximum product of a sub-array.
      * <p>
      * Example:
@@ -1440,7 +1440,7 @@ public class ArrayDSA {
      * An inversion is a pair of indices (i, j) such that i < j and arr[i] > arr[j].
      * It uses a modified version of merge sort to count the inversions.
      *
-     * @param givenArray The input array.
+     * @param  givenArray The input array.
      * @return The number of inversions in the array.
      * <p>
      * Example:
@@ -1503,7 +1503,7 @@ public class ArrayDSA {
      * A reverse pair is a pair of indices (i, j) such that i < j and arr[i] > 2 * arr[j].
      * It uses a modified version of merge sort to count the reverse pairs.
      *
-     * @param givenArray The input array.
+     * @param  givenArray The input array.
      * @return The number of reverse pairs in the array.
      * <p>
      * Example:
@@ -1574,9 +1574,9 @@ public class ArrayDSA {
     /**
      * This method sets the entire row and column to zero if an element in a given matrix is zero.
      *
-     * @param givenMatrix The input matrix.
-     * @param rowLen      The number of rows in the matrix.
-     * @param colLen      The number of columns in the matrix.
+     * @param  givenMatrix The input matrix.
+     * @param  rowLen      The number of rows in the matrix.
+     * @param  colLen      The number of columns in the matrix.
      *                    <p>
      *                    Example:
      *                    Input: givenMatrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
@@ -1609,7 +1609,7 @@ public class ArrayDSA {
     /**
      * This method rotates a given matrix by 90 degrees clockwise.
      *
-     * @param givenMatrix The input matrix.
+     * @param  givenMatrix The input matrix.
      *                    <p>
      *                    Example:
      *                    Input: givenMatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -1641,7 +1641,7 @@ public class ArrayDSA {
      * It defines the top, bottom, left, and right boundaries of the matrix and iterates over the elements in a
      * spiral order.
      *
-     * @param givenMatrix The input matrix.
+     * @param  givenMatrix The input matrix.
      * @return A list of elements in the matrix in a spiral order.
      * <p>
      * Example:
@@ -1709,7 +1709,7 @@ public class ArrayDSA {
      * This method generates the Pascal's triangle up to a given row.
      * It uses two arrays to store the current row and the previous row of the triangle.
      *
-     * @param row The number of rows to generate.
+     * @param  row The number of rows to generate.
      * @return A list of lists representing the Pascal's triangle.
      * <p>
      * Example:
@@ -1745,7 +1745,7 @@ public class ArrayDSA {
      * This method rearranges a given array to its next lexicographically greater permutation.
      * If the array is already the greatest permutation, it rearranges the array to the smallest permutation.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The array rearranged to its next permutation.
      * <p>
      * Example:
@@ -1787,7 +1787,7 @@ public class ArrayDSA {
     /**
      * This method prints a given array.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      */
     private void printArray(int[] arr) {
         for (int num : arr) {
@@ -1799,7 +1799,7 @@ public class ArrayDSA {
     /**
      * This method prints a given matrix.
      *
-     * @param matrix The input matrix.
+     * @param  matrix The input matrix.
      */
     private void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
@@ -1816,7 +1816,7 @@ public class ArrayDSA {
      * negative.
      * Note: This method may not work for all cases, especially when the array contains majority elements.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      *            <p>
      *            Example:
      *            Input: arr = [3, 1, 3]
@@ -1848,8 +1848,8 @@ public class ArrayDSA {
      * It uses a HashMap to store the running sum of elements and their count.
      * Note: This method may not work for all cases, especially when the array contains only positive numbers and zero.
      *
-     * @param arr The input array.
-     * @param K   The target sum.
+     * @param  arr The input array.
+     * @param  K   The target sum.
      * @return The total number of sub-arrays whose sum equals to K.
      * <p>
      * Example:
@@ -1890,8 +1890,8 @@ public class ArrayDSA {
      * It uses two pointers to keep track of the running sum of elements.
      * Note: This method may not work for all cases, especially when the array contains negative numbers.
      *
-     * @param arr The input array.
-     * @param K   The target sum.
+     * @param  arr The input array.
+     * @param  K   The target sum.
      * @return The total number of sub-arrays whose sum equals to K.
      * <p>
      * Example:

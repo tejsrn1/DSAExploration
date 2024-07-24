@@ -77,8 +77,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * <p>
      * This method is similar to the Knapsack problem, which is basically any container problem where things need to fit based on a condition and requirement for max/min.
      *
-     * @param greedForCookie An array representing the greed level of each child for cookies.
-     * @param sizeOfCookie   An array representing the size of each cookie.
+     * @param  greedForCookie An array representing the greed level of each child for cookies.
+     * @param  sizeOfCookie   An array representing the size of each cookie.
      * @return The maximum number of children that can be contented.
      */
     public int findContentChildren_aka_AssignCookies(int[] greedForCookie, int[] sizeOfCookie) {
@@ -106,10 +106,10 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method calculates the maximum total number of units that can be put on the truck.
      * It uses a greedy approach to pick the box that has the maximum number of items.
      *
-     * @param boxTypes  2D array where each element is an array of two integers:
+     * @param  boxTypes  2D array where each element is an array of two integers:
      *                  numberOfBoxes (the number of boxes of type i) and
      *                  numberOfUnitsPerBox (number of units in each box of the type i)
-     * @param truckSize The capacity of the truck
+     * @param  truckSize The capacity of the truck
      * @return The maximum total number of units that can be put on the truck
      */
     public int Fractional_Knapsack_Better(int[][] boxTypes, int truckSize) {
@@ -135,8 +135,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method calculates the minimum number of coins needed to reach a target value.
      * It uses a greedy approach to pick the largest coin that can divide the given value.
      *
-     * @param coins       Array of available coins
-     * @param targetValue The target value
+     * @param  coins       Array of available coins
+     * @param  targetValue The target value
      * @return List of coins used to reach the target value
      */
     public List<Integer> minCoins(int[] coins, int targetValue) {
@@ -160,7 +160,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method checks if it is possible to give change for each transaction.
      * It uses a greedy approach to give change for 10 and 20 dollar bills.
      *
-     * @param bills Array of bills
+     * @param  bills Array of bills
      * @return true if it is possible to give change for each transaction, false otherwise
      */
     public boolean lemonadeChange(int[] bills) {
@@ -198,7 +198,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method checks if a string is valid.
      * It uses a greedy approach to balance out the left and star characters.
      *
-     * @param inpStr The input string
+     * @param  inpStr The input string
      * @return true if the string is valid, false otherwise
      */
     public boolean checkValidString(String inpStr) {
@@ -239,8 +239,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
     /**
      * This method calculates the maximum number of meetings that can be attended.
      *
-     * @param start  Array of start times
-     * @param finish Array of finish times
+     * @param  start  Array of start times
+     * @param  finish Array of finish times
      * @return List of meetings that can be attended
      */
     public List<Integer> maxMeeting(int[] start, int[] finish) {
@@ -261,7 +261,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * If it is, the current meeting can be held after the last meeting, so it is added to the result list.
      * The position of the meeting is also adjusted by adding 1 because the original position was 0-indexed.
      *
-     * @param meetings A list of Meeting objects representing the meetings to be scheduled.
+     * @param  meetings A list of Meeting objects representing the meetings to be scheduled.
      * @return A list of integers representing the 1-indexed positions of the meetings that can be held.
      */
     private List<Integer> maxMeeting(List<Meeting> meetings) {
@@ -291,7 +291,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * If it is, the person cannot attend all the meetings, so it returns false.
      * If the person can attend all the meetings, it returns true.
      *
-     * @param intervals A 2D array where each row represents a meeting, the first element of the row is the start time of the meeting, and the second element is the end time.
+     * @param  intervals A 2D array where each row represents a meeting, the first element of the row is the start time of the meeting, and the second element is the end time.
      * @return A boolean value indicating whether the person can attend all the meetings.
      */
     public boolean canAttendMeetings(int[][] intervals) {
@@ -320,7 +320,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * If it is not, it returns false.
      * If the last index is reachable, it returns true.
      *
-     * @param nums An array of non-negative integers representing the maximum jump length at each index.
+     * @param  nums An array of non-negative integers representing the maximum jump length at each index.
      * @return A boolean value indicating whether the last index is reachable.
      */
     public boolean canJump(int[] nums) {
@@ -343,7 +343,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * It also counts the number of jumps made.
      * If the current index is the end of the previous jump, it increments the jump count and updates the end of the current jump.
      *
-     * @param nums An array of non-negative integers representing the maximum jump length at each index.
+     * @param  nums An array of non-negative integers representing the maximum jump length at each index.
      * @return An integer representing the minimum number of jumps required to reach the last index.
      */
     public int minJump_UnderStable(int[] nums) {
@@ -368,8 +368,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * It sorts the arrival and departure times independently because we don't care which train comes and goes,
      * instead we care about what is taking place between two time starts/ends or in this case platform requirements for trains coming and going.
      *
-     * @param arr Array of train arrival times
-     * @param dep Array of train departure times
+     * @param  arr Array of train arrival times
+     * @param  dep Array of train departure times
      * @return The minimum number of platforms required
      */
     public int min_platform_required(int[] arr, int[] dep) {
@@ -408,7 +408,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method schedules jobs to maximize profit. It uses a greedy approach: pick max profit jobs first and mark job can be done on its deadline
      * and then pick second max profit keep marking job and once all fit done.
      *
-     * @param jobArr Array of jobs with their deadlines and profits
+     * @param  jobArr Array of jobs with their deadlines and profits
      * @return An array where the first element is the total number of jobs done and the second element is the total profit
      */
     public int[] JobScheduling(Job[] jobArr) {
@@ -456,8 +456,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method is used to insert a new interval into an existing list of intervals and then merge all overlapping intervals.
      * The method uses a greedy approach to solve the problem.
      *
-     * @param intervals   An array of intervals.
-     * @param newInterval The new interval to be inserted.
+     * @param  intervals   An array of intervals.
+     * @param  newInterval The new interval to be inserted.
      * @return The merged intervals after the insertion of the new interval.
      */
     public int[][] insert_interval(int[][] intervals, int[] newInterval) {
@@ -489,8 +489,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
     /**
      * This method is used to merge two intervals.
      *
-     * @param a The first interval.
-     * @param b The second interval.
+     * @param  a The first interval.
+     * @param  b The second interval.
      * @return The merged interval.
      */
     private int[] mergeTwoIntervals(int[] a, int[] b) {
@@ -502,8 +502,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
     /**
      * This method is used to check if two intervals overlap.
      *
-     * @param a The first interval.
-     * @param b The second interval.
+     * @param  a The first interval.
+     * @param  b The second interval.
      * @return True if the intervals overlap, false otherwise.
      */
     private boolean IsIntervalOverLap(int[] a, int[] b) {
@@ -513,8 +513,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
     /**
      * This method is used to add a new interval to an existing list of intervals.
      *
-     * @param intervals   The existing list of intervals.
-     * @param newInterval The new interval to be added.
+     * @param  intervals   The existing list of intervals.
+     * @param  newInterval The new interval to be added.
      * @return The updated list of intervals.
      */
     private int[][] addToExistingIntervalList(int[][] intervals, int[] newInterval) {
@@ -545,7 +545,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method merges all overlapping intervals.
      * It uses a greedy approach to merge the intervals that are already inserted.
      *
-     * @param intervals 2D array of intervals
+     * @param  intervals 2D array of intervals
      * @return 2D array of merged intervals
      */
     public int[][] merge_intervals(int[][] intervals) {
@@ -576,7 +576,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method calculates the minimum number of non-overlapping intervals.
      * It uses a greedy approach to remove the minimum number of intervals so that the rest of the intervals are non-overlapping.
      *
-     * @param intervals 2D array of intervals
+     * @param  intervals 2D array of intervals
      * @return The minimum number of intervals to remove to make the rest of the intervals non-overlapping
      */
     public int non_overlapping_interval(int[][] intervals) {
@@ -607,7 +607,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method calculates the minimum number of candies to distribute to children.
      * It uses a greedy approach to give each child a number of candies based on their rating.
      *
-     * @param ratings Array of children's ratings
+     * @param  ratings Array of children's ratings
      * @return The minimum number of candies required
      */
     public int candy_distribution(int[] ratings) {
@@ -646,9 +646,9 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * If it is, it adds the profit of the current job to the maximum profit so far and updates the end time.
      * Finally, it returns the maximum profit.
      *
-     * @param startTime An array of integers representing the start time of each job.
-     * @param endTime   An array of integers representing the end time of each job.
-     * @param profit    An array of integers representing the profit of each job.
+     * @param  startTime An array of integers representing the start time of each job.
+     * @param  endTime   An array of integers representing the end time of each job.
+     * @param  profit    An array of integers representing the profit of each job.
      * @return An integer representing the maximum profit.
      */
     public int jobScheduling_maxProfit_PQ(int[] startTime, int[] endTime, int[] profit) {
@@ -673,7 +673,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * If it is, it adds the profit of the current job to the maximum profit so far and updates the end time.
      * Finally, it returns the maximum profit.
      *
-     * @param allJobs A list of lists, where each list contains the start time, end time, and profit of a job.
+     * @param  allJobs A list of lists, where each list contains the start time, end time, and profit of a job.
      * @return An integer representing the maximum profit.
      */
     int jobScheduling_maxProfit_PQ(List<List<Integer>> allJobs) {
@@ -713,8 +713,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * It also trims leading zeros from the result.
      * If the result is empty, it returns "0".
      *
-     * @param nums A string representing the input number.
-     * @param k    An integer representing the number of digits to remove.
+     * @param  nums A string representing the input number.
+     * @param  k    An integer representing the number of digits to remove.
      * @return A string representing the smallest possible number after removing k digits.
      */
     public String remove_K_digits(String nums, int k) {
@@ -751,7 +751,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method checks if a string is valid based on the constraints of parentheses and stars.
      * It works for the majority of use cases but not all, as the constraint is that open parentheses come first then close.
      *
-     * @param inpStr The input string to check
+     * @param  inpStr The input string to check
      * @return True if the string is valid, false otherwise
      */
     public boolean checkValidString_WorksForMajorityUseCases(String inpStr) {
@@ -782,8 +782,8 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method calculates the maximum total number of units that can be put on the truck using a greedy approach.
      * It picks the box(s) that has the max items and starts from there.
      *
-     * @param boxTypes  2D array where each element is an array of two integers: [numberOfBoxes, numberOfUnitsPerBox]
-     * @param truckSize The size of the truck
+     * @param  boxTypes  2D array where each element is an array of two integers: [numberOfBoxes, numberOfUnitsPerBox]
+     * @param  truckSize The size of the truck
      * @return The maximum total number of units that can be put on the truck
      */
     public int Fractional_Knapsack_ON2(int[][] boxTypes, int truckSize) {
@@ -818,7 +818,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
     /**
      * This method finds the box type that has the maximum unit.
      *
-     * @param boxTypes 2D array where each element is an array of two integers: [numberOfBoxes, numberOfUnitsPerBox]
+     * @param  boxTypes 2D array where each element is an array of two integers: [numberOfBoxes, numberOfUnitsPerBox]
      * @return The index of the box type that has the maximum unit
      */
     private int findBoxTypeHasMaxUnit(int[][] boxTypes) {
@@ -837,7 +837,7 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method calculates the minimum number of jumps to reach the end of the array.
      * It uses a greedy approach to jump to the farthest reachable index.
      *
-     * @param nums Array of maximum jump lengths at each index
+     * @param  nums Array of maximum jump lengths at each index
      * @return The minimum number of jumps to reach the end of the array
      */
     public int minJump(int[] nums) {
@@ -872,9 +872,9 @@ Let's try the greedy method. First, we find the profit per weight as shown above
      * This method calculates the maximum profit from scheduling jobs.
      * It uses a greedy approach to schedule the jobs with non-overlapping intervals.
      *
-     * @param startTime Array of start times
-     * @param endTime   Array of end times
-     * @param profit    Array of profits
+     * @param  startTime Array of start times
+     * @param  endTime   Array of end times
+     * @param  profit    Array of profits
      * @return The maximum profit from scheduling jobs
      */
     public int jobScheduling_maxProfit(int[] startTime, int[] endTime, int[] profit) {

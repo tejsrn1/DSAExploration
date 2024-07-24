@@ -11,8 +11,8 @@ public class HeapsDSA {
     /**
      * This method finds the kth largest element in an array using a max heap.
      *
-     * @param arr The input array.
-     * @param k   The index to find.
+     * @param  arr The input array.
+     * @param  k   The index to find.
      * @return The kth largest element in the array.
      * <p>
      * Example:
@@ -43,8 +43,8 @@ public class HeapsDSA {
     /**
      * This method finds the kth smallest element in an array using a min heap.
      *
-     * @param arr The input array.
-     * @param k   The index to find.
+     * @param  arr The input array.
+     * @param  k   The index to find.
      * @return The kth smallest element in the array.
      * <p>
      * Example:
@@ -76,7 +76,7 @@ public class HeapsDSA {
      * This method assigns a rank to each unique element in an array.
      * The rank is the position the element would have if the array were sorted.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The array of ranks.
      * <p>
      * Example:
@@ -117,8 +117,8 @@ public class HeapsDSA {
     /**
      * This method returns the k most frequent elements in an array.
      *
-     * @param arr The input array.
-     * @param k   The number of elements to return.
+     * @param  arr The input array.
+     * @param  k   The number of elements to return.
      * @return The k most frequent elements in the array.
      * <p>
      * Example:
@@ -161,8 +161,8 @@ public class HeapsDSA {
     /**
      * This method calculates the least interval time to finish all tasks.
      *
-     * @param task    Array of tasks represented as characters.
-     * @param waiting The waiting time for each task.
+     * @param  task    Array of tasks represented as characters.
+     * @param  waiting The waiting time for each task.
      * @return The minimum total time to finish all tasks.
      * <p>
      * Example:
@@ -193,7 +193,7 @@ public class HeapsDSA {
     /**
      * This method calculates the median of an array of integers.
      *
-     * @param arr Array of integers.
+     * @param  arr Array of integers.
      *            <p>
      *            Example:
      *            Input: arr = [41, 35, 62, 5, 97, 108]
@@ -234,14 +234,14 @@ public class HeapsDSA {
     /**
      * This method checks if it's possible to rearrange the deck such that each group of size groupSize is consecutive.
      *
-     * @param arr       Array of integers representing the deck of cards.
-     * @param groupSize The size of each group of cards.
+     * @param  arr       Array of integers representing the deck of cards.
+     * @param  groupSize The size of each group of cards.
      * @return True if it's possible to rearrange the deck, false otherwise.
      * <p>
      * Example:
      * Input: arr = [1,2,3,6,2,3,4,7,8], groupSize = 3
      * Output: True
-     * Explanation: The deck can be rearranged as [1,2,3],[2,3,4],[6,7,8].
+     * Explanation : The deck can be rearranged as [1,2,3],[2,3,4],[6,7,8].
      */
     public boolean HandOfStraights(int[] arr, int groupSize) {
         if (arr.length % groupSize != 0) return false;
@@ -269,7 +269,7 @@ public class HeapsDSA {
      * This method assigns a rank to each unique element in an array.
      * The rank is the position the element would have if the array were sorted.
      *
-     * @param arr The input array.
+     * @param  arr The input array.
      * @return The array of ranks.
      * <p>
      * Example:

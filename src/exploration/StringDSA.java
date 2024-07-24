@@ -8,7 +8,7 @@ public class StringDSA {
     /**
      * This method removes the outermost parentheses of a valid string of parentheses.
      *
-     * @param inStr The input string of parentheses.
+     * @param  inStr The input string of parentheses.
      * @return The resulting string after removing the outermost parentheses.
      * <p>
      * Example:
@@ -38,7 +38,7 @@ public class StringDSA {
     /**
      * This method reverses the words in a given string.
      *
-     * @param inputStr The input string.
+     * @param  inputStr The input string.
      * @return The resulting string after reversing the words.
      * <p>
      * Example:
@@ -92,7 +92,7 @@ public class StringDSA {
     /**
      * This method finds the largest odd number in a string.
      *
-     * @param inStr The input string.
+     * @param  inStr The input string.
      * @return The largest odd number in the string. If no odd number is found, returns an empty string.
      * <p>
      * Example:
@@ -113,7 +113,7 @@ public class StringDSA {
     /**
      * This method finds the longest common prefix among an array of strings.
      *
-     * @param inpStrArray The input array of strings.
+     * @param  inpStrArray The input array of strings.
      * @return The longest common prefix. If no common prefix is found, returns an empty string.
      * <p>
      * Example:
@@ -143,8 +143,8 @@ public class StringDSA {
     /**
      * This method checks if two strings are isomorphic.
      *
-     * @param str1 The first input string.
-     * @param str2 The second input string.
+     * @param  str1 The first input string.
+     * @param  str2 The second input string.
      * @return True if the two strings are isomorphic, false otherwise.
      * <p>
      * Example:
@@ -180,8 +180,8 @@ public class StringDSA {
     /**
      * This method checks if a string can be rotated to match another string.
      *
-     * @param input The original string.
-     * @param goal  The string to match.
+     * @param  input The original string.
+     * @param  goal  The string to match.
      * @return True if the original string can be rotated to match the goal string, false otherwise.
      * <p>
      * Example:
@@ -217,8 +217,8 @@ public class StringDSA {
      * Anagrams are words or phrases formed by rearranging the letters of a different word or phrase,
      * typically using all the original letters exactly once.
      *
-     * @param str1 The first string
-     * @param str2 The second string
+     * @param  str1 The first string
+     * @param  str2 The second string
      * @return true if the two strings are anagrams of each other, false otherwise.
      * <p>
      * Example:
@@ -249,7 +249,7 @@ public class StringDSA {
     /**
      * This method sorts the characters in a string based on their frequency.
      *
-     * @param inpStr The input string
+     * @param  inpStr The input string
      * @return The sorted string
      * <p>
      * Example:
@@ -283,7 +283,7 @@ public class StringDSA {
     /**
      * This method calculates the maximum depth of valid parentheses in a string.
      *
-     * @param inStr The input string
+     * @param  inStr The input string
      * @return The maximum depth of valid parentheses
      * <p>
      * Example:
@@ -310,7 +310,7 @@ public class StringDSA {
     /**
      * This method converts a Roman numeral to an integer.
      *
-     * @param inStr The input string
+     * @param  inStr The input string
      * @return The integer value of the Roman numeral
      * <p>
      * Example:
@@ -349,7 +349,7 @@ public class StringDSA {
     /**
      * This method calculates the number of substrings in a string.
      *
-     * @param inStr The input string
+     * @param  inStr The input string
      * @return The number of substrings
      * <p>
      * Example:
@@ -367,8 +367,8 @@ public class StringDSA {
      * This method counts the number of substrings with K distinct characters in a given string.
      * It uses a sliding window approach to generate all substrings and keeps track of distinct characters using a boolean array.
      *
-     * @param inStr The input string.
-     * @param K     The number of distinct characters.
+     * @param  inStr The input string.
+     * @param  K     The number of distinct characters.
      * @return The total number of substrings with K distinct characters.
      * <p>
      * Example:
@@ -404,7 +404,7 @@ public class StringDSA {
      * This method counts the total number of homogenous substrings in a given string.
      * A homogenous substring is a substring with all the same characters.
      *
-     * @param inStr The input string.
+     * @param  inStr The input string.
      * @return The total number of homogenous substrings modulo 1e9 + 7.
      * <p>
      * Example:
@@ -441,7 +441,7 @@ public class StringDSA {
      * This method finds the longest palindromic substring in a given string.
      * It uses an expand from center approach to check for palindromes.
      *
-     * @param inStr The input string.
+     * @param  inStr The input string.
      * @return The longest palindromic substring.
      * <p>
      * Example:
@@ -495,9 +495,9 @@ public class StringDSA {
     /**
      * This helper method expands a substring from the center and checks if it's a palindrome.
      *
-     * @param input The input string.
-     * @param left  The left index.
-     * @param right The right index.
+     * @param  input The input string.
+     * @param  left  The left index.
+     * @param  right The right index.
      * @return The palindromic substring.
      */
     private String expandFromCenter(String input, int left, int right) {
@@ -512,7 +512,7 @@ public class StringDSA {
      * This method calculates the sum of the beauty of all substrings of a string.
      * The beauty of a substring is the difference between the maximum and minimum frequency of characters.
      *
-     * @param inStr The input string.
+     * @param  inStr The input string.
      * @return The sum of the beauty of all substrings.
      * <p>
      * Example:
@@ -553,7 +553,7 @@ public class StringDSA {
     /**
      * This method calculates the minimum number of parentheses to be added to make the input string valid.
      *
-     * @param inStr The input string of parentheses.
+     * @param  inStr The input string of parentheses.
      * @return The minimum number of parentheses to be added.
      * <p>
      * Example:
@@ -581,7 +581,7 @@ public class StringDSA {
     /**
      * This method generates the nth term of the count-and-say sequence.
      *
-     * @param n The input number.
+     * @param  n The input number.
      * @return The nth term of the count-and-say sequence.
      * <p>
      * Example:
@@ -619,7 +619,7 @@ public class StringDSA {
     /**
      * This method finds the longest prefix of a string.
      *
-     * @param inpStr The input string.
+     * @param  inpStr The input string.
      * @return The longest prefix of the string.
      * <p>
      * Example:
@@ -658,8 +658,8 @@ public class StringDSA {
     /**
      * This method finds the first occurrence of a needle in a haystack using the brute force sliding window algorithm.
      *
-     * @param haystack The string in which to search.
-     * @param needle   The string to search for.
+     * @param  haystack The string in which to search.
+     * @param  needle   The string to search for.
      * @return The index of the first occurrence of the needle in the haystack. If the needle is not found, returns -1.
      * <p>
      * Example:
@@ -692,8 +692,8 @@ public class StringDSA {
     /**
      * This method finds the first occurrence of a needle in a haystack using the KMP (Knuth Morris Pratt) algorithm.
      *
-     * @param haystack The string in which to search.
-     * @param needle   The string to search for.
+     * @param  haystack The string in which to search.
+     * @param  needle   The string to search for.
      * @return The index of the first occurrence of the needle in the haystack. If the needle is not found, returns -1.
      * <p>
      * Example:
@@ -734,7 +734,7 @@ public class StringDSA {
      * This method calculates the Longest Proper Prefix which is also suffix (LPS) array for a string.
      * The LPS array is used to keep track of the longest suffix of the substring ending at position i that matches a prefix of the original string.
      *
-     * @param inputStr The input string
+     * @param  inputStr The input string
      * @return The LPS array
      * <p>
      * Example:
@@ -768,8 +768,8 @@ public class StringDSA {
     /**
      * This method checks if the string 'needle' can be obtained by repeating the string 'haystack' one or more times.
      *
-     * @param haystack The string to be repeated
-     * @param needle   The string to be obtained
+     * @param  haystack The string to be repeated
+     * @param  needle   The string to be obtained
      * @return The minimum number of times 'haystack' needs to be repeated. If 'needle' cannot be obtained from 'haystack', return -1.
      * <p>
      * Example:
@@ -807,7 +807,7 @@ public class StringDSA {
     /**
      * This method finds the shortest palindrome by adding characters in front of the original string.
      *
-     * @param inpStr The input string
+     * @param  inpStr The input string
      * @return The shortest palindrome
      * <p>
      * Example:
@@ -832,8 +832,8 @@ public class StringDSA {
      * This method calculates the Longest Proper Prefix which is also suffix (LPS) array for a string.
      * The LPS array is used to keep track of the longest suffix of the substring ending at position i that matches a prefix of the original string.
      *
-     * @param inputStr     The input string
-     * @param orgStringLen The length of the original string
+     * @param  inputStr     The input string
+     * @param  orgStringLen The length of the original string
      * @return The last element of the LPS array
      * <p>
      * Example:
@@ -872,7 +872,7 @@ public class StringDSA {
      * This method converts a string to an integer (atoi).
      * It handles spaces before the digit or sign, stops when it hits a space in between, and handles overflow and underflow.
      *
-     * @param inpStr The input string.
+     * @param  inpStr The input string.
      * @return The converted integer.
      * <p>
      * Example:
@@ -928,8 +928,8 @@ public class StringDSA {
      * <p>
      * Note: This method does not handle all use cases. For complex cases like "bbbacddceeb" vs "ceebbbbacdd", use a different method.
      *
-     * @param input The input string.
-     * @param goal  The goal string.
+     * @param  input The input string.
+     * @param  goal  The goal string.
      * @return True if the input can be rotated to match the goal, false otherwise.
      * <p>
      * Example:
@@ -976,8 +976,8 @@ public class StringDSA {
     /**
      * This method finds the first occurrence of a needle in a haystack using the Rabin-Karp rolling hash algorithm.
      *
-     * @param haystack The string in which to search.
-     * @param needle   The string to search for.
+     * @param  haystack The string in which to search.
+     * @param  needle   The string to search for.
      * @return The index of the first occurrence of the needle in the haystack. If the needle is not found, returns -1.
      * <p>
      * Example:
@@ -1046,8 +1046,8 @@ public class StringDSA {
     /**
      * This method calculates the hash value for a given string.
      *
-     * @param inputStr      The input string.
-     * @param lenToConsider The length of the string to consider for the hash calculation.
+     * @param  inputStr      The input string.
+     * @param  lenToConsider The length of the string to consider for the hash calculation.
      * @return The calculated hash value.
      */
     private int calculateHashValue(String inputStr, int lenToConsider) {
@@ -1066,7 +1066,7 @@ public class StringDSA {
      * This method finds the shortest palindrome by prepending characters to the given string.
      * It uses the Rabin-Karp algorithm to compare substrings in constant time.
      *
-     * @param inpStr The input string.
+     * @param  inpStr The input string.
      * @return The shortest palindrome.
      * <p>
      * Example:
@@ -1112,7 +1112,7 @@ public class StringDSA {
      * This method is used to understand the Rabin-Karp algorithm.
      * It calculates the prefix and suffix hash values for each character in the string.
      *
-     * @param inpStr The input string.
+     * @param  inpStr The input string.
      */
     private void Just_RAbin_Algo_calc_Understanding(String inpStr) {
         final int base = 3;

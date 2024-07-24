@@ -6,7 +6,7 @@ public class MathsDSA {
     /**
      * This method counts the number of digits in an integer.
      *
-     * @param inputNumber The input integer.
+     * @param  inputNumber The input integer.
      * @return The number of digits in the integer.
      * <p>
      * Example:
@@ -25,7 +25,7 @@ public class MathsDSA {
     /**
      * This method reverses an integer.
      *
-     * @param inputNumber The input integer.
+     * @param  inputNumber The input integer.
      * @return The reversed integer. If the reversed integer exceeds the range of 32-bit signed integer, returns 0.
      * <p>
      * Example:
@@ -53,7 +53,7 @@ public class MathsDSA {
     /**
      * This method checks if an integer is a palindrome.
      *
-     * @param inputNumber The input integer.
+     * @param  inputNumber The input integer.
      * @return True if the integer is a palindrome, false otherwise.
      * <p>
      * Example:
@@ -74,8 +74,8 @@ public class MathsDSA {
     /**
      * This method calculates the greatest common divisor (GCD) of two integers.
      *
-     * @param inputNumber  The first input integer.
-     * @param inputNumber2 The second input integer.
+     * @param  inputNumber  The first input integer.
+     * @param  inputNumber2 The second input integer.
      * @return The GCD of the two integers.
      * <p>
      * Example:
@@ -98,7 +98,7 @@ public class MathsDSA {
     /**
      * This method checks if an integer is an Armstrong number.
      *
-     * @param inputNumber The input integer.
+     * @param  inputNumber The input integer.
      * @return True if the integer is an Armstrong number, false otherwise.
      * <p>
      * Example:
@@ -130,7 +130,7 @@ public class MathsDSA {
     /**
      * This method prints all the divisors of an integer.
      *
-     * @param inputNumber The input integer.
+     * @param  inputNumber The input integer.
      *                    <p>
      *                    Example:
      *                    Input: 36
@@ -151,7 +151,7 @@ public class MathsDSA {
     /**
      * This method checks if an integer is a prime number.
      *
-     * @param inputNumber The input integer.
+     * @param  inputNumber The input integer.
      * @return True if the integer is a prime number, false otherwise.
      * <p>
      * Example:

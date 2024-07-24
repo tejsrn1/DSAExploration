@@ -36,7 +36,7 @@ public class SLDWindowDSA {
      * This method finds the length of the longest substring without repeating characters.
      * It assumes that the input string contains only 128 ASCII characters.
      *
-     * @param inputString The string from which to find the longest substring without repeating characters.
+     * @param  inputString The string from which to find the longest substring without repeating characters.
      * @return The length of the longest substring without repeating characters.
      * <p>
      * Example:
@@ -75,8 +75,8 @@ public class SLDWindowDSA {
      * It uses a helper method to calculate the number of subarrays with a sum less than or equal to the target,
      * and the number of subarrays with a sum less than the target. The difference between these two values gives the result.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return The number of subarrays with a sum equal to the target.
      * <p>
      * Example:
@@ -91,8 +91,8 @@ public class SLDWindowDSA {
     /**
      * This helper method calculates the number of subarrays with a sum less than or equal to the target.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return The number of subarrays with a sum less than or equal to the target.
      */
     public int numOfSubarraysWithSumHelper(int[] arr, int target) {
@@ -124,8 +124,8 @@ public class SLDWindowDSA {
      * This method calculates the number of nice subarrays.
      * A nice subarray is an array where the number of odd numbers is exactly equal to the target.
      *
-     * @param arr    The input array.
-     * @param target The target number of odd numbers.
+     * @param  arr    The input array.
+     * @param  target The target number of odd numbers.
      * @return The number of nice subarrays.
      * <p>
      * Example:
@@ -140,8 +140,8 @@ public class SLDWindowDSA {
     /**
      * This helper method calculates the number of subarrays where the number of odd numbers is less than or equal to the target.
      *
-     * @param arr    The input array.
-     * @param target The target number of odd numbers.
+     * @param  arr    The input array.
+     * @param  target The target number of odd numbers.
      * @return The number of subarrays where the number of odd numbers is less than or equal to the target.
      */
     public int numberOfNiceSubarraysHelper(int[] arr, int target) {
@@ -177,7 +177,7 @@ public class SLDWindowDSA {
     /**
      * This method calculates the number of substrings in the input string that contain all characters 'a', 'b', and 'c'.
      *
-     * @param inpStr The input string.
+     * @param  inpStr The input string.
      * @return The count of substrings that contain all characters 'a', 'b', and 'c'.
      * <p>
      * Example:
@@ -211,8 +211,8 @@ public class SLDWindowDSA {
     /**
      * This method calculates the maximum score that can be obtained from a card game.
      *
-     * @param cardPoints The points of each card.
-     * @param k          The number of cards that can be taken from the beginning or end.
+     * @param  cardPoints The points of each card.
+     * @param  k          The number of cards that can be taken from the beginning or end.
      * @return The maximum score that can be obtained.
      * <p>
      * Example:
@@ -254,8 +254,8 @@ public class SLDWindowDSA {
     /**
      * This method calculates the length of the longest substring with at most k distinct characters.
      *
-     * @param inpStr The input string.
-     * @param k      The maximum number of distinct characters.
+     * @param  inpStr The input string.
+     * @param  k      The maximum number of distinct characters.
      * @return The length of the longest substring with at most k distinct characters.
      * <p>
      * Example:
@@ -290,8 +290,8 @@ public class SLDWindowDSA {
     /**
      * This method calculates the number of subarrays with exactly k distinct numbers.
      *
-     * @param arr The input array.
-     * @param k   The number of distinct numbers.
+     * @param  arr The input array.
+     * @param  k   The number of distinct numbers.
      * @return The number of subarrays with exactly k distinct numbers.
      * <p>
      * Example:
@@ -309,8 +309,8 @@ public class SLDWindowDSA {
      * This method calculates the total count of subarrays with exactly K distinct elements.
      * It uses a sliding window approach to keep track of the distinct elements in the current window (subarray).
      *
-     * @param arr The input array
-     * @param k   The number of distinct elements
+     * @param  arr The input array
+     * @param  k   The number of distinct elements
      * @return The total count of subarrays with K distinct elements
      * <p>
      * Example:
@@ -352,8 +352,8 @@ public class SLDWindowDSA {
      * This method finds the minimum window substring from string 's' which contains all the characters from string 't'.
      * It uses a sliding window approach to keep track of the characters in the current window (substring).
      *
-     * @param s The input string
-     * @param t The target string
+     * @param  s The input string
+     * @param  t The target string
      * @return The minimum window substring
      * <p>
      * Example:
@@ -420,8 +420,8 @@ public class SLDWindowDSA {
      * This method calculates the frequency of the most frequent element in the array after performing at most 'k' operations.
      * In one operation, we can increase any element by one.
      *
-     * @param arr The input array
-     * @param k   The maximum number of operations
+     * @param  arr The input array
+     * @param  k   The maximum number of operations
      * @return The frequency of the most frequent element after 'k' operations
      * <p>
      * Example:
@@ -475,7 +475,7 @@ public class SLDWindowDSA {
      * This method calculates the length of the longest substring without repeating characters.
      * It uses a sliding window approach to keep track of the characters in the current window (substring).
      *
-     * @param inStr The input string
+     * @param  inStr The input string
      * @return The length of the longest substring without repeating characters
      * <p>
      * Example:
@@ -511,7 +511,7 @@ public class SLDWindowDSA {
     /**
      * This method calculates the maximum number of fruits that can be collected from a tree.
      *
-     * @param fruits The types of fruits in the tree.
+     * @param  fruits The types of fruits in the tree.
      * @return The maximum number of fruits that can be collected.
      * <p>
      * Example:
@@ -548,8 +548,8 @@ public class SLDWindowDSA {
     /**
      * This method calculates the number of subarrays with a sum equal to a given target.
      *
-     * @param arr    The input array.
-     * @param target The target sum.
+     * @param  arr    The input array.
+     * @param  target The target sum.
      * @return The number of subarrays with a sum equal to the target.
      * <p>
      * Example:
@@ -589,8 +589,8 @@ public class SLDWindowDSA {
     /**
      * This method calculates the number of subarrays with exactly k distinct numbers.
      *
-     * @param arr The input array.
-     * @param k   The number of distinct numbers.
+     * @param  arr The input array.
+     * @param  k   The number of distinct numbers.
      * @return The number of subarrays with exactly k distinct numbers.
      * <p>
      * Example:
@@ -649,8 +649,8 @@ public class SLDWindowDSA {
     /**
      * This method finds the longest subarray that contains only 1's by flipping at most K 0's.
      *
-     * @param numArray The input array.
-     * @param K        The maximum number of 0's that can be flipped.
+     * @param  numArray The input array.
+     * @param  K        The maximum number of 0's that can be flipped.
      * @return The length of the longest subarray that contains only 1's.
      * <p>
      * Example:
@@ -684,8 +684,8 @@ public class SLDWindowDSA {
     /**
      * This method replaces some characters in the input string to make the length of the longest repeating character substring as long as possible.
      *
-     * @param inputString The input string.
-     * @param K           The maximum number of characters that can be replaced.
+     * @param  inputString The input string.
+     * @param  K           The maximum number of characters that can be replaced.
      * @return The length of the longest repeating character substring.
      * <p>
      * Example:
@@ -723,7 +723,7 @@ public class SLDWindowDSA {
     /**
      * This method finds the maximum number of fruits that can be collected by only collecting two types of fruits.
      *
-     * @param fruits The types of fruits in the tree.
+     * @param  fruits The types of fruits in the tree.
      * @return The maximum number of fruits that can be collected.
      * <p>
      * Example:

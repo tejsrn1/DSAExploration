@@ -20,8 +20,8 @@ public class BinarySearchTreeDSA {
     /**
      * This method searches for a node in a Binary Search Tree (BST).
      *
-     * @param root       The root node of the BST.
-     * @param nodeToFind The value of the node to find.
+     * @param  root       The root node of the BST.
+     * @param  nodeToFind The value of the node to find.
      * @return The node if found, otherwise null.
      * <p>
      * Example:
@@ -49,9 +49,9 @@ public class BinarySearchTreeDSA {
     /**
      * This method finds the minimum or maximum value in a BST.
      *
-     * @param root    The root node of the BST.
-     * @param res     An array where the result will be stored.
-     * @param findMin A boolean that determines whether to find the minimum (if true) or maximum (if false).
+     * @param  root    The root node of the BST.
+     * @param  res     An array where the result will be stored.
+     * @param  findMin A boolean that determines whether to find the minimum (if true) or maximum (if false).
      *                <p>
      *                Example:
      *                TreeNode root = new TreeNode(4);
@@ -83,8 +83,8 @@ public class BinarySearchTreeDSA {
      * This method finds the ceiling of a given node in a BST.
      * The ceiling is the smallest element in the BST that is greater than or equal to the given node.
      *
-     * @param root      The root node of the BST.
-     * @param givenNode The node for which to find the ceiling.
+     * @param  root      The root node of the BST.
+     * @param  givenNode The node for which to find the ceiling.
      * @return The value of the ceiling node.
      * <p>
      * Example:
@@ -115,8 +115,8 @@ public class BinarySearchTreeDSA {
      * This method finds the floor of a given node in a BST.
      * The floor is the largest element in the BST that is less than or equal to the given node.
      *
-     * @param root      The root node of the BST.
-     * @param givenNode The node for which to find the floor.
+     * @param  root      The root node of the BST.
+     * @param  givenNode The node for which to find the floor.
      * @return The value of the floor node.
      * <p>
      * Example:
@@ -146,8 +146,8 @@ public class BinarySearchTreeDSA {
     /**
      * This method inserts a new node into a Binary Search Tree (BST).
      *
-     * @param root The root of the BST.
-     * @param val  The value to be inserted into the BST.
+     * @param  root The root of the BST.
+     * @param  val  The value to be inserted into the BST.
      * @return The root of the modified BST.
      * <p>
      * Example:
@@ -187,8 +187,8 @@ public class BinarySearchTreeDSA {
     /**
      * This method deletes a node from a Binary Search Tree (BST).
      *
-     * @param root The root of the BST.
-     * @param key  The value to be deleted from the BST.
+     * @param  root The root of the BST.
+     * @param  key  The value to be deleted from the BST.
      * @return The root of the modified BST.
      * <p>
      * Example:
@@ -239,7 +239,7 @@ public class BinarySearchTreeDSA {
     /**
      * This method finds the successor of a node in a BST.
      *
-     * @param node The node whose successor is to be found.
+     * @param  node The node whose successor is to be found.
      * @return The value of the successor node.
      * <p>
      * Example:
@@ -256,7 +256,7 @@ public class BinarySearchTreeDSA {
     /**
      * This method finds the predecessor of a node in a BST.
      *
-     * @param node The node whose predecessor is to be found.
+     * @param  node The node whose predecessor is to be found.
      * @return The value of the predecessor node.
      * <p>
      * Example:
@@ -274,8 +274,8 @@ public class BinarySearchTreeDSA {
      * This method finds the Kth smallest element in a binary search tree.
      * It uses an in-order traversal (left, root, right) to find the Kth smallest element.
      *
-     * @param root The root of the binary search tree.
-     * @param K    An array of size 1 where K[0] is the Kth smallest element to find.
+     * @param  root The root of the binary search tree.
+     * @param  K    An array of size 1 where K[0] is the Kth smallest element to find.
      * @return The Kth smallest TreeNode if it exists, null otherwise.
      * <p>
      * Example:
@@ -307,8 +307,8 @@ public class BinarySearchTreeDSA {
      * This method finds the Kth largest element in a binary search tree.
      * It uses a reverse in-order traversal (right, root, left) to find the Kth largest element.
      *
-     * @param root The root of the binary search tree.
-     * @param K    An array of size 1 where K[0] is the Kth largest element to find.
+     * @param  root The root of the binary search tree.
+     * @param  K    An array of size 1 where K[0] is the Kth largest element to find.
      * @return The Kth largest TreeNode if it exists, null otherwise.
      * <p>
      * Example:
@@ -340,9 +340,9 @@ public class BinarySearchTreeDSA {
      * This method checks if a binary tree is a valid binary search tree (BST).
      * It uses a pre-order traversal (root, left, right) and checks the BST property at each node.
      *
-     * @param root The root of the binary tree.
-     * @param min  The minimum value that the current node's value should be greater than.
-     * @param max  The maximum value that the current node's value should be less than.
+     * @param  root The root of the binary tree.
+     * @param  min  The minimum value that the current node's value should be greater than.
+     * @param  max  The maximum value that the current node's value should be less than.
      * @return true if the binary tree is a valid BST, false otherwise.
      * <p>
      * Example:
@@ -369,9 +369,9 @@ public class BinarySearchTreeDSA {
      * The LCA is defined between two nodes node1 and node2 as the lowest node in the tree that has both node1 and
      * node2 as descendants.
      *
-     * @param root  The root node of the BST.
-     * @param node1 The first node.
-     * @param node2 The second node.
+     * @param  root  The root node of the BST.
+     * @param  node1 The first node.
+     * @param  node2 The second node.
      * @return The lowest common ancestor of node1 and node2.
      * <p>
      * Example:
@@ -401,8 +401,8 @@ public class BinarySearchTreeDSA {
      * This method finds the inorder predecessor of a given node in a BST.
      * The inorder predecessor of a node is the node with the highest value that is less than the given node.
      *
-     * @param root      The root node of the BST.
-     * @param givenNode The node for which the inorder predecessor is to be found.
+     * @param  root      The root node of the BST.
+     * @param  givenNode The node for which the inorder predecessor is to be found.
      * @return The inorder predecessor of the given node.
      * <p>
      * Example:
@@ -428,8 +428,8 @@ public class BinarySearchTreeDSA {
      * This method finds the inorder successor of a given node in a BST.
      * The inorder successor of a node is the node with the lowest value that is greater than the given node.
      *
-     * @param root      The root node of the BST.
-     * @param givenNode The node for which the inorder successor is to be found.
+     * @param  root      The root node of the BST.
+     * @param  givenNode The node for which the inorder successor is to be found.
      * @return The inorder successor of the given node.
      * <p>
      * Example:
@@ -454,7 +454,7 @@ public class BinarySearchTreeDSA {
     /**
      * This method demonstrates the usage of a BST iterator.
      *
-     * @param root The root node of the BST.
+     * @param  root The root node of the BST.
      *             <p>
      *             Example:
      *             TreeNode root = new TreeNode(4);
@@ -486,8 +486,8 @@ public class BinarySearchTreeDSA {
     /**
      * This method finds if there are two nodes in the BST that add up to a given target.
      *
-     * @param root The root node of the BST.
-     * @param k    The target sum.
+     * @param  root The root node of the BST.
+     * @param  k    The target sum.
      * @return True if there are two nodes that add up to the target, otherwise false.
      * <p>
      * Example:
@@ -505,9 +505,9 @@ public class BinarySearchTreeDSA {
     /**
      * This is a helper method for the findTarget_aka_find2Sum method.
      *
-     * @param root The root node of the BST.
-     * @param k    The target sum.
-     * @param set  A set to keep track of the visited nodes.
+     * @param  root The root node of the BST.
+     * @param  k    The target sum.
+     * @param  set  A set to keep track of the visited nodes.
      * @return True if there are two nodes that add up to the target, otherwise false.
      */
     private boolean findTarget_aka_find2Sum(TreeNode root, int k, HashSet<Integer> set) {
@@ -537,7 +537,7 @@ public class BinarySearchTreeDSA {
     /**
      * This method recovers a Binary Search Tree (BST) where two elements are swapped.
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      *             <p>
      *             Example:
      *             If we have a BST [1,3,null,null,2], the BST after recovery will be [3,1,null,null,2].
@@ -565,7 +565,7 @@ public class BinarySearchTreeDSA {
      * This method corrects a binary search tree (BST) where two nodes are swapped.
      * It uses an in-order traversal (left, root, right) to find the nodes that violate the BST property.
      *
-     * @param root The root of the BST.
+     * @param  root The root of the BST.
      *             <p>
      *             Example:
      *             Input: root = [3,5,8,7,20]
@@ -596,7 +596,7 @@ public class BinarySearchTreeDSA {
      * This method converts a sorted array to a balanced binary search tree (BST).
      * It picks the middle element as the root and recursively does the same for the left and right halves of the array.
      *
-     * @param sorted The sorted array to convert.
+     * @param  sorted The sorted array to convert.
      * @return The root of the balanced BST.
      * <p>
      * Example:
@@ -630,7 +630,7 @@ public class BinarySearchTreeDSA {
      * It starts with the root and checks if it's a valid BST. If it is, it returns its size.
      * If it's not, it does the same for its left and right children and returns the maximum size.
      *
-     * @param root The root of the binary tree.
+     * @param  root The root of the binary tree.
      * @return The length of the largest valid BST within the binary tree.
      * <p>
      * Example:
@@ -658,7 +658,7 @@ public class BinarySearchTreeDSA {
      * This method calculates the size of a binary search tree (BST).
      * The size of a BST is defined as the total number of nodes in the tree.
      *
-     * @param root The root node of the BST.
+     * @param  root The root node of the BST.
      * @return The size of the BST.
      * <p>
      * Example:
@@ -684,8 +684,8 @@ public class BinarySearchTreeDSA {
      * The first element of the preorder array is the root of the tree.
      * The method keeps a running index count on the preorder array and creates left and right nodes of the root.
      *
-     * @param preorder   The preorder traversal array of the BST.
-     * @param upperbound The maximum value that a node in the BST can have.
+     * @param  preorder   The preorder traversal array of the BST.
+     * @param  upperbound The maximum value that a node in the BST can have.
      * @return The root node of the BST.
      * <p>
      * Example:

@@ -226,10 +226,10 @@ B. How to Store Graph?
      * This is a helper method for the DFSOfGraph method.
      * It performs the actual DFS traversal using recursion.
      *
-     * @param node    The current node.
-     * @param visited A boolean array to mark visited nodes.
-     * @param adjList The adjacency list of the graph.
-     * @param res     The result list to store the order of visited nodes.
+     * @param  node    The current node.
+     * @param  visited A boolean array to mark visited nodes.
+     * @param  adjList The adjacency list of the graph.
+     * @param  res     The result list to store the order of visited nodes.
      */
     void DFSOfGraph(int node, boolean[] visited, List<List<Integer>> adjList, ArrayList<Integer> res) {
         visited[node] = true;
@@ -246,8 +246,8 @@ B. How to Store Graph?
      * This method counts the number of connected components in a graph.
      * It uses a Depth-First Search (DFS) approach to visit all nodes in the graph.
      *
-     * @param n     The number of nodes in the graph.
-     * @param edges The edges of the graph.
+     * @param  n     The number of nodes in the graph.
+     * @param  edges The edges of the graph.
      * @return The number of connected components in the graph.
      */
     public int countGraphComponents(int n, int[][] edges) {
@@ -279,9 +279,9 @@ B. How to Store Graph?
     /**
      * This method performs a Depth-First Search (DFS) on a graph to count the number of connected components.
      *
-     * @param node    The starting node for the DFS.
-     * @param visited An array to keep track of visited nodes.
-     * @param adjList The adjacency list representation of the graph.
+     * @param  node    The starting node for the DFS.
+     * @param  visited An array to keep track of visited nodes.
+     * @param  adjList The adjacency list representation of the graph.
      *                <p>
      *                Example:
      *                Suppose we have a graph with 5 nodes and the edges are [(1, 2), (2, 3), (4, 5)].
@@ -300,7 +300,7 @@ B. How to Store Graph?
     /**
      * This method counts the number of provinces (i.e., connected components) in a graph represented by an adjacency matrix.
      *
-     * @param adjMatrix The adjacency matrix representation of the graph.
+     * @param  adjMatrix The adjacency matrix representation of the graph.
      * @return The number of provinces.
      * <p>
      * Example:
@@ -334,7 +334,7 @@ B. How to Store Graph?
      * This method calculates the minimum time required to rot all oranges in a grid.
      * It uses a Breadth-First Search (BFS) approach.
      *
-     * @param adjMatrix The grid represented as a 2D array.
+     * @param  adjMatrix The grid represented as a 2D array.
      * @return The minimum time required to rot all oranges. If it's not possible to rot all oranges, return -1.
      * <p>
      * Example:
@@ -395,10 +395,10 @@ B. How to Store Graph?
     /**
      * This method performs a flood fill on an image represented by a 2D array.
      *
-     * @param image    The input image represented as a 2D array.
-     * @param sr       The row index of the starting pixel.
-     * @param sc       The column index of the starting pixel.
-     * @param newColor The new color to be filled.
+     * @param  image    The input image represented as a 2D array.
+     * @param  sr       The row index of the starting pixel.
+     * @param  sc       The column index of the starting pixel.
+     * @param  newColor The new color to be filled.
      * @return The image after performing the flood fill.
      * <p>
      * Example:
@@ -420,12 +420,12 @@ B. How to Store Graph?
      * This method performs a flood fill operation on an image using Depth-First Search (DFS).
      * It changes the color of all connected pixels of the original color to the new color.
      *
-     * @param image      The 2D array representing the image.
-     * @param sr         The row index of the starting pixel.
-     * @param sc         The column index of the starting pixel.
-     * @param orgColor   The original color.
-     * @param newColor   The new color.
-     * @param directions The 2D array representing the four possible directions (up, down, left, right).
+     * @param  image      The 2D array representing the image.
+     * @param  sr         The row index of the starting pixel.
+     * @param  sc         The column index of the starting pixel.
+     * @param  orgColor   The original color.
+     * @param  newColor   The new color.
+     * @param  directions The 2D array representing the four possible directions (up, down, left, right).
      */
     void floodFill_DFS(int[][] image, int sr, int sc, int orgColor, int newColor, int[][] directions) {
         // Assign the new color to the starting pixel.
@@ -474,9 +474,9 @@ B. How to Store Graph?
      * This method detects if there is a cycle in an undirected graph starting from a specific node.
      * It uses Breadth-First Search (BFS) for the traversal.
      *
-     * @param adjList   The adjacency list of the graph.
-     * @param visited   The array to keep track of visited nodes.
-     * @param startNode The starting node for the traversal.
+     * @param  adjList   The adjacency list of the graph.
+     * @param  visited   The array to keep track of visited nodes.
+     * @param  startNode The starting node for the traversal.
      * @return True if a cycle is detected, false otherwise.
      */
     boolean detectCycle_UnDirectedGraph(ArrayList<ArrayList<Integer>> adjList, boolean[] visited, int startNode) {
@@ -536,10 +536,10 @@ B. How to Store Graph?
      * This method detects if there is a cycle in an undirected graph starting from a specific node.
      * It uses Depth-First Search (DFS) for the traversal.
      *
-     * @param adjList    The adjacency list of the graph.
-     * @param visited    The array to keep track of visited nodes.
-     * @param startNode  The starting node for the traversal.
-     * @param parentNode The parent node of the starting node.
+     * @param  adjList    The adjacency list of the graph.
+     * @param  visited    The array to keep track of visited nodes.
+     * @param  startNode  The starting node for the traversal.
+     * @param  parentNode The parent node of the starting node.
      * @return True if a cycle is detected, false otherwise.
      */
     boolean detectCycle_UnDirectedGraph_DFS(ArrayList<ArrayList<Integer>> adjList, boolean[] visited, int startNode, int parentNode) {
@@ -566,7 +566,7 @@ B. How to Store Graph?
      * This method calculates the distance of the nearest 0 from each cell in a matrix.
      * It uses Breadth-First Search (BFS) to traverse the matrix.
      *
-     * @param adjMatrix The adjacency matrix.
+     * @param  adjMatrix The adjacency matrix.
      * @return The matrix with the distances of the nearest 0 from each cell.
      */
     public int[][] Zero_One_Matrix_BFS(int[][] adjMatrix) {
@@ -624,7 +624,7 @@ B. How to Store Graph?
      * This method finds and marks regions surrounded by 'X' in a matrix.
      * It uses Depth-First Search (DFS) to traverse the matrix.
      *
-     * @param adjMatrix The adjacency matrix.
+     * @param  adjMatrix The adjacency matrix.
      * @return The matrix with the regions surrounded by 'X' marked.
      */
     public char[][] Surrounded_Regions(char[][] adjMatrix) {
@@ -677,11 +677,11 @@ B. How to Store Graph?
     /**
      * This method traverses the matrix using Depth-First Search (DFS) and marks visited positions.
      *
-     * @param adjMatrix  The adjacency matrix.
-     * @param visited    The matrix that keeps track of visited positions.
-     * @param row        The current row index.
-     * @param col        The current column index.
-     * @param directions The possible directions to move in the matrix.
+     * @param  adjMatrix  The adjacency matrix.
+     * @param  visited    The matrix that keeps track of visited positions.
+     * @param  row        The current row index.
+     * @param  col        The current column index.
+     * @param  directions The possible directions to move in the matrix.
      */
     void Surrounded_Regions_DFS(char[][] adjMatrix, boolean[][] visited, int row, int col, int[][] directions) {
         // Mark visited
@@ -706,7 +706,7 @@ B. How to Store Graph?
      * This method counts the number of enclaves in a matrix.
      * It uses the same idea as surrounded regions.
      *
-     * @param adjMatrix The adjacency matrix.
+     * @param  adjMatrix The adjacency matrix.
      * @return The number of enclaves in the matrix.
      */
     public int num_of_Enclaves(int[][] adjMatrix) {
@@ -760,11 +760,11 @@ B. How to Store Graph?
     /**
      * This method performs a Depth-First Search (DFS) on a matrix to count the number of enclaves.
      *
-     * @param adjMatrix  The adjacency matrix representation of the graph.
-     * @param visited    An array to keep track of visited nodes.
-     * @param row        The row index of the current node.
-     * @param col        The column index of the current node.
-     * @param directions The possible directions to move in the matrix.
+     * @param  adjMatrix  The adjacency matrix representation of the graph.
+     * @param  visited    An array to keep track of visited nodes.
+     * @param  row        The row index of the current node.
+     * @param  col        The column index of the current node.
+     * @param  directions The possible directions to move in the matrix.
      *                   <p>
      *                   Example:
      *                   Suppose we have a matrix with 1's representing land and 0's representing water.
@@ -788,7 +788,7 @@ B. How to Store Graph?
     /**
      * This method counts the number of islands (i.e., connected components) in a matrix.
      *
-     * @param adjMatrix The adjacency matrix representation of the graph.
+     * @param  adjMatrix The adjacency matrix representation of the graph.
      * @return The number of islands.
      * <p>
      * Example:
@@ -814,11 +814,11 @@ B. How to Store Graph?
     /**
      * This method performs a Depth-First Search (DFS) on a matrix to find all the land connected to the current node.
      *
-     * @param adjMatrix  The adjacency matrix representation of the graph.
-     * @param visited    An array to keep track of visited nodes.
-     * @param row        The row index of the current node.
-     * @param col        The column index of the current node.
-     * @param directions The possible directions to move in the matrix.
+     * @param  adjMatrix  The adjacency matrix representation of the graph.
+     * @param  visited    An array to keep track of visited nodes.
+     * @param  row        The row index of the current node.
+     * @param  col        The column index of the current node.
+     * @param  directions The possible directions to move in the matrix.
      */
     void num_Islands_DFS(char[][] adjMatrix, boolean[][] visited, int row, int col, int[][] directions) {
         visited[row][col] = true;
@@ -839,7 +839,7 @@ B. How to Store Graph?
      * This method counts the number of distinct islands in a matrix.
      * An island is considered distinct if it has a different shape or size from other islands.
      *
-     * @param adjMatrix The adjacency matrix representation of the graph.
+     * @param  adjMatrix The adjacency matrix representation of the graph.
      * @return The number of distinct islands.
      * <p>
      * Example:
@@ -892,12 +892,12 @@ B. How to Store Graph?
      * This method performs a Depth-First Search (DFS) on a given adjacency matrix to find distinct islands.
      * It uses a recursive approach to visit all nodes in the graph.
      *
-     * @param adjMatrix  The input adjacency matrix.
-     * @param visited    A boolean array to mark visited nodes.
-     * @param row        The current row index.
-     * @param col        The current column index.
-     * @param directions The possible directions to move in the matrix.
-     * @param currIsLand The current island being visited.
+     * @param  adjMatrix  The input adjacency matrix.
+     * @param  visited    A boolean array to mark visited nodes.
+     * @param  row        The current row index.
+     * @param  col        The current column index.
+     * @param  directions The possible directions to move in the matrix.
+     * @param  currIsLand The current island being visited.
      */
     void num_Distinct_Islands_DFS(int[][] adjMatrix, boolean[][] visited, int row, int col, int[][] directions, List<int[]> currIsLand) {
         for (int[] dir : directions) {
@@ -917,8 +917,8 @@ B. How to Store Graph?
     /**
      * This method checks if a given island is unique among a list of islands.
      *
-     * @param currIsLand       The current island to check.
-     * @param uniqueIsLandList The list of unique islands.
+     * @param  currIsLand       The current island to check.
+     * @param  uniqueIsLandList The list of unique islands.
      * @return A boolean indicating whether the current island is unique.
      */
     private boolean isUnique(List<int[]> currIsLand, List<List<int[]>> uniqueIsLandList) {
@@ -946,9 +946,9 @@ B. How to Store Graph?
      * This method finds the minimum number of transformations required to convert a begin word to a target word.
      * Each transformation is a single character change and the intermediate word must be in the given word list.
      *
-     * @param beginWord  The word to start from.
-     * @param targetWord The target word to reach.
-     * @param wordList   The list of allowable words.
+     * @param  beginWord  The word to start from.
+     * @param  targetWord The target word to reach.
+     * @param  wordList   The list of allowable words.
      * @return The minimum number of transformations required.
      */
     public int world_ladder_1(String beginWord, String targetWord, List<String> wordList) {
@@ -991,9 +991,9 @@ B. How to Store Graph?
      * This method finds all shortest transformation sequences from a given word to a target word.
      * It uses a Breadth-First Search (BFS) approach and assumes that transformations must be valid words in the word list.
      *
-     * @param beginWord  The starting word.
-     * @param targetWord The target word.
-     * @param wordList   The list of valid words for transformations.
+     * @param  beginWord  The starting word.
+     * @param  targetWord The target word.
+     * @param  wordList   The list of valid words for transformations.
      * @return A list of all shortest transformation sequences.
      * <p>
      * Example:
@@ -1066,7 +1066,7 @@ B. How to Store Graph?
      * This method checks if a graph is bipartite.
      * A graph is bipartite if its vertices can be divided into two disjoint and independent sets U and V such that every edge connects a vertex in U to one in V.
      *
-     * @param adjMatrix The adjacency matrix representation of the graph.
+     * @param  adjMatrix The adjacency matrix representation of the graph.
      * @return True if the graph is bipartite, false otherwise.
      * <p>
      * Example:
@@ -1091,10 +1091,10 @@ B. How to Store Graph?
      * This method checks if a graph is bipartite using Depth-First Search (DFS).
      * A graph is bipartite if its vertices can be divided into two disjoint sets such that every edge connects two vertices from different sets.
      *
-     * @param node      The starting node for the DFS.
-     * @param color     The color to assign to the starting node.
-     * @param colored   The array to keep track of the colors of the nodes.
-     * @param adjMatrix The adjacency matrix of the graph.
+     * @param  node      The starting node for the DFS.
+     * @param  color     The color to assign to the starting node.
+     * @param  colored   The array to keep track of the colors of the nodes.
+     * @param  adjMatrix The adjacency matrix of the graph.
      * @return True if the graph is bipartite, false otherwise.
      */
     boolean isBipartite_DFSOfGraph(int node, int color, int[] colored, int[][] adjMatrix) {
@@ -1148,10 +1148,10 @@ B. How to Store Graph?
      * This method detects if there is a cycle in a directed graph starting from a specific node.
      * It uses Depth-First Search (DFS) for the traversal.
      *
-     * @param node        The starting node for the DFS.
-     * @param adjList     The adjacency list of the graph.
-     * @param visited     The array to keep track of visited nodes.
-     * @param pathVisited The array to keep track of the nodes in the current path.
+     * @param  node        The starting node for the DFS.
+     * @param  adjList     The adjacency list of the graph.
+     * @param  visited     The array to keep track of visited nodes.
+     * @param  pathVisited The array to keep track of the nodes in the current path.
      * @return True if a cycle is detected, false otherwise.
      */
     private boolean detectCycle_DirectedGraph_DFS(int node, ArrayList<ArrayList<Integer>> adjList, boolean[] visited, boolean[] pathVisited) {
@@ -1209,10 +1209,10 @@ B. How to Store Graph?
     /**
      * This method performs Depth-First Search (DFS) for topological sorting.
      *
-     * @param node    The current node.
-     * @param adjList The adjacency list of the graph.
-     * @param visited The array that keeps track of visited nodes.
-     * @param st      The stack that stores the nodes in topological order.
+     * @param  node    The current node.
+     * @param  adjList The adjacency list of the graph.
+     * @param  visited The array that keeps track of visited nodes.
+     * @param  st      The stack that stores the nodes in topological order.
      */
     private void topologicalSort_DFS(int node, ArrayList<ArrayList<Integer>> adjList, boolean[] visited, Stack<Integer> st) {
         // Mark visited
@@ -1272,8 +1272,8 @@ B. How to Store Graph?
      * This method checks if it is possible to finish all courses given a list of prerequisites.
      * It uses a Breadth-First Search (BFS) approach to find a topological ordering of the courses.
      *
-     * @param numCourses    The number of courses.
-     * @param prerequisites The prerequisites for each course.
+     * @param  numCourses    The number of courses.
+     * @param  prerequisites The prerequisites for each course.
      * @return A boolean indicating whether it is possible to finish all courses.
      */
     public boolean canFinish_courseSchedule_1(int numCourses, int[][] prerequisites) {
@@ -1322,8 +1322,8 @@ B. How to Store Graph?
      * This method finds a valid order in which to take all courses given a list of prerequisites.
      * It uses a Breadth-First Search (BFS) approach to find a topological ordering of the courses.
      *
-     * @param numCourses    The number of courses.
-     * @param prerequisites The prerequisites for each course.
+     * @param  numCourses    The number of courses.
+     * @param  prerequisites The prerequisites for each course.
      * @return An array representing a valid order to take all courses, or an empty array if no valid order exists.
      */
     public int[] canFinish_courseSchedule_2(int numCourses, int[][] prerequisites) {
@@ -1379,7 +1379,7 @@ B. How to Store Graph?
      * This method finds all nodes in a graph that are eventually safe.
      * A node is eventually safe if it can reach a terminal node (i.e., a node that has no outgoing edges).
      *
-     * @param graph The adjacency list representation of the graph.
+     * @param  graph The adjacency list representation of the graph.
      * @return A list of all nodes that are eventually safe, in ascending order.
      * <p>
      * Example:
@@ -1434,7 +1434,7 @@ B. How to Store Graph?
      * This method determines the order of characters in an alien language.
      * It uses a topological sort approach and assumes that the order of characters can be determined from a list of words in the alien language.
      *
-     * @param words The list of words in the alien language.
+     * @param  words The list of words in the alien language.
      * @return A string representing the order of characters in the alien language. If the order cannot be determined, return an empty string.
      * <p>
      * Example:
@@ -1517,8 +1517,8 @@ B. How to Store Graph?
      * This method calculates the shortest path from a source node to all other nodes in a graph using Breadth-First Search (BFS).
      * It works by visiting each node and its children, updating the shortest distance to each child node if a shorter path is found.
      *
-     * @param edges      2D array representing the edges between nodes in the graph.
-     * @param totalNodes The total number of nodes in the graph.
+     * @param  edges      2D array representing the edges between nodes in the graph.
+     * @param  totalNodes The total number of nodes in the graph.
      * @return An array of shortest distances from the source node (node 0) to all other nodes.
      */
     public int[] shortestPath_BFS(int[][] edges, int totalNodes) {
@@ -1571,8 +1571,8 @@ B. How to Store Graph?
      * This method calculates the shortest path from a source node to all other nodes in a Directed Acyclic Graph (DAG) using Topological Sort and Dynamic Programming.
      * It first performs a topological sort on the nodes, then checks each node's children, updating the shortest distance if a shorter path is found.
      *
-     * @param edges      2D array representing the edges between nodes in the graph.
-     * @param totalNodes The total number of nodes in the graph.
+     * @param  edges      2D array representing the edges between nodes in the graph.
+     * @param  totalNodes The total number of nodes in the graph.
      * @return An array of shortest distances from the source node (node 0) to all other nodes.
      */
     public int[] shortestPath_DAG(int[][] edges, int totalNodes) {
@@ -1645,10 +1645,10 @@ B. How to Store Graph?
     /**
      * Helper method for performing Topological Sort via Depth-First Search (DFS).
      *
-     * @param node    The current node.
-     * @param adjList The adjacency list of the graph.
-     * @param visited An array to keep track of visited nodes.
-     * @param st      The stack to store the nodes in topological order.
+     * @param  node    The current node.
+     * @param  adjList The adjacency list of the graph.
+     * @param  visited An array to keep track of visited nodes.
+     * @param  st      The stack to store the nodes in topological order.
      */
     private void topologicalSort_DFS_shortestPath_DAG(int node, List<ArrayList<Pair_A>> adjList, boolean[] visited, Stack<Integer> st) {
         visited[node] = true; // Mark node as visited
@@ -1697,9 +1697,9 @@ B. How to Store Graph?
      * This method implements Dijkstra's algorithm to find the shortest path in a graph.
      * It uses a priority queue to select the next node with the smallest distance.
      *
-     * @param adjList    The adjacency list representing the graph.
-     * @param totalNodes The total number of nodes in the graph.
-     * @param sourceNode The starting node for the path.
+     * @param  adjList    The adjacency list representing the graph.
+     * @param  totalNodes The total number of nodes in the graph.
+     * @param  sourceNode The starting node for the path.
      * @return An array of shortest distances from the source node to all other nodes.
      */
     int[] dijkstra_shortestPath_PQ(List<List<Pair_A>> adjList, int totalNodes, int sourceNode) {
@@ -1742,7 +1742,7 @@ B. How to Store Graph?
      * This method finds the shortest path in a binary matrix using Breadth-First Search (BFS).
      * It considers all 8 directions from a given cell.
      *
-     * @param adjMatrix The adjacency matrix representing the graph.
+     * @param  adjMatrix The adjacency matrix representing the graph.
      * @return The shortest path distance. If the path is not possible, it returns -1.
      */
     public int shortestPathBinaryMatrix(int[][] adjMatrix) {
@@ -1800,7 +1800,7 @@ B. How to Store Graph?
      * This method finds the minimum effort path in a matrix using Dijkstra's algorithm.
      * The effort is defined as the maximum difference in heights between two consecutive cells in the path.
      *
-     * @param heights The matrix representing the heights of each cell.
+     * @param  heights The matrix representing the heights of each cell.
      * @return The minimum effort to travel from the top-left cell to the bottom-right cell. If the path is not possible, it returns -1.
      */
     public int minimumEffortPath(int[][] heights) {
@@ -1867,11 +1867,11 @@ B. How to Store Graph?
      * This method finds the cheapest price for a flight with a maximum number of stops.
      * It uses Dijkstra's algorithm to find the shortest path in a graph.
      *
-     * @param totalCities      The total number of cities.
-     * @param flights          The 2D array representing the flights, where flights[i] = [from, to, price].
-     * @param originalSource   The original source city.
-     * @param finalDestination The final destination city.
-     * @param maxStop          The maximum number of stops.
+     * @param  totalCities      The total number of cities.
+     * @param  flights          The 2D array representing the flights, where flights[i] = [from, to, price].
+     * @param  originalSource   The original source city.
+     * @param  finalDestination The final destination city.
+     * @param  maxStop          The maximum number of stops.
      * @return The cheapest price for the flight. If there is no route within the maxStop, return -1.
      * <p>
      * Example:
@@ -1937,9 +1937,9 @@ B. How to Store Graph?
      * This method calculates the time it will take for all nodes to receive the signal.
      * It uses Dijkstra's algorithm to find the shortest path in a graph.
      *
-     * @param times      The 2D array representing the times, where times[i] = [from, to, time].
-     * @param totalNodes The total number of nodes.
-     * @param sourceNode The source node.
+     * @param  times      The 2D array representing the times, where times[i] = [from, to, time].
+     * @param  totalNodes The total number of nodes.
+     * @param  sourceNode The source node.
      * @return The minimum time for all nodes to receive the signal. If any node doesn't receive the signal, return -1.
      * <p>
      * Example:
@@ -2142,9 +2142,9 @@ B. How to Store Graph?
      * This method finds the city that has the smallest number of neighbors within a given maximum distance.
      * It uses the Floyd Warshall algorithm to find the shortest path in a graph.
      *
-     * @param totalCities       The total number of cities.
-     * @param edges             The 2D array representing the edges, where edges[i] = [from, to, distance].
-     * @param distanceThreshold The maximum distance threshold.
+     * @param  totalCities       The total number of cities.
+     * @param  edges             The 2D array representing the edges, where edges[i] = [from, to, distance].
+     * @param  distanceThreshold The maximum distance threshold.
      * @return The city that has the smallest number of neighbors within the given maximum distance. If there are multiple such cities, return the one with the higher rank.
      * <p>
      * Example:

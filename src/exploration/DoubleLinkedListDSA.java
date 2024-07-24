@@ -5,11 +5,11 @@ import exploration.helpers.llist.lru.DoublyListNode;
 
 public class DoubleLinkedListDSA {
 
-    /**
+    /** 
      * This method appends a new node to the end of a doubly linked list.
      *
-     * @param data The data to be stored in the new node.
-     * @param head The head node of the doubly linked list.
+     * @param  data The data to be stored in the new node.
+     * @param  head The head node of the doubly linked list.
      * @return The head node of the updated doubly linked list.
      * <p>
      * Example:
@@ -36,7 +36,7 @@ public class DoubleLinkedListDSA {
     /**
      * This method deletes the last node of a doubly linked list.
      *
-     * @param head The head node of the doubly linked list.
+     * @param  head The head node of the doubly linked list.
      * @return The head node of the updated doubly linked list.
      * <p>
      * Example:
@@ -57,7 +57,7 @@ public class DoubleLinkedListDSA {
     /**
      * This method reverses a doubly linked list.
      *
-     * @param head The head node of the doubly linked list.
+     * @param  head The head node of the doubly linked list.
      * @return The head node of the reversed doubly linked list.
      * <p>
      * Example:
@@ -85,7 +85,7 @@ public class DoubleLinkedListDSA {
      * This method reverses a doubly linked list.
      * This is an alternate implementation of the Reverse method.
      *
-     * @param head The head node of the doubly linked list.
+     * @param  head The head node of the doubly linked list.
      * @return The head node of the reversed doubly linked list.
      * <p>
      * Example:

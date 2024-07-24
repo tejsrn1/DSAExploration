@@ -41,7 +41,7 @@ public class HashDSA {
      * This method counts the frequency of each element in a given array.
      * It uses a HashMap to store the frequency of each element, where the element is the key and its frequency is the value.
      *
-     * @param givenArray The input array.
+     * @param  givenArray The input array.
      *                   <p>
      *                   Example:
      *                   Input: givenArray = [1, 2, 2, 3, 3, 3]
@@ -74,7 +74,7 @@ public class HashDSA {
     /**
      * This method finds the maximum and minimum frequency of elements in an array.
      *
-     * @param givenArray The input array
+     * @param  givenArray The input array
      *                   <p>
      *                   Example:
      *                   Input: givenArray = [1, 2, 2, 3, 3, 3]
