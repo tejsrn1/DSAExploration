@@ -19,13 +19,18 @@ A. What is Graph...
       |      \   |
       C         D
 
-In this graph, A, B, C, and D are referred to as nodes or vertices, and the lines or paths connecting them are called edges. If the connecting lines point to a vertex (i.e., ->), the graph is called a directed graph; otherwise, it’s an undirected graph. These lines represent links or relations between two nodes.
+In this graph, A, B, C, and D are referred to as nodes or vertices, and the lines or paths connecting them are called edges.
+If the connecting lines point to a vertex (i.e., ->), the graph is called a directed graph; otherwise, it’s an undirected graph. These lines represent links or relations between two nodes.
 
-A graph can have a cycle (e.g., A - B - D - A), in which case it’s called a cyclic graph. A graph without a cycle is called an acyclic graph. If an edge has a number label (e.g., 8 or 5), the graph is referred to as a weighted graph, representing concepts like distance, cost, or quantity.
+A graph can have a cycle (e.g., A - B - D - A), in which case it’s called a cyclic graph.
+A graph without a cycle is called an acyclic graph. If an edge has a number label (e.g., 8 or 5), the graph is referred to as a weighted graph, representing concepts like distance, cost, or quantity.
 
-If a node has a color, it’s called a colored graph. If adjacent nodes have different colors, it’s called legal coloring. If adjacent nodes have the same color, it’s called illegal coloring.
+If a node has a color, it’s called a colored graph. If adjacent nodes have different colors,
+ it’s called legal coloring. If adjacent nodes have the same color, it’s called illegal coloring.
 
-A path contains nodes, and each node is reachable from another node. For example, A, B, D, and E form a path, and each node can reach the others. However, A, D, E is not a path because A does not have any link to D. Also, A, B, D, B, A is not a path because a node (B) appears more than once.
+A path contains nodes, and each node is reachable from another node. For example, A, B, D, and E form a path,
+ and each node can reach the others. However, A, D, E is not a path because A does not have any link to D.
+ Also, A, B, D, B, A is not a path because a node (B) appears more than once.
           A -------  B
                      |
                     |

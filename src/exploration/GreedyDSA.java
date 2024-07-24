@@ -8,7 +8,7 @@ import exploration.helpers.greedy.helpers.MeetingComparator;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Greedy {
+public class GreedyDSA {
 
     /* Note
 

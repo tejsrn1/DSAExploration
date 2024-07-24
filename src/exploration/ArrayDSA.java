@@ -29,8 +29,10 @@ public class ArrayDSA {
      * This method finds and returns the second largest or second smallest element in an array.
      *
      * @param inputArray  An array of integers.
-     * @param returnSmall A boolean flag to decide whether to return the second smallest (if true) or second largest (if false) element.
-     * @return The second smallest or second largest integer in the array. Returns -1 if the array has less than 2 elements.
+     * @param returnSmall A boolean flag to decide whether to return the second smallest (if true) or second largest
+     *                    (if false) element.
+     * @return The second smallest or second largest integer in the array. Returns -1 if the array has less than 2
+     * elements.
      * <p>
      * Example:
      * int[] array = {1, 2, 3, 4, 5};
@@ -986,7 +988,8 @@ public class ArrayDSA {
 
     /**
      * This method finds all the majority elements in a given array.
-     * A majority element is an element that appears more than n/3 times in the array, where n is the length of the array.
+     * A majority element is an element that appears more than n/3 times in the array, where n is the length of the
+     * array.
      *
      * @param arr The input array.
      * @return An array of all the majority elements.
@@ -1028,7 +1031,8 @@ public class ArrayDSA {
 
     /**
      * This method finds all the majority elements in a given array using Moore's Voting Algorithm.
-     * A majority element is an element that appears more than n/3 times in the array, where n is the length of the array.
+     * A majority element is an element that appears more than n/3 times in the array, where n is the length of the
+     * array.
      *
      * @param arr The input array.
      * @return An array of all the majority elements.
@@ -1266,7 +1270,8 @@ public class ArrayDSA {
 
     /**
      * This method merges two sorted arrays into one sorted array without using extra space.
-     * It compares the last element of the first array with the first element of the second array and swaps them if necessary.
+     * It compares the last element of the first array with the first element of the second array and swaps them if
+     * necessary.
      *
      * @param arr1 The first input array.
      * @param arr2 The second input array.
@@ -1332,10 +1337,12 @@ public class ArrayDSA {
 
     /**
      * This method finds the missing and repeating numbers in a given array.
-     * It uses the absolute values of the elements as indices and marks the corresponding elements in the array as negative.
+     * It uses the absolute values of the elements as indices and marks the corresponding elements in the array as
+     * negative.
      *
      * @param arr The input array.
-     * @return An array of two integers where the first integer is the repeating number and the second integer is the missing number.
+     * @return An array of two integers where the first integer is the repeating number and the second integer is the
+     * missing number.
      * <p>
      * Example:
      * Input: arr = [3, 1, 3]
@@ -1574,7 +1581,8 @@ public class ArrayDSA {
      *                    Example:
      *                    Input: givenMatrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
      *                    Output: [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
-     *                    Explanation: The element at the second row and the second column is zero, so the entire second row and the second column are set to zero.
+     *                    Explanation: The element at the second row and the second column is zero, so the entire
+     *                    second row and the second column are set to zero.
      */
     public void zeroMatrix(int[][] givenMatrix, int rowLen, int colLen) {
         int[] rowMark = new int[rowLen];
@@ -1630,7 +1638,8 @@ public class ArrayDSA {
 
     /**
      * This method prints a given matrix in a spiral order.
-     * It defines the top, bottom, left, and right boundaries of the matrix and iterates over the elements in a spiral order.
+     * It defines the top, bottom, left, and right boundaries of the matrix and iterates over the elements in a
+     * spiral order.
      *
      * @param givenMatrix The input matrix.
      * @return A list of elements in the matrix in a spiral order.
@@ -1803,7 +1812,8 @@ public class ArrayDSA {
 
     /**
      * This method finds the missing and repeating numbers in a given array.
-     * It uses the absolute values of the elements as indices and marks the corresponding elements in the array as negative.
+     * It uses the absolute values of the elements as indices and marks the corresponding elements in the array as
+     * negative.
      * Note: This method may not work for all cases, especially when the array contains majority elements.
      *
      * @param arr The input array.

@@ -5,15 +5,27 @@ import java.util.Arrays;
 public class BinarysearchDSA {
 
     /*
-   Binary search is a method of searching for a specific value within a sorted space. This technique involves dividing the space in half and then proceeding to the left or right, depending on the position of the value being searched for. The search concludes once the desired value is found.
+   Binary search is a method of searching for a specific value within a sorted space. This technique involves
+   dividing the space in half and then proceeding to the left or right, depending on the position of the value being
+   searched for. The search concludes once the desired value is found.
 
-It's important to note that binary search can only be performed on sorted spaces. This includes sorted arrays, sorted binary trees, or any other sorted structures.
+It's important to note that binary search can only be performed on sorted spaces. This includes sorted arrays, sorted
+ binary trees, or any other sorted structures.
 
-In problems involving sorted spaces, a common pattern is the decision to move left or right, and upon finding the desired value, returning it as the answer. However, the conditions for deciding when to move left or right, and what constitutes the answer, vary from problem to problem. These conditions can only be determined by applying different checks on the given space. Understanding where the answer lies within the sorted space can help determine whether to move left or right, or whether the current position is the answer.
+In problems involving sorted spaces, a common pattern is the decision to move left or right, and upon finding the
+desired value, returning it as the answer. However, the conditions for deciding when to move left or right, and what
+constitutes the answer, vary from problem to problem. These conditions can only be determined by applying different
+checks on the given space. Understanding where the answer lies within the sorted space can help determine whether to
+move left or right, or whether the current position is the answer.
 
-For instance, when searching for a single element in a sorted space, we typically start at the middle. From there, we determine whether we need to move left or right. The parameters that need to be checked to decide this direction will vary based on the specific problem. Once these parameters are determined, we proceed in the appropriate direction.
+For instance, when searching for a single element in a sorted space, we typically start at the middle. From there, we
+ determine whether we need to move left or right. The parameters that need to be checked to decide this direction
+ will vary based on the specific problem. Once these parameters are determined, we proceed in the appropriate direction.
 
-Additionally, it's worth noting the concepts of floor and ceiling in mathematics. The floor of a number is the largest integer less than or equal to the number, while the ceiling is the smallest integer greater than or equal to the number. For example, the floor of 2.31 is 2, and the ceiling of 2.31 is 3. These concepts are often used in problems involving binary search and sorted spaces.
+Additionally, it's worth noting the concepts of floor and ceiling in mathematics. The floor of a number is the
+largest integer less than or equal to the number, while the ceiling is the smallest integer greater than or equal to
+the number. For example, the floor of 2.31 is 2, and the ceiling of 2.31 is 3. These concepts are often used in
+problems involving binary search and sorted spaces.
 
     * */
 
@@ -71,7 +83,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
 
     /**
      * This method finds the lower bound of a target value in a sorted array.
-     * The lower bound is the first or smallest index where the value at that index is greater than or equal to the target.
+     * The lower bound is the first or smallest index where the value at that index is greater than or equal to the
+     * target.
      *
      * @param arr    The input sorted array.
      * @param target The target value.
@@ -427,7 +440,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
     }
 
     /**
-     * This method finds the single non-duplicate number in a sorted array where every element appears twice except for one.
+     * This method finds the single non-duplicate number in a sorted array where every element appears twice except
+     * for one.
      *
      * @param arr the array to be searched
      * @return the single non-duplicate number
@@ -549,11 +563,13 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
 
     /**
      * This method calculates the minimum eating speed required for Koko to eat all the bananas within the total hours.
-     * Koko can decide her bananas-per-hour eating speed of the bananas pile. She will choose the smallest integer such that she can eat all the bananas within the total hours.
+     * Koko can decide her bananas-per-hour eating speed of the bananas pile. She will choose the smallest integer
+     * such that she can eat all the bananas within the total hours.
      *
      * @param pilesOfBanana The piles of bananas that Koko can eat.
      * @param totalHours    The total hours within which Koko needs to eat all the bananas.
-     * @return The minimum eating speed (bananas per hour) required for Koko to eat all the bananas within the total hours.
+     * @return The minimum eating speed (bananas per hour) required for Koko to eat all the bananas within the total
+     * hours.
      */
     public int minEatingSpeed_kokoBanana(int[] pilesOfBanana, int totalHours) {
         int maxBananas = Integer.MIN_VALUE;
@@ -646,7 +662,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
 
 
     /**
-     * This method finds the smallest divisor such that the sum of quotients of an array of numbers divided by the divisor is less than or equal to a threshold.
+     * This method finds the smallest divisor such that the sum of quotients of an array of numbers divided by the
+     * divisor is less than or equal to a threshold.
      *
      * @param numbers   The input array of numbers.
      * @param threshold The threshold sum of quotients.
@@ -680,7 +697,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
     }
 
     /**
-     * This method finds the minimum capacity of a ship such that all the weights can be shipped within the allowed days.
+     * This method finds the minimum capacity of a ship such that all the weights can be shipped within the allowed
+     * days.
      *
      * @param weights     The input array of weights.
      * @param allowedDays The number of allowed days.
@@ -745,7 +763,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
     }
 
     /**
-     * This method finds the maximum distance between cows in stalls such that the cows are placed as far apart as possible.
+     * This method finds the maximum distance between cows in stalls such that the cows are placed as far apart as
+     * possible.
      *
      * @param stalls The input array of stalls.
      * @param cows   The number of cows.
@@ -812,7 +831,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
     }
 
     /**
-     * This method counts the minimum number of pages that should be allocated to students such that the maximum number is minimized.
+     * This method counts the minimum number of pages that should be allocated to students such that the maximum
+     * number is minimized.
      *
      * @param pagesOfEachBook The number of pages in each book.
      * @param students        The number of students.
@@ -864,7 +884,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
 
 
     /**
-     * This method counts the number of students required to read all the books given a maximum number of pages a student can read.
+     * This method counts the number of students required to read all the books given a maximum number of pages a
+     * student can read.
      *
      * @param pagesOfEachBook an array representing the number of pages in each book
      * @param mxPages         the maximum number of pages a student can read
@@ -929,7 +950,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
     }
 
     /**
-     * This method splits an array into a specified number of subarrays such that the maximum sum of any subarray is minimized.
+     * This method splits an array into a specified number of subarrays such that the maximum sum of any subarray is
+     * minimized.
      *
      * @param arr             the array to be split
      * @param countOfSubArray the number of subarrays
@@ -968,7 +990,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
 
 
     /**
-     * This method counts the number of subarrays that can be formed from the given array such that the sum of each subarray is less than or equal to the maximum sum.
+     * This method counts the number of subarrays that can be formed from the given array such that the sum of each
+     * subarray is less than or equal to the maximum sum.
      *
      * @param arr   The input array.
      * @param mxSum The maximum sum of each subarray.
@@ -1083,7 +1106,8 @@ Additionally, it's worth noting the concepts of floor and ceiling in mathematics
      * The matrix is sorted in non-increasing order.
      *
      * @param mat The binary matrix.
-     * @return An array of two integers. The first integer is the row with the maximum number of ones and the second integer is the maximum number of ones.
+     * @return An array of two integers. The first integer is the row with the maximum number of ones and the second
+     * integer is the maximum number of ones.
      */
     public int[] rowAndMaximumOnes(int[][] mat) {
         int lenR = mat.length;
